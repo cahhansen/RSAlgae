@@ -1,0 +1,1 @@
+This repository is a collection of the scripts used in Google Earth Engine and R for processing, model development, and analysis of algal blooms using remote sensing.
