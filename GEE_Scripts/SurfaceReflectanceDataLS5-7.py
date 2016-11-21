@@ -15,14 +15,16 @@ start = timeit.default_timer()
 # Initialize the Earth Engine object, using the authentication credentials.
 ee.Initialize()
 
-# User Input
-basefolder = 'E:/University of Utah - Research/Dissertation Research/Field Data/'
-# Specify location of database file with chl-a (corrected for pheophytin) data
-samplingfile = basefolder+'GSLSWSChlData.csv'
+# User Input--------------------------------------------------------------------
+#Specify basefolder location
+basefolder = 'C:/Users/'
+# Specify location of file with the dates of chl-a measurements
+samplingfile = basefolder+'UtahChlData.csv'
 # Read in necessary files and format
 samplingdf=pd.io.parsers.read_csv(samplingfile, header=0)
 samplingdf['SampleDate']=pd.to_datetime(samplingdf['Date'])
 length=len(samplingdf)
+#Specify the time-window for including non-coincident imagery (+/- days from the sampling date)
 print('The total number of samples of chl-a is: '+str(length))
 timewindow=10
 print('Time window is: '+str(timewindow))
@@ -37,7 +39,7 @@ for m in range(0,length):
     #Calculate the start and end dates of the timewindow
     startdate=samplingdf['DateStart'].iloc[m]
     enddate=samplingdf['DateEnd'].iloc[m]
-    #Specify the station and retrieve the geometry from the Google Fusion Table 
+    #Specify the station and retrieve the geometry (location) from the Google Fusion Table 
     Station = str(int(samplingdf['StationID'].iloc[m]))
     stations = ee.FeatureCollection('ft:1NTFB0ptBnEvXeJhOHxjVssFMFJ1WKdFebNcMIWSk').filterMetadata('StationID', 'equals', Station)
     #Print statement for tracking progress
@@ -87,7 +89,7 @@ for m in range(0,length):
             pass
    
 print('Number of successfual matches: '+str(len(pixel_df)))
-pixel_df.to_csv(basefolder+'ChlorophyllData/ReflectanceValues/LS5-7EarthEngineExport.csv',index=False)
+pixel_df.to_csv(basefolder+'LS5-7EarthEngineExport.csv',index=False)
 print('Finished exporting reflectance data!')
 stop = timeit.default_timer()
 time=(stop - start)/60
