@@ -1,0 +1,12 @@
+Package: ChlModelDevel
+Type: Package
+Title: Handles Reflectance Data and Develops Empirical Models
+Version: 0.1.0
+Author: Carly Hansen
+Maintainer: <carlyahansen@gmail.com>
+Description: Works with MysQL database, reads in and formats data, and creates models for estimating chl-a
+License: Apache
+LazyData: TRUE
+Imports:
+    RMySQL,lubridate
+RoxygenNote: 5.0.1
