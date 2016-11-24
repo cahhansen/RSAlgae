@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: ChlModelDevel\nType: Package\nTitle: Handles Reflectance Data and Develops Empirical Models\nVersion: 0.1.0\nAuthor: Carly Hansen\nMaintainer: <carlyahansen@gmail.com>\nDescription: Works with MysQL database, reads in and formats data, and creates models for estimating chl-a\nLicense: Apache\nLazyData: TRUE\nImports:\n    RMySQL,lubridate\nRoxygenNote: 5.0.1\n",
+    "created" : 1479834142716.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1966911625",
+    "id" : "4A4493FE",
+    "lastKnownWriteTime" : 1479959892,
+    "last_content_update" : 1479959892365,
+    "path" : "~/GitHub/GSL-Algae/R_Scripts/ChlModelDevel/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}
