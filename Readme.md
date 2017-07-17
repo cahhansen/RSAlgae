@@ -9,18 +9,21 @@ This repository is a collection of the scripts and functions used in Google Eart
 ---
 An example workflow is as follows:
 ### Download reflectance data:
--GEE_Scripts>GetSRDataLS5-7.py
-	Read in dates and station IDs from a field record file and Google Fusion Table of sampling locations. Can be adapted to retrieve data over the entire satellite record. Save data in .csv.
+* GEE_Scripts>GetSRDataLS5-7.py
+
+Read in dates and station IDs from a field record file and Google Fusion Table of sampling locations. Can be adapted to retrieve data over the entire satellite record. Save data in .csv.
 
 ### Format data:
--R_Scripts>FormatCalibrationReflectanceData.R
--R_Scripts>FormatHistoricReflectanceData.R
+* R_Scripts>FormatCalibrationReflectanceData.R
+* R_Scripts>FormatHistoricReflectanceData.R
+
 Save data in .csv format.
 
 ### Create model variables:
--R_Scripts>CreateModelVariables.R
+* R_Scripts>CreateModelVariables.R
+
 Save data in .RData format (XData.RData)
 
 ### Testing different time windows and obtaining significant variables:
--R_Scripts>
+* R_Scripts>
 More content will be added as functions are generalized and finalized.
