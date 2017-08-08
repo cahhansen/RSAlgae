@@ -1,6 +1,6 @@
-#' Perform Stepwise Regression
+#' create_model_vars
 #'
-#' Use stepwise regression to parameterize initial model
+#' Create model variables used in model calibration and application
 #'
 #' @param filename CSV file with formatted surface reflectance data
 #' @param rowIndex True or False, Indicates whether the first column in the formatted data file is a row index
