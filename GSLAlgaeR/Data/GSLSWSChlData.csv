@@ -1,0 +1,1569 @@
+Date,Value,StationID,Organization,Latitude,Longitude,Lake,SampleDepth_m,Units,MaxDepth_m,Variable,Method
+12/8/1992,2.8,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,9,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/8/1992,1.3,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,6.5,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/16/1993,4.3,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,19,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/16/1993,2.8,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,19.1,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/22/1994,9,4985120,UTAHDWQ,41.1055556,-112.225,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/22/1994,36.8,4985200,UTAHDWQ,41.0497499,-112.1886833,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/31/1994,5.4,4985120,UTAHDWQ,41.1055556,-112.225,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/31/1994,39.9,4985200,UTAHDWQ,41.0497499,-112.1886833,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/22/1994,8.4,4985120,UTAHDWQ,41.1055556,-112.225,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/21/1995,6.6,4985120,UTAHDWQ,41.1055556,-112.225,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/27/1995,0.2,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,4.25,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/27/1995,0.2,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,8.2,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/27/1995,0.2,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,6.2,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/27/1995,0.5,4982600,UTAHDWQ,41.218821,-112.834973,Gilbert,2.4,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/26/1995,8.4,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/26/1995,8.9,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/4/1995,8,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+8/22/1995,8,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+8/23/1995,2,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.1,Chlorophyll,Welschmeyer Fluorometric Method
+9/6/1995,4,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.3,Chlorophyll,Welschmeyer Fluorometric Method
+9/25/1995,2,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.2,Chlorophyll,Welschmeyer Fluorometric Method
+9/25/1995,10,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.1,Chlorophyll,Welschmeyer Fluorometric Method
+9/27/1995,9.3,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/27/1995,9.4,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/14/1995,1.6,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/14/1995,4.2,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/7/1996,55,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.3,Chlorophyll,Welschmeyer Fluorometric Method
+2/9/1996,68,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,8.7,Chlorophyll,Welschmeyer Fluorometric Method
+3/18/1996,111,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+3/19/1996,37,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+3/19/1996,40,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.7,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/1996,50,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.8,Chlorophyll,Welschmeyer Fluorometric Method
+4/9/1996,32,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9,Chlorophyll,Welschmeyer Fluorometric Method
+4/29/1996,64,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+4/29/1996,45,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+4/29/1996,51,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/29/1996,39,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,4.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/29/1996,60,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+4/29/1996,49,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.2,Chlorophyll,Welschmeyer Fluorometric Method
+5/1/1996,0,2433,USGS,41.13888889,-112.7944444,Gilbert,0.5,ug/l,0.9,Chlorophyll,Welschmeyer Fluorometric Method
+5/1/1996,0,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/1/1996,36,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/1/1996,11,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+5/1/1996,0,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+5/2/1996,11,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/2/1996,17,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/2/1996,32,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/13/1996,10,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+5/14/1996,0,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.2,Chlorophyll,Welschmeyer Fluorometric Method
+5/15/1996,6,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.2,Chlorophyll,Welschmeyer Fluorometric Method
+5/21/1996,0,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/31/1996,0,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/31/1996,0,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/31/1996,0,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/3/1996,0,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9,Chlorophyll,Welschmeyer Fluorometric Method
+6/3/1996,0,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/4/1996,0,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+6/4/1996,2,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.8,Chlorophyll,Welschmeyer Fluorometric Method
+7/1/1996,5,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.5,Chlorophyll,Welschmeyer Fluorometric Method
+7/2/1996,9,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.7,Chlorophyll,Welschmeyer Fluorometric Method
+7/3/1996,5,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.7,Chlorophyll,Welschmeyer Fluorometric Method
+7/12/1996,14.7,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,9.4,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/12/1996,4.7,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/12/1996,5.1,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,8.6,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/12/1996,3.3,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/12/1996,2.9,4982600,UTAHDWQ,41.218821,-112.834973,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/22/1996,1,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.6,Chlorophyll,Welschmeyer Fluorometric Method
+7/22/1996,6,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.5,Chlorophyll,Welschmeyer Fluorometric Method
+7/23/1996,4,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.1,Chlorophyll,Welschmeyer Fluorometric Method
+7/23/1996,3,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,8.9,Chlorophyll,Welschmeyer Fluorometric Method
+7/23/1996,5,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.4,Chlorophyll,Welschmeyer Fluorometric Method
+7/23/1996,10,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+7/24/1996,3,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.5,Chlorophyll,Welschmeyer Fluorometric Method
+8/19/1996,4,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.4,Chlorophyll,Welschmeyer Fluorometric Method
+8/19/1996,2,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.3,Chlorophyll,Welschmeyer Fluorometric Method
+8/19/1996,9,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.7,Chlorophyll,Welschmeyer Fluorometric Method
+8/23/1996,4,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,4.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/23/1996,4,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.2,Chlorophyll,Welschmeyer Fluorometric Method
+8/26/1996,1,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,8.8,Chlorophyll,Welschmeyer Fluorometric Method
+8/26/1996,5,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.3,Chlorophyll,Welschmeyer Fluorometric Method
+8/26/1996,4,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,5.8,Chlorophyll,Welschmeyer Fluorometric Method
+9/23/1996,10,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.2,Chlorophyll,Welschmeyer Fluorometric Method
+9/23/1996,4,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.7,Chlorophyll,Welschmeyer Fluorometric Method
+9/24/1996,11,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+9/24/1996,30,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.3,Chlorophyll,Welschmeyer Fluorometric Method
+9/26/1996,4,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.3,Chlorophyll,Welschmeyer Fluorometric Method
+9/27/1996,11,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,8.4,Chlorophyll,Welschmeyer Fluorometric Method
+9/27/1996,4,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,5.9,Chlorophyll,Welschmeyer Fluorometric Method
+9/27/1996,21,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,5.6,Chlorophyll,Welschmeyer Fluorometric Method
+9/27/1996,11,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.2,Chlorophyll,Welschmeyer Fluorometric Method
+10/22/1996,20,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.1,Chlorophyll,Welschmeyer Fluorometric Method
+10/22/1996,44,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/23/1996,16,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,8.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/23/1996,26,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+10/23/1996,14,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,5.6,Chlorophyll,Welschmeyer Fluorometric Method
+10/23/1996,18,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.3,Chlorophyll,Welschmeyer Fluorometric Method
+10/24/1996,25,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+10/28/1996,35,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,4.7,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1996,35.9,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,9.3,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/19/1996,44.7,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/19/1996,46.3,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,7.9,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/20/1996,31,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.3,Chlorophyll,Welschmeyer Fluorometric Method
+11/20/1996,54,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.1,Chlorophyll,Welschmeyer Fluorometric Method
+11/20/1996,54,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.2,Chlorophyll,Welschmeyer Fluorometric Method
+11/21/1996,58,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,8.5,Chlorophyll,Welschmeyer Fluorometric Method
+11/21/1996,56,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.2,Chlorophyll,Welschmeyer Fluorometric Method
+11/21/1996,46,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.1,Chlorophyll,Welschmeyer Fluorometric Method
+11/21/1996,58,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+11/27/1996,58,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+11/27/1996,53,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+1/24/1997,135.5,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+1/24/1997,132,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.5,Chlorophyll,Welschmeyer Fluorometric Method
+1/24/1997,137.5,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.7,Chlorophyll,Welschmeyer Fluorometric Method
+1/29/1997,138,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,8.8,Chlorophyll,Welschmeyer Fluorometric Method
+1/29/1997,132.5,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+1/29/1997,143.5,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+1/30/1997,148.5,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+1/30/1997,149,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.5,Chlorophyll,Welschmeyer Fluorometric Method
+2/10/1997,132.5,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+2/10/1997,140.5,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.5,Chlorophyll,Welschmeyer Fluorometric Method
+2/10/1997,137.5,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.8,Chlorophyll,Welschmeyer Fluorometric Method
+2/11/1997,117,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.1,Chlorophyll,Welschmeyer Fluorometric Method
+2/11/1997,137.5,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,1.6,Chlorophyll,Welschmeyer Fluorometric Method
+2/11/1997,121,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+2/11/1997,214.5,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,1.8,Chlorophyll,Welschmeyer Fluorometric Method
+2/13/1997,124,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,8.8,Chlorophyll,Welschmeyer Fluorometric Method
+2/13/1997,127,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+2/13/1997,135,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+3/11/1997,39.5,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+3/11/1997,33.5,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.8,Chlorophyll,Welschmeyer Fluorometric Method
+3/11/1997,40,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+3/12/1997,36,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,8.9,Chlorophyll,Welschmeyer Fluorometric Method
+3/12/1997,34.5,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.6,Chlorophyll,Welschmeyer Fluorometric Method
+3/12/1997,33,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.2,Chlorophyll,Welschmeyer Fluorometric Method
+3/13/1997,36,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+3/13/1997,54,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,1.8,Chlorophyll,Welschmeyer Fluorometric Method
+3/13/1997,39,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.7,Chlorophyll,Welschmeyer Fluorometric Method
+3/13/1997,81,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/1997,43,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/1997,54,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/1997,18,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+4/10/1997,54,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.8,Chlorophyll,Welschmeyer Fluorometric Method
+4/10/1997,60,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2,Chlorophyll,Welschmeyer Fluorometric Method
+4/10/1997,48,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+4/10/1997,190,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2.2,Chlorophyll,Welschmeyer Fluorometric Method
+4/15/1997,36,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.2,Chlorophyll,Welschmeyer Fluorometric Method
+4/15/1997,36,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.7,Chlorophyll,Welschmeyer Fluorometric Method
+4/15/1997,27,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/22/1997,38,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+4/22/1997,38,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+4/22/1997,18,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+4/28/1997,36,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/28/1997,36,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.1,Chlorophyll,Welschmeyer Fluorometric Method
+4/28/1997,48,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.1,Chlorophyll,Welschmeyer Fluorometric Method
+4/28/1997,69,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2.2,Chlorophyll,Welschmeyer Fluorometric Method
+4/30/1997,51,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.3,Chlorophyll,Welschmeyer Fluorometric Method
+4/30/1997,36,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+4/30/1997,41,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/5/1997,27,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/5/1997,8,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+5/5/1997,18,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+5/5/1997,41,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/6/1997,18,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.6,Chlorophyll,Welschmeyer Fluorometric Method
+5/6/1997,4,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/7/1997,4,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/7/1997,18,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/7/1997,36,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+5/7/1997,4,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2.2,Chlorophyll,Welschmeyer Fluorometric Method
+5/19/1997,0,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+5/19/1997,0,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/19/1997,0,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/20/1997,0,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/20/1997,0,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.2,Chlorophyll,Welschmeyer Fluorometric Method
+5/20/1997,0,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+5/20/1997,4,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/21/1997,0,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/21/1997,0,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/21/1997,0,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/9/1997,0,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+6/9/1997,1,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10,Chlorophyll,Welschmeyer Fluorometric Method
+6/9/1997,1,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.3,Chlorophyll,Welschmeyer Fluorometric Method
+6/10/1997,6,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.3,Chlorophyll,Welschmeyer Fluorometric Method
+6/10/1997,2,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/10/1997,4,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/1997,5,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/1997,2,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.3,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/1997,6,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.1,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/1997,223,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/23/1997,6,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+6/23/1997,5,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.1,Chlorophyll,Welschmeyer Fluorometric Method
+6/23/1997,1,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/25/1997,15,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/25/1997,5,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+6/25/1997,12,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/1997,12,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/1997,5,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.3,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/1997,6,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/1997,131,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2.4,Chlorophyll,Welschmeyer Fluorometric Method
+7/9/1997,7.4,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,10.1,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/9/1997,7.9,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/9/1997,5.9,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,9.1,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/9/1997,5.5,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/9/1997,6.2,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,9.2,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/15/1997,9.7,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/15/1997,11.3,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/15/1997,11.3,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/15/1997,12.5,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/15/1997,13.4,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/1997,19,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+7/21/1997,9,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.1,Chlorophyll,Welschmeyer Fluorometric Method
+7/21/1997,26,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.2,Chlorophyll,Welschmeyer Fluorometric Method
+7/22/1997,15,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.3,Chlorophyll,Welschmeyer Fluorometric Method
+7/22/1997,22,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+7/22/1997,21,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+7/23/1997,19,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.2,Chlorophyll,Welschmeyer Fluorometric Method
+7/23/1997,10,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.9,Chlorophyll,Welschmeyer Fluorometric Method
+7/23/1997,79,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2.3,Chlorophyll,Welschmeyer Fluorometric Method
+7/24/1997,22,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+8/18/1997,9,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/18/1997,3,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+8/18/1997,7,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/20/1997,26,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+8/20/1997,16,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.2,Chlorophyll,Welschmeyer Fluorometric Method
+8/20/1997,8,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.7,Chlorophyll,Welschmeyer Fluorometric Method
+8/20/1997,32,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.2,Chlorophyll,Welschmeyer Fluorometric Method
+8/21/1997,25,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2,Chlorophyll,Welschmeyer Fluorometric Method
+8/21/1997,23,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/21/1997,196,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2.1,Chlorophyll,Welschmeyer Fluorometric Method
+9/11/1997,13.7,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/11/1997,15.7,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/11/1997,16.3,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/11/1997,16.8,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/11/1997,18.4,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/23/1997,5.4504,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+9/23/1997,4.9962,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.8,Chlorophyll,Welschmeyer Fluorometric Method
+9/23/1997,6.9644,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3,Chlorophyll,Welschmeyer Fluorometric Method
+9/24/1997,3.1794,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1,Chlorophyll,Welschmeyer Fluorometric Method
+9/24/1997,5.4504,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+9/24/1997,6.2074,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.2,Chlorophyll,Welschmeyer Fluorometric Method
+9/25/1997,8.327,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+9/25/1997,4.2392,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,1.9,Chlorophyll,Welschmeyer Fluorometric Method
+9/25/1997,0,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+9/25/1997,21.45,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1997,15.64467,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.7,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1997,8.831667,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1997,7.317667,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/9/1997,20.18667,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.1,Chlorophyll,Welschmeyer Fluorometric Method
+10/9/1997,10.9765,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,1.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/9/1997,11.7335,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+10/9/1997,20.13,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,1.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/10/1997,0,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9,Chlorophyll,Welschmeyer Fluorometric Method
+10/10/1997,8.7055,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+10/10/1997,9.841,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.1,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1997,17.0325,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1997,11.2036,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1997,17.411,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3,Chlorophyll,Welschmeyer Fluorometric Method
+10/21/1997,24.224,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,1.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/21/1997,4.9205,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,8.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/21/1997,18.5465,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.6,Chlorophyll,Welschmeyer Fluorometric Method
+10/21/1997,11.355,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.1,Chlorophyll,Welschmeyer Fluorometric Method
+10/22/1997,30.6585,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+10/22/1997,38.2285,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+10/22/1997,35.83133,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,1.9,Chlorophyll,Welschmeyer Fluorometric Method
+11/3/1997,15.897,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.7,Chlorophyll,Welschmeyer Fluorometric Method
+11/3/1997,6.056,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.6,Chlorophyll,Welschmeyer Fluorometric Method
+11/3/1997,16.2755,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3,Chlorophyll,Welschmeyer Fluorometric Method
+11/4/1997,3.785,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,8.9,Chlorophyll,Welschmeyer Fluorometric Method
+11/4/1997,10.2195,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+11/4/1997,48.70033,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.1,Chlorophyll,Welschmeyer Fluorometric Method
+11/5/1997,12.4905,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+11/5/1997,26.8735,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,1.8,Chlorophyll,Welschmeyer Fluorometric Method
+11/5/1997,17.7895,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.7,Chlorophyll,Welschmeyer Fluorometric Method
+11/5/1997,52.99,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2,Chlorophyll,Welschmeyer Fluorometric Method
+11/7/1997,51.5,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,10,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/7/1997,48,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/7/1997,41.2,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,9,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/7/1997,40.2,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/7/1997,35.1,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,8,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/7/1997,43.9,4982600,UTAHDWQ,41.218821,-112.834973,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/24/1997,10.598,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.6,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1997,35.5656,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1997,30.3534,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1997,32.4996,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+12/17/1997,36.4854,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.1,Chlorophyll,Welschmeyer Fluorometric Method
+12/17/1997,30.9666,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2,Chlorophyll,Welschmeyer Fluorometric Method
+12/17/1997,52.122,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.7,Chlorophyll,Welschmeyer Fluorometric Method
+12/18/1997,12.264,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.2,Chlorophyll,Welschmeyer Fluorometric Method
+12/18/1997,34.3392,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.6,Chlorophyll,Welschmeyer Fluorometric Method
+12/18/1997,35.5656,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.2,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/1998,63.7285,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/1998,59.6935,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.8,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/1998,78.658,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.4,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/1998,73.009,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,7.9,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/1998,72.202,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,4.8,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/1998,71.7985,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/1998,64.5355,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.4,Chlorophyll,Welschmeyer Fluorometric Method
+1/22/1998,56.4655,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+1/22/1998,54.8515,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+1/22/1998,60.904,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.1,Chlorophyll,Welschmeyer Fluorometric Method
+1/22/1998,68.167,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.1,Chlorophyll,Welschmeyer Fluorometric Method
+1/22/1998,105.4153,2963,USGS,41.03138889,-112.1397222,Farmington,1,ug/l,2.2,Chlorophyll,Welschmeyer Fluorometric Method
+1/26/1998,9.6595,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.1,Chlorophyll,Welschmeyer Fluorometric Method
+1/26/1998,25.7995,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.2,Chlorophyll,Welschmeyer Fluorometric Method
+1/26/1998,31.045,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.5,Chlorophyll,Welschmeyer Fluorometric Method
+1/26/1998,35.4835,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+1/26/1998,52.027,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.4,Chlorophyll,Welschmeyer Fluorometric Method
+2/17/1998,21.16625,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10,Chlorophyll,Welschmeyer Fluorometric Method
+2/17/1998,23.03386,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3,Chlorophyll,Welschmeyer Fluorometric Method
+2/17/1998,21.78879,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8,Chlorophyll,Welschmeyer Fluorometric Method
+2/17/1998,14.31835,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,4.7,Chlorophyll,Welschmeyer Fluorometric Method
+2/17/1998,11.20566,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+2/17/1998,12.86576,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+3/19/1998,74.98885,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+3/19/1998,95.21057,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+3/19/1998,56.45229,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+3/19/1998,32.01772,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.2,Chlorophyll,Welschmeyer Fluorometric Method
+3/19/1998,64.878,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+3/19/1998,64.03543,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+3/19/1998,63.19286,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+3/20/1998,22.46857,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+3/20/1998,106.9504,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6.3,Chlorophyll,Welschmeyer Fluorometric Method
+3/20/1998,138.4064,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.4,Chlorophyll,Welschmeyer Fluorometric Method
+3/20/1998,107.8491,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+3/21/1998,114.1403,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.4,Chlorophyll,Welschmeyer Fluorometric Method
+3/21/1998,73.69691,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+3/21/1998,107.8491,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+3/21/1998,101.7826,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+3/21/1998,70.10194,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.6,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/1998,124.1364,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/1998,126.1714,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.4,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/1998,108.8538,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/1998,113.9613,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.3,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/1998,118.5247,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/1998,117.1592,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.6,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/1998,113.2675,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+4/9/1998,120.0664,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+4/9/1998,119.8629,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.8,Chlorophyll,Welschmeyer Fluorometric Method
+4/9/1998,126.1714,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/9/1998,97.89162,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+4/9/1998,63.57475,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.2,Chlorophyll,Welschmeyer Fluorometric Method
+4/13/1998,107.7714,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+4/13/1998,111.4067,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+4/20/1998,36.61609,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/20/1998,34.87247,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.4,Chlorophyll,Welschmeyer Fluorometric Method
+4/20/1998,44.98549,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.2,Chlorophyll,Welschmeyer Fluorometric Method
+4/20/1998,32.4314,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/20/1998,32.4314,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+4/20/1998,43.93931,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/20/1998,35.56992,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+4/21/1998,29.29288,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.7,Chlorophyll,Welschmeyer Fluorometric Method
+4/21/1998,33.47757,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+4/21/1998,33.47757,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+4/21/1998,28.2467,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+4/23/1998,28.2467,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.3,Chlorophyll,Welschmeyer Fluorometric Method
+4/23/1998,26.15435,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/23/1998,19.87731,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+4/23/1998,21.96966,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+4/23/1998,27.89798,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+5/8/1998,4.970099,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.5,Chlorophyll,Welschmeyer Fluorometric Method
+5/8/1998,3.106312,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/8/1998,5.620946,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+5/8/1998,5.79845,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/8/1998,4.14175,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+5/8/1998,5.79845,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.6,Chlorophyll,Welschmeyer Fluorometric Method
+5/8/1998,6.212625,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+5/12/1998,6.212625,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/12/1998,7.100142,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/12/1998,5.916785,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/12/1998,7.938354,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/1998,5.377037,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/1998,5.54735,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/1998,5.693333,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/1998,4.963419,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/1998,6.235556,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+5/22/1998,4.554667,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/22/1998,7.211555,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+5/22/1998,6.072889,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/22/1998,6.072889,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/1998,6.072889,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.6,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/1998,7.211555,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/1998,6.832,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.2,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/1998,7.211555,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.5,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/1998,6.452445,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/1998,7.970667,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/1998,7.591111,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/8/1998,1.838294,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.5,Chlorophyll,Welschmeyer Fluorometric Method
+6/8/1998,1.378721,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/8/1998,3.063824,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/8/1998,2.144677,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.5,Chlorophyll,Welschmeyer Fluorometric Method
+6/8/1998,6.587221,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+6/8/1998,3.063824,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+6/8/1998,5.514883,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/10/1998,2.961696,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,2.1,Chlorophyll,Welschmeyer Fluorometric Method
+6/10/1998,4.697863,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+6/10/1998,0.5106373,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/10/1998,4.289353,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.7,Chlorophyll,Welschmeyer Fluorometric Method
+6/10/1998,2.757441,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/1998,6.893603,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.5,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/1998,9.191471,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,3,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/1998,9.03828,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/22/1998,0.8195643,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/22/1998,2.322099,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/22/1998,1.502535,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+6/22/1998,0.4097822,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/22/1998,1.092752,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/22/1998,11.88368,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,4.1,Chlorophyll,Welschmeyer Fluorometric Method
+6/22/1998,28.41156,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.2,Chlorophyll,Welschmeyer Fluorometric Method
+6/23/1998,1.639129,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.2,Chlorophyll,Welschmeyer Fluorometric Method
+6/23/1998,9.561584,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6.2,Chlorophyll,Welschmeyer Fluorometric Method
+6/23/1998,1.502535,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/24/1998,6.829703,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.7,Chlorophyll,Welschmeyer Fluorometric Method
+6/24/1998,2.048911,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/24/1998,9.015208,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+6/24/1998,0.8195643,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+6/24/1998,8.195643,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.5,Chlorophyll,Welschmeyer Fluorometric Method
+6/24/1998,3.414851,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+7/15/1998,0.07067613,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.7,Chlorophyll,Welschmeyer Fluorometric Method
+7/15/1998,0.05400381,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.8,Chlorophyll,Welschmeyer Fluorometric Method
+7/15/1998,0.0646819,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+7/15/1998,0.05110427,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.5,Chlorophyll,Welschmeyer Fluorometric Method
+7/15/1998,0.08626112,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.2,Chlorophyll,Welschmeyer Fluorometric Method
+7/16/1998,0.05464505,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.6,Chlorophyll,Welschmeyer Fluorometric Method
+7/16/1998,0.05726578,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.8,Chlorophyll,Welschmeyer Fluorometric Method
+7/16/1998,0.05357833,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+7/16/1998,0.06040695,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.7,Chlorophyll,Welschmeyer Fluorometric Method
+7/16/1998,0.05726578,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+7/16/1998,0.06016532,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+7/16/1998,0.04569917,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+7/17/1998,0.06161508,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.1,Chlorophyll,Welschmeyer Fluorometric Method
+7/17/1998,0.0652395,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.9,Chlorophyll,Welschmeyer Fluorometric Method
+7/17/1998,0.06161508,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.7,Chlorophyll,Welschmeyer Fluorometric Method
+7/17/1998,0.07248833,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+7/30/1998,11.8,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,10,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/30/1998,10.7,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,10,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/30/1998,8.8,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,8,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/30/1998,9.7,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/30/1998,14.3,4982600,UTAHDWQ,41.218821,-112.834973,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/11/1998,16.20781,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.6,Chlorophyll,Welschmeyer Fluorometric Method
+8/11/1998,19.7962,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.4,Chlorophyll,Welschmeyer Fluorometric Method
+8/11/1998,16.62134,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/11/1998,16.8081,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.5,Chlorophyll,Welschmeyer Fluorometric Method
+8/11/1998,10.40501,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+8/11/1998,15.17398,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+8/11/1998,13.60656,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+8/13/1998,23.18358,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.6,Chlorophyll,Welschmeyer Fluorometric Method
+8/13/1998,12.32594,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/13/1998,10.92526,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.3,Chlorophyll,Welschmeyer Fluorometric Method
+8/13/1998,18.20877,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+8/13/1998,12.00578,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+8/14/1998,8.754218,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+8/14/1998,7.128434,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/14/1998,10.21325,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.6,Chlorophyll,Welschmeyer Fluorometric Method
+8/14/1998,5.544338,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+8/14/1998,8.604145,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+9/22/1998,13.16914286,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+9/22/1998,50.67257,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.3,Chlorophyll,Welschmeyer Fluorometric Method
+9/22/1998,25.52033,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+9/22/1998,46.72183,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.7,Chlorophyll,Welschmeyer Fluorometric Method
+9/24/1998,75.92297,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+9/24/1998,62.18126,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6.1,Chlorophyll,Welschmeyer Fluorometric Method
+9/24/1998,49.38428,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.4,Chlorophyll,Welschmeyer Fluorometric Method
+9/24/1998,60.12,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+9/24/1998,81.162,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,6.1,Chlorophyll,Welschmeyer Fluorometric Method
+9/28/1998,28.95576,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+9/28/1998,22.545,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.2,Chlorophyll,Welschmeyer Fluorometric Method
+9/28/1998,28.91486,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+9/28/1998,14.4288,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.2,Chlorophyll,Welschmeyer Fluorometric Method
+9/28/1998,25.12157,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+9/28/1998,32.63657,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+9/28/1998,20.26903,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.6,Chlorophyll,Welschmeyer Fluorometric Method
+10/5/1998,86.75845,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+10/5/1998,53.27274,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/5/1998,22.17885,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.2,Chlorophyll,Welschmeyer Fluorometric Method
+10/5/1998,32.34416,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+10/5/1998,27.58767,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+10/5/1998,42.04741,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.7,Chlorophyll,Welschmeyer Fluorometric Method
+10/7/1998,117.5349,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/7/1998,98.42772,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/7/1998,78.8613,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.6,Chlorophyll,Welschmeyer Fluorometric Method
+10/7/1998,91.83205,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+10/7/1998,96.90564,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.5,Chlorophyll,Welschmeyer Fluorometric Method
+10/7/1998,77.62598,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1998,83.71429,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1998,77.11862,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.6,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1998,78.13335,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1998,74.58183,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1998,53.78009,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/19/1998,133.9777,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/19/1998,131.6064,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+10/19/1998,168.0649,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/19/1998,133.3848,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+10/19/1998,132.4956,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.5,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1998,126.271,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1998,129.8279,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.6,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1998,124.4925,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1998,112.6361,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1998,110.812,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/23/1998,131.6064,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+10/23/1998,136.0525,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+10/23/1998,161.8403,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.3,Chlorophyll,Welschmeyer Fluorometric Method
+10/23/1998,140.4987,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.3,Chlorophyll,Welschmeyer Fluorometric Method
+10/23/1998,128.0495,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+10/23/1998,99.59402,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.3,Chlorophyll,Welschmeyer Fluorometric Method
+10/23/1998,116.4894,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/29/1998,67.5,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,10,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+10/29/1998,48.2,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+10/29/1998,52.1,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,10,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/2/1998,227.1034,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+11/2/1998,228.3376,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+11/2/1998,204.681,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.6,Chlorophyll,Welschmeyer Fluorometric Method
+11/2/1998,207.3553,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+11/2/1998,225.8691,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.3,Chlorophyll,Welschmeyer Fluorometric Method
+11/3/1998,180.2016,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.6,Chlorophyll,Welschmeyer Fluorometric Method
+11/3/1998,215.9951,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.5,Chlorophyll,Welschmeyer Fluorometric Method
+11/3/1998,204.8868,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.3,Chlorophyll,Welschmeyer Fluorometric Method
+11/3/1998,224.6349,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+11/3/1998,188.8414,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+11/4/1998,243.1487,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+11/4/1998,214.7608,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+11/4/1998,274.0052,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.2,Chlorophyll,Welschmeyer Fluorometric Method
+11/4/1998,249.32,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.3,Chlorophyll,Welschmeyer Fluorometric Method
+11/4/1998,251.7885,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+11/4/1998,234.5089,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.6,Chlorophyll,Welschmeyer Fluorometric Method
+11/4/1998,244.383,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1998,227.3291,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.6,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1998,204.0484,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.6,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1998,231.4375,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.4,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1998,224.5902,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1998,235.5458,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1998,194.4622,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+11/20/1998,223.2207,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.9,Chlorophyll,Welschmeyer Fluorometric Method
+11/20/1998,219.1124,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.6,Chlorophyll,Welschmeyer Fluorometric Method
+11/20/1998,241.0236,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.5,Chlorophyll,Welschmeyer Fluorometric Method
+11/20/1998,223.2207,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+11/23/1998,241.0236,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+11/23/1998,243.7625,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+11/23/1998,243.7625,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+11/23/1998,256.0876,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.2,Chlorophyll,Welschmeyer Fluorometric Method
+11/23/1998,236.9153,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+11/23/1998,245.132,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+11/23/1998,246.5014,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1998,115.7593,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1998,125.8652,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1998,159.858,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1998,144.2397,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.3,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1998,133.215,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1998,155.2644,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1998,158.0206,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+12/17/1998,121.2716,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.1,Chlorophyll,Welschmeyer Fluorometric Method
+12/17/1998,114.8406,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+12/17/1998,112.0844,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.6,Chlorophyll,Welschmeyer Fluorometric Method
+12/17/1998,113.0031,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+12/17/1998,130.4589,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+12/17/1998,129.5401,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+1/12/1999,73.94437,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.5,Chlorophyll,Welschmeyer Fluorometric Method
+1/12/1999,100.0863,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.4,Chlorophyll,Welschmeyer Fluorometric Method
+1/12/1999,90.37645,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3,Chlorophyll,Welschmeyer Fluorometric Method
+1/12/1999,89.62953,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.4,Chlorophyll,Welschmeyer Fluorometric Method
+1/12/1999,61.24685,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+1/12/1999,81.4135,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+1/12/1999,76.1851,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+1/13/1999,76.1851,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.6,Chlorophyll,Welschmeyer Fluorometric Method
+1/13/1999,91.12336,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+1/13/1999,93.3641,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.5,Chlorophyll,Welschmeyer Fluorometric Method
+1/13/1999,78.42584,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+1/13/1999,91.87027,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.2,Chlorophyll,Welschmeyer Fluorometric Method
+1/13/1999,76.1851,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+1/14/1999,79.17275,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+1/14/1999,85.14806,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.9,Chlorophyll,Welschmeyer Fluorometric Method
+1/14/1999,84.40115,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.7,Chlorophyll,Welschmeyer Fluorometric Method
+1/14/1999,91.87027,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+2/12/1999,101.28,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.6,Chlorophyll,Welschmeyer Fluorometric Method
+2/12/1999,115.2497,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.5,Chlorophyll,Welschmeyer Fluorometric Method
+2/12/1999,113.1542,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.3,Chlorophyll,Welschmeyer Fluorometric Method
+2/12/1999,108.4394,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.5,Chlorophyll,Welschmeyer Fluorometric Method
+2/12/1999,110.7968,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+2/12/1999,125.7269,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+2/12/1999,117.869,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+2/15/1999,124.8538,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.1,Chlorophyll,Welschmeyer Fluorometric Method
+2/15/1999,109.2252,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+2/15/1999,135.5493,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.7,Chlorophyll,Welschmeyer Fluorometric Method
+2/15/1999,128.3462,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+2/15/1999,115.2497,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+2/18/1999,113.5034,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.8,Chlorophyll,Welschmeyer Fluorometric Method
+2/18/1999,110.8841,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,10,Chlorophyll,Welschmeyer Fluorometric Method
+2/18/1999,105.6455,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+2/18/1999,123.9807,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.5,Chlorophyll,Welschmeyer Fluorometric Method
+2/18/1999,98.66069,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.2,Chlorophyll,Welschmeyer Fluorometric Method
+3/12/1999,128.5782,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+3/12/1999,117.5573,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+3/12/1999,115.7204,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+3/15/1999,99.18893,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.8,Chlorophyll,Welschmeyer Fluorometric Method
+3/15/1999,90.37214,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+3/15/1999,98.4542,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+3/15/1999,96.98473,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+3/15/1999,72.00381,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+4/7/1999,99.41425,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.2,Chlorophyll,Welschmeyer Fluorometric Method
+4/7/1999,96.04427,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+4/7/1999,94.35929,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.7,Chlorophyll,Welschmeyer Fluorometric Method
+4/7/1999,97.72926,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+4/7/1999,111.2092,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+4/11/1999,81.72189,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.7,Chlorophyll,Welschmeyer Fluorometric Method
+4/11/1999,94.35929,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+4/11/1999,62.34453,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+4/11/1999,103.6267,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/11/1999,95.20178,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+4/13/1999,108.6817,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.8,Chlorophyll,Welschmeyer Fluorometric Method
+4/13/1999,93.51679,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.7,Chlorophyll,Welschmeyer Fluorometric Method
+4/13/1999,118.7916,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+4/13/1999,107.8392,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.6,Chlorophyll,Welschmeyer Fluorometric Method
+4/13/1999,103.6267,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/13/1999,108.6817,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+4/13/1999,100.2567,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.2,Chlorophyll,Welschmeyer Fluorometric Method
+5/6/1999,91.66042,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/6/1999,95.11929,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/6/1999,111.549,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/6/1999,111.3328,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/6/1999,103.7665,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.6,Chlorophyll,Welschmeyer Fluorometric Method
+5/6/1999,108.0901,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+5/6/1999,100.3076,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/7/1999,7.946084,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/7/1999,92.9575,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,4.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/7/1999,75.66308,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,3,Chlorophyll,Welschmeyer Fluorometric Method
+5/7/1999,88.20153,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/7/1999,105.9283,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,5.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/7/1999,100.5238,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.5,Chlorophyll,Welschmeyer Fluorometric Method
+5/11/1999,78.90578,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.9,Chlorophyll,Welschmeyer Fluorometric Method
+5/11/1999,96.5605,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,10.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/11/1999,92.64867,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,4.2,Chlorophyll,Welschmeyer Fluorometric Method
+5/11/1999,87.91329,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/17/1999,138.4772,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/17/1999,136.4989,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/17/1999,156.2814,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.2,Chlorophyll,Welschmeyer Fluorometric Method
+5/17/1999,120.1784,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/17/1999,123.7816,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.6,Chlorophyll,Welschmeyer Fluorometric Method
+5/17/1999,164.1944,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,4.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/17/1999,118.6947,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/1999,102.8688,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.9,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/1999,88.36162,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/1999,101.5499,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,3.2,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/1999,142.4337,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/1999,122.6512,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.9,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/1999,118.6947,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.9,Chlorophyll,Welschmeyer Fluorometric Method
+5/20/1999,93.63694,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,2,Chlorophyll,Welschmeyer Fluorometric Method
+5/20/1999,104.1876,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,10,Chlorophyll,Welschmeyer Fluorometric Method
+5/20/1999,90.99928,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.6,Chlorophyll,Welschmeyer Fluorometric Method
+5/20/1999,94.95577,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+6/7/1999,86.52048,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/7/1999,72.93462,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,11,Chlorophyll,Welschmeyer Fluorometric Method
+6/7/1999,85.09039,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/7/1999,85.80544,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/7/1999,85.09039,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/7/1999,84.37534,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,4.3,Chlorophyll,Welschmeyer Fluorometric Method
+6/7/1999,77.93993,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/9/1999,42.90272,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,2.2,Chlorophyll,Welschmeyer Fluorometric Method
+6/9/1999,43.61776,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+6/9/1999,43.61776,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,5.1,Chlorophyll,Welschmeyer Fluorometric Method
+6/9/1999,43.61776,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/9/1999,49.33813,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,8,Chlorophyll,Welschmeyer Fluorometric Method
+6/9/1999,42.18767,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/1999,93.67094,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/1999,48.62308,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/1999,40.75758,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,3.2,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/1999,42.18767,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/1999,17.02292,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,8,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/1999,14.62907,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/1999,16.75694,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/1999,21.27865,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/1999,15.42702,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/1999,35.46442,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,4.2,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/1999,11.17129,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/29/1999,5.585646,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,2.2,Chlorophyll,Welschmeyer Fluorometric Method
+6/29/1999,8.245477,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,10.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/29/1999,7.550488,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+6/29/1999,9.84156,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/29/1999,5.319663,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/30/1999,8.245477,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/30/1999,8.511459,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/30/1999,5.851629,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+6/30/1999,5.851629,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/30/1999,7.713511,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+7/6/1999,19.4,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/6/1999,26,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/6/1999,27.2,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/6/1999,29.4,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/6/1999,32.2,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/6/1999,32.8,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/12/1999,5.888,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.8,Chlorophyll,Welschmeyer Fluorometric Method
+7/12/1999,5.852,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.6,Chlorophyll,Welschmeyer Fluorometric Method
+7/12/1999,13.89,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.9,Chlorophyll,Welschmeyer Fluorometric Method
+7/12/1999,3.607,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,7.9,Chlorophyll,Welschmeyer Fluorometric Method
+7/12/1999,4.293,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+7/12/1999,4.306,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.2,Chlorophyll,Welschmeyer Fluorometric Method
+7/13/1999,5.389,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.3,Chlorophyll,Welschmeyer Fluorometric Method
+7/13/1999,5.018,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6.2,Chlorophyll,Welschmeyer Fluorometric Method
+7/13/1999,4.615,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,3,Chlorophyll,Welschmeyer Fluorometric Method
+7/13/1999,3.997,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+7/13/1999,3.688,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.9,Chlorophyll,Welschmeyer Fluorometric Method
+7/19/1999,8.323,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,2.3,Chlorophyll,Welschmeyer Fluorometric Method
+7/19/1999,8.845,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+7/19/1999,8.845,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+7/19/1999,12.15,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.6,Chlorophyll,Welschmeyer Fluorometric Method
+7/19/1999,12.347,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+7/21/1999,7.1,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/1999,7.4,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/1999,7.1,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/1999,6,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/1999,7.4,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/1999,2.1,4982600,UTAHDWQ,41.218821,-112.834973,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/16/1999,2.2,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.8,Chlorophyll,Welschmeyer Fluorometric Method
+8/16/1999,4.1,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/16/1999,4.8,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.7,Chlorophyll,Welschmeyer Fluorometric Method
+8/16/1999,3.3,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+8/16/1999,4.8,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+8/16/1999,3.9,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+8/17/1999,6.2,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.1,Chlorophyll,Welschmeyer Fluorometric Method
+8/17/1999,4.3,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6.2,Chlorophyll,Welschmeyer Fluorometric Method
+8/17/1999,5.2,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/17/1999,5,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.8,Chlorophyll,Welschmeyer Fluorometric Method
+8/18/1999,1.3,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/18/1999,2,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.7,Chlorophyll,Welschmeyer Fluorometric Method
+8/18/1999,2.7,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+8/18/1999,8.8,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.8,Chlorophyll,Welschmeyer Fluorometric Method
+8/18/1999,2.1,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+8/18/1999,11,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/18/1999,4.1,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+8/19/1999,33.2,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/19/1999,41.9,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/19/1999,43.3,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/19/1999,62.2,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/19/1999,150.9,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/20/1999,10.9,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+9/20/1999,15,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+9/20/1999,8.9,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.3,Chlorophyll,Welschmeyer Fluorometric Method
+9/20/1999,11.1,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+9/20/1999,11.4,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+9/20/1999,15.5,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+9/21/1999,27.4,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.2,Chlorophyll,Welschmeyer Fluorometric Method
+9/21/1999,22.7,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6.3,Chlorophyll,Welschmeyer Fluorometric Method
+9/21/1999,31.5,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.8,Chlorophyll,Welschmeyer Fluorometric Method
+9/21/1999,13.5,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.8,Chlorophyll,Welschmeyer Fluorometric Method
+9/21/1999,21.7,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,10,Chlorophyll,Welschmeyer Fluorometric Method
+9/21/1999,21.2,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+9/21/1999,16.4,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.8,Chlorophyll,Welschmeyer Fluorometric Method
+9/21/1999,19.1,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.6,Chlorophyll,Welschmeyer Fluorometric Method
+9/22/1999,15.6,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+9/22/1999,22.2,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/4/1999,13.5,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.2,Chlorophyll,Welschmeyer Fluorometric Method
+10/4/1999,14.4,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.6,Chlorophyll,Welschmeyer Fluorometric Method
+10/4/1999,15.3,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/4/1999,14.9,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/4/1999,18.5,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/4/1999,19.4,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.2,Chlorophyll,Welschmeyer Fluorometric Method
+10/5/1999,10,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/5/1999,13.5,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,10,Chlorophyll,Welschmeyer Fluorometric Method
+10/5/1999,9.5,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+10/5/1999,8.6,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+10/5/1999,13.1,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1999,22.9,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1999,25.6,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1999,25.6,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1999,20.7,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.3,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1999,19.4,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/8/1999,19.8,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/18/1999,23.4,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.6,Chlorophyll,Welschmeyer Fluorometric Method
+10/18/1999,17.4,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/18/1999,19.2,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+10/18/1999,19.2,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.3,Chlorophyll,Welschmeyer Fluorometric Method
+10/18/1999,20.4,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5,Chlorophyll,Welschmeyer Fluorometric Method
+10/18/1999,15.1,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/18/1999,14.5,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1999,15.1,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1999,13.3,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1999,13.9,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.5,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1999,17.4,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+10/20/1999,16.3,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.7,Chlorophyll,Welschmeyer Fluorometric Method
+10/21/1999,7.9,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.5,Chlorophyll,Welschmeyer Fluorometric Method
+10/21/1999,10.3,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.6,Chlorophyll,Welschmeyer Fluorometric Method
+10/21/1999,13.3,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+10/21/1999,10.9,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+11/4/1999,25.8,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,10,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/4/1999,43,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,11,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/4/1999,26.2,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/4/1999,32.6,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,9.5,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/10/1999,26.8,4982600,UTAHDWQ,41.218821,-112.834973,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/15/1999,18.1,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+11/15/1999,13.6,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+11/15/1999,25.3,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.7,Chlorophyll,Welschmeyer Fluorometric Method
+11/15/1999,15.1,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+11/15/1999,13.6,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+11/15/1999,16.3,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+11/16/1999,19.9,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.4,Chlorophyll,Welschmeyer Fluorometric Method
+11/16/1999,17.4,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+11/16/1999,17.2,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+11/16/1999,14.5,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1999,28,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,3.2,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1999,21.7,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,8.3,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1999,28.9,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,5.6,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1999,20.8,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+11/19/1999,19,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+12/15/1999,34.2,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.7,Chlorophyll,Welschmeyer Fluorometric Method
+12/15/1999,26.2,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.3,Chlorophyll,Welschmeyer Fluorometric Method
+12/15/1999,29.8,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.2,Chlorophyll,Welschmeyer Fluorometric Method
+12/15/1999,28,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.6,Chlorophyll,Welschmeyer Fluorometric Method
+12/15/1999,28.9,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+12/15/1999,30.7,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.4,Chlorophyll,Welschmeyer Fluorometric Method
+12/15/1999,28,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1999,27.1,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1999,28,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1999,28,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.4,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1999,26.2,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1999,32.4,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,5.1,Chlorophyll,Welschmeyer Fluorometric Method
+12/16/1999,25.3,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+12/20/1999,19.9,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.6,Chlorophyll,Welschmeyer Fluorometric Method
+12/20/1999,23.5,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.6,Chlorophyll,Welschmeyer Fluorometric Method
+12/20/1999,21.7,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.9,Chlorophyll,Welschmeyer Fluorometric Method
+12/20/1999,19.9,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+1/19/2000,31.5,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.8,Chlorophyll,Welschmeyer Fluorometric Method
+1/19/2000,29.8,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.8,Chlorophyll,Welschmeyer Fluorometric Method
+1/19/2000,36.9,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.2,Chlorophyll,Welschmeyer Fluorometric Method
+1/19/2000,28.9,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.5,Chlorophyll,Welschmeyer Fluorometric Method
+1/19/2000,29.8,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.3,Chlorophyll,Welschmeyer Fluorometric Method
+1/19/2000,36.9,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,2.6,Chlorophyll,Welschmeyer Fluorometric Method
+1/19/2000,28.9,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+1/20/2000,27.1,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.7,Chlorophyll,Welschmeyer Fluorometric Method
+1/20/2000,27.1,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+1/20/2000,27.1,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.5,Chlorophyll,Welschmeyer Fluorometric Method
+1/20/2000,28,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+1/20/2000,25.3,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/2000,25.3,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/2000,34.2,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.9,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/2000,31.5,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,3.1,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/2000,29.8,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.6,Chlorophyll,Welschmeyer Fluorometric Method
+1/21/2000,28,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.8,Chlorophyll,Welschmeyer Fluorometric Method
+2/7/2000,28.4,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.6,Chlorophyll,Welschmeyer Fluorometric Method
+2/7/2000,29.6,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.5,Chlorophyll,Welschmeyer Fluorometric Method
+2/7/2000,29.6,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.3,Chlorophyll,Welschmeyer Fluorometric Method
+2/7/2000,28.4,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.4,Chlorophyll,Welschmeyer Fluorometric Method
+2/7/2000,29.6,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,4.9,Chlorophyll,Welschmeyer Fluorometric Method
+2/7/2000,26.1,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+2/7/2000,28.4,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+2/8/2000,12,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.8,Chlorophyll,Welschmeyer Fluorometric Method
+2/8/2000,21.8,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.85,Chlorophyll,Welschmeyer Fluorometric Method
+2/8/2000,25.5,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6.8,Chlorophyll,Welschmeyer Fluorometric Method
+2/8/2000,23.7,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+2/9/2000,25.5,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+2/9/2000,30.2,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+2/9/2000,16.2,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.6,Chlorophyll,Welschmeyer Fluorometric Method
+2/9/2000,11.5,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+2/9/2000,24.6,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.8,Chlorophyll,Welschmeyer Fluorometric Method
+3/22/2000,24.6,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.2,Chlorophyll,Welschmeyer Fluorometric Method
+3/22/2000,32.1,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.8,Chlorophyll,Welschmeyer Fluorometric Method
+3/22/2000,32.1,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.5,Chlorophyll,Welschmeyer Fluorometric Method
+3/22/2000,28.4,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.5,Chlorophyll,Welschmeyer Fluorometric Method
+3/22/2000,29.3,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.6,Chlorophyll,Welschmeyer Fluorometric Method
+3/22/2000,25.5,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.7,Chlorophyll,Welschmeyer Fluorometric Method
+3/22/2000,32.1,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+3/22/2000,23.7,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.2,Chlorophyll,Welschmeyer Fluorometric Method
+3/23/2000,24.6,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.1,Chlorophyll,Welschmeyer Fluorometric Method
+3/23/2000,17.1,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,10.1,Chlorophyll,Welschmeyer Fluorometric Method
+3/23/2000,20.9,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.7,Chlorophyll,Welschmeyer Fluorometric Method
+3/24/2000,29.3,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.3,Chlorophyll,Welschmeyer Fluorometric Method
+3/24/2000,26.5,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6.6,Chlorophyll,Welschmeyer Fluorometric Method
+3/24/2000,26.5,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.7,Chlorophyll,Welschmeyer Fluorometric Method
+3/24/2000,25.5,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.9,Chlorophyll,Welschmeyer Fluorometric Method
+3/24/2000,28.4,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.7,Chlorophyll,Welschmeyer Fluorometric Method
+3/24/2000,31.2,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.7,Chlorophyll,Welschmeyer Fluorometric Method
+4/8/2000,12.6,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+4/21/2000,-1.8,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.4,Chlorophyll,Welschmeyer Fluorometric Method
+4/21/2000,15.9,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.9,Chlorophyll,Welschmeyer Fluorometric Method
+4/21/2000,11.7,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+4/25/2000,12.6,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.6,Chlorophyll,Welschmeyer Fluorometric Method
+4/25/2000,11.7,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/25/2000,15.1,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3,Chlorophyll,Welschmeyer Fluorometric Method
+4/25/2000,16.8,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/25/2000,11.7,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+4/25/2000,15.9,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+4/25/2000,13.4,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/2/2000,-0.3,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/2/2000,0.5,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+5/2/2000,0.3,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/2/2000,7,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/2/2000,0.8,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+5/9/2000,15.9,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.6,Chlorophyll,Welschmeyer Fluorometric Method
+5/9/2000,13.4,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/9/2000,6.7,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.6,Chlorophyll,Welschmeyer Fluorometric Method
+5/9/2000,4.3,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/9/2000,20.9,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/9/2000,18.7,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/2000,1.4,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.7,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/2000,3.3,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.9,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/2000,6.7,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.6,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/2000,0.8,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/2000,5.4,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/2000,0.9,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/24/2000,1.7,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.3,Chlorophyll,Welschmeyer Fluorometric Method
+5/24/2000,0,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+5/24/2000,1,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/24/2000,1.7,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+5/26/2000,1.1,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,4.8,Chlorophyll,Welschmeyer Fluorometric Method
+5/26/2000,0.8,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,10.9,Chlorophyll,Welschmeyer Fluorometric Method
+5/26/2000,3.3,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+6/12/2000,5.1,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4,Chlorophyll,Welschmeyer Fluorometric Method
+6/12/2000,6.2,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,5.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/13/2000,7.3,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.7,Chlorophyll,Welschmeyer Fluorometric Method
+6/13/2000,5.3,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.5,Chlorophyll,Welschmeyer Fluorometric Method
+6/13/2000,5.5,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/14/2000,2.4,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.7,Chlorophyll,Welschmeyer Fluorometric Method
+6/14/2000,3.5,2807,USGS,41.05277778,-112.7538889,Gilbert,1,ug/l,3.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/14/2000,6.7,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.1,Chlorophyll,Welschmeyer Fluorometric Method
+6/14/2000,3.5,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,7,Chlorophyll,Welschmeyer Fluorometric Method
+6/19/2000,7.3,3954,USGS,40.79944444,-112.1563889,Gilbert,1,ug/l,3.7,Chlorophyll,Welschmeyer Fluorometric Method
+6/20/2000,8.2,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.8,Chlorophyll,Welschmeyer Fluorometric Method
+6/20/2000,8.5,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.5,Chlorophyll,Welschmeyer Fluorometric Method
+6/20/2000,6.9,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/20/2000,10.1,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,8.5,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/2000,3.9,2200,USGS,41.20111111,-112.5086111,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/2000,3,2267,USGS,41.18777778,-112.4122222,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/2000,3,2336,USGS,41.175,-112.2777778,Gilbert,1,ug/l,2.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/2000,3.7,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,5.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/2000,3.5,2767,USGS,41.07277778,-112.3333333,Gilbert,1,ug/l,4.6,Chlorophyll,Welschmeyer Fluorometric Method
+6/27/2000,2.4,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.7,Chlorophyll,Welschmeyer Fluorometric Method
+6/27/2000,3.9,2565,USGS,41.11222222,-112.6405556,Gilbert,1,ug/l,9.7,Chlorophyll,Welschmeyer Fluorometric Method
+6/27/2000,2.6,2433,USGS,41.13888889,-112.7944444,Gilbert,1,ug/l,1.7,Chlorophyll,Welschmeyer Fluorometric Method
+6/27/2000,3.9,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/27/2000,2.6,2935,USGS,41.025,-112.6766667,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/2000,2.6,3381,USGS,40.92666667,-112.445,Gilbert,1,ug/l,7.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/2000,2.4,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,10.1,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/2000,3.9,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,3.4,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/2000,2.8,3757,USGS,40.84083333,-112.3666667,Gilbert,1,ug/l,8.3,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/2000,3,3941,USGS,40.79666667,-112.4038889,Gilbert,1,ug/l,5.2,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/2000,2.6,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,6.9,Chlorophyll,Welschmeyer Fluorometric Method
+8/21/2000,3,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/21/2000,4.8,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/21/2000,7.6,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/21/2000,3.3,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/21/2000,2.6,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/30/2000,19.2,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/30/2000,18.2,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/30/2000,21.5,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+5/9/2001,10.3,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+5/10/2001,7.3,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+5/10/2001,6.2,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+5/10/2001,5.9,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+5/10/2001,8.9,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/18/2001,2.4,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/18/2001,5.9,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/18/2001,1.9,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/18/2001,4.2,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/19/2001,3.8,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/19/2001,3.8,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/19/2001,0.9,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/19/2001,3.3,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/19/2001,5.7,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/21/2001,0.2,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/21/2001,0.2,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/21/2001,0.2,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/21/2001,0.2,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/21/2001,0.2,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/19/2001,25.8,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/19/2001,20.3,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/19/2001,4.5,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/19/2001,29.3,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/19/2001,12.9,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/20/2002,1.9,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/20/2002,1.9,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/20/2002,3.8,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/20/2002,0.9,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/20/2002,5.4,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+4/10/2002,0.2,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+4/10/2002,0.2,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/14/2002,44.3,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/14/2002,10.3,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/14/2002,1.6,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/14/2002,0.8,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/14/2002,3.2,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/11/2002,0.5,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/11/2002,0.5,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/11/2002,0.5,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/1/2002,31.9,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/1/2002,30.7,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/1/2002,51.7,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/1/2002,16.3,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/1/2002,25.8,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/14/2002,2.4,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/14/2002,11.8,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/14/2002,2.4,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/14/2002,1,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/26/2003,7.6,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/26/2003,6.6,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/26/2003,2.8,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/26/2003,6.6,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/6/2003,0.2,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/6/2003,0.2,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/6/2003,0.2,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/6/2003,0.2,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/6/2003,0.2,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/26/2003,1.8,4985120,UTAHDWQ,41.1055556,-112.225,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/26/2003,17.9,4985200,UTAHDWQ,41.0497499,-112.1886833,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/26/2003,31.3,4985250,UTAHDWQ,40.9967149,-112.1406999,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/3/2003,1.2,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/3/2003,0.5,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/3/2003,0.5,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/3/2003,1.2,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/3/2003,0.2,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/15/2003,0.55,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/15/2003,0.4,4984900,UTAHDWQ,41.0714722,-112.2819166,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/16/2003,11.5,4985200,UTAHDWQ,41.0497499,-112.1886833,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/16/2003,41.2,4985250,UTAHDWQ,40.9967149,-112.1406999,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/16/2003,26,4985300,UTAHDWQ,40.9281999,-112.0883166,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/31/2003,24,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/31/2003,29.4,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/31/2003,25.6,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/31/2003,22,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/31/2003,27.4,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/26/2003,0.4,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/26/2003,0.4,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/26/2003,0.4,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/26/2003,0.4,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/28/2003,3.9,4985120,UTAHDWQ,41.1055556,-112.225,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/28/2003,9.4,4985130,UTAHDWQ,41.0663611,-112.2306111,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/28/2003,59.7,4985200,UTAHDWQ,41.0497499,-112.1886833,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/28/2003,30.6,4985250,UTAHDWQ,40.9967149,-112.1406999,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/28/2003,14.4,4985300,UTAHDWQ,40.9281999,-112.0883166,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/5/2003,83.3,4985200,UTAHDWQ,41.0497499,-112.1886833,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/18/2003,83.6,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/18/2003,81.2,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/18/2003,75.1,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/18/2003,90.1,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+12/18/2003,59.1,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/12/2004,40.1,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/12/2004,42.2,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/12/2004,31.5,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+2/12/2004,44.6,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/17/2004,192,4985200,UTAHDWQ,41.0497499,-112.1886833,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/22/2004,4.3,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/22/2004,6.6,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/22/2004,5.6,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/22/2004,5.2,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/22/2004,4.8,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/7/2004,63.6,4985200,UTAHDWQ,41.0497499,-112.1886833,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/14/2004,1.8,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/14/2004,0.6,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/14/2004,0.2,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/14/2004,0.5,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/2004,6.6,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/2004,3.6,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/2004,7.2,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/2004,4.3,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/2004,3.8,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/21/2004,4.8,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/31/2004,24.3,4984900,UTAHDWQ,41.0714722,-112.2819166,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/31/2004,31.7,4985200,UTAHDWQ,41.0497499,-112.1886833,Farmington,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/15/2004,5.9,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/17/2004,9.9,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/17/2004,2.9,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/17/2004,3.2,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/17/2004,3.4,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+3/11/2005,33.9,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+3/11/2005,38.1,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+3/11/2005,43.4,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+3/11/2005,38.4,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+3/31/2005,75.8,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+4/1/2005,23.8,2565,USGS,41.11222222,-112.6405556,Gilbert,0,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+4/1/2005,21.8,2267,USGS,41.18777778,-112.4122222,Gilbert,0,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+4/1/2005,23.4,2767,USGS,41.07277778,-112.3333333,Gilbert,0,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+4/26/2005,5.6,4.11E+14,USGS,41.22114,-112.2229,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+4/27/2005,54.6,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/2/2005,1.4,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/2/2005,6.4,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/2/2005,3.6,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/2/2005,3.2,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/2/2005,0.9,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/2/2005,6.8,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/14/2005,46.4,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/16/2005,31.5,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/30/2005,5.1,4.11E+14,USGS,41.22114,-112.2229,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/7/2005,2.8,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/7/2005,6,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/7/2005,4.1,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/7/2005,-9999,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/7/2005,8.3,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/7/2005,-9999,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/14/2005,109,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/25/2005,1.6,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/25/2005,3.5,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/4/2005,4.6,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/5/2005,21.4,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/5/2005,23,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/11/2005,33.5,4.11E+14,USGS,41.22114,-112.2229,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/23/2005,19.9,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/23/2005,38.9,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/25/2005,17,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/25/2005,18.6,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/31/2005,39.6,4.11E+14,USGS,41.22114,-112.2229,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+9/8/2005,224,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+9/22/2005,33.2,4.11E+14,USGS,41.22114,-112.2229,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+9/28/2005,10,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/28/2005,19.1,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/28/2005,14.9,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/28/2005,14.5,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/28/2005,19.1,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/22/2005,65.4,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+12/19/2005,47.4,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+1/10/2006,7.2,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+1/10/2006,6.7,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+1/10/2006,7.5,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+1/10/2006,6.3,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+3/15/2006,90.9,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+5/8/2006,98.4,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/2006,0.9,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+5/18/2006,2.7,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+5/18/2006,6.6,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+5/18/2006,1.8,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+5/18/2006,2.9,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+5/18/2006,0.9,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+5/23/2006,0.8,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+5/25/2006,21.6,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/1/2006,0.7,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/1/2006,0.9,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/1/2006,0.9,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/19/2006,39.6,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/19/2006,35,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/20/2006,24.8,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/20/2006,37.1,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/2006,11.9,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/29/2006,1.2,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/29/2006,1.8,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/29/2006,3.1,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/29/2006,3.6,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/29/2006,5.2,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/13/2006,6.8,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/13/2006,14,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/13/2006,5.2,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/13/2006,2.4,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/13/2006,9.9,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/13/2006,10.8,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/18/2006,57.5,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/27/2006,7.4,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/27/2006,6.5,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/28/2006,8.5,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/28/2006,9.9,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/8/2006,142,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/29/2006,5.8,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/29/2006,7.2,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+9/1/2006,6.2,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+9/7/2006,54.1,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+9/12/2006,97.2,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/12/2006,51,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/12/2006,5.8,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/12/2006,119.7,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/12/2006,87.7,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/27/2006,3.2,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+9/27/2006,7.5,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+9/28/2006,3.1,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+9/28/2006,3.7,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/10/2006,139,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/1/2006,17.2,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/1/2006,19.5,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/3/2006,28.9,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/3/2006,23.2,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/20/2006,27,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/20/2006,21.1,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/21/2006,13.5,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/21/2006,16.2,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/21/2006,22.1,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+12/6/2006,26.5,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+12/6/2006,24.1,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+12/7/2006,27,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+12/7/2006,24.4,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+12/20/2006,19.8,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+2/2/2007,43.9,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+3/5/2007,189,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,-9999,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+3/9/2007,40.9,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+3/9/2007,16.1,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+3/9/2007,21.4,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+3/9/2007,33.4,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+3/9/2007,20.9,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+3/19/2007,30.1,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+3/19/2007,31.3,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+3/20/2007,27.3,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+3/20/2007,23.7,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+4/26/2007,30.3,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+4/26/2007,15.2,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+5/1/2007,8.3,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+5/2/2007,12.1,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+5/18/2007,389,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/2007,0.3,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+5/23/2007,0.1,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+5/31/2007,0.3,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+5/31/2007,0.8,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/19/2007,150,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/20/2007,6.8,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/20/2007,5.2,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/20/2007,14.9,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/20/2007,10.8,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/20/2007,9.6,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/20/2007,10.8,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/26/2007,6.8,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/2007,4.4,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/27/2007,10.6,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/28/2007,7,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/10/2007,7.5,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/10/2007,195.3,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/10/2007,9.5,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/10/2007,42.4,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/10/2007,17.4,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/10/2007,5.7,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/17/2007,103,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/16/2007,32.1,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/16/2007,108.4,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/16/2007,15.9,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/16/2007,92.4,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+8/16/2007,70.5,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/13/2007,10.8,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/13/2007,8.1,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/13/2007,6.3,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/13/2007,8.5,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/13/2007,4.9,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/27/2007,39,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/27/2007,23.7,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/27/2007,65.7,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/27/2007,20,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+9/27/2007,57.5,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+7/23/2008,37.6,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+7/23/2008,155.7,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+7/23/2008,31.2,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+7/23/2008,20.8,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+7/23/2008,15,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+7/23/2008,140.1,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+7/23/2008,39.8,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+8/4/2008,22.6,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+8/4/2008,80.5,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+8/4/2008,75.6,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+8/4/2008,77.8,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+8/4/2008,70.3,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+8/4/2008,109.7,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+8/4/2008,51.8,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+9/17/2008,25.7,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+9/17/2008,112,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+9/17/2008,31.5,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+9/17/2008,24.6,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+9/17/2008,20.3,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+9/17/2008,32.4,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+9/17/2008,139.6,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+9/17/2008,17.5,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Water Grab Sampling
+11/18/2008,13.9,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/18/2008,7.7,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/18/2008,11.2,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/18/2008,11.7,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+11/18/2008,3.8,4982500,UTAHDWQ,41.161046,-112.72136,Gilbert,-9999,ug/l,-9999,Chlorophyll,"Chlorophyll-A, Uncorrected for pheophytin"
+6/22/2009,5,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/22/2009,5,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/22/2009,5.2,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/22/2009,6.3,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/22/2009,8.6,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/22/2009,11.1,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/22/2009,15.4,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/22/2009,45,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/6/2009,7,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/6/2009,8.9,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/6/2009,10.9,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/6/2009,13.1,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/6/2009,14.8,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/6/2009,15.4,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/6/2009,17.5,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/6/2009,113.4,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/3/2009,22.5,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/3/2009,35,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/3/2009,35.5,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/3/2009,37.2,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/3/2009,57.9,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/3/2009,104.6,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/3/2009,131.3,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/3/2009,140.2,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/17/2009,4.1,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/17/2009,5,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/17/2009,6.3,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/17/2009,9.3,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/17/2009,20.8,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/17/2009,30.5,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/17/2009,47.7,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/17/2009,127.1,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/7/2009,5.2,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/7/2009,5.7,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/7/2009,15.7,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/7/2009,16.4,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/7/2009,32.1,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/7/2009,52.6,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/7/2009,65.1,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/7/2009,96,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+12/18/2009,54.7,4982000,UTAHDWQ,40.8308333,-112.2572222,Gilbert,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+12/18/2009,50.3,4982080,UTAHDWQ,40.9986111,-112.4472222,Gilbert,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+12/18/2009,50,4982130,UTAHDWQ,41.140213,-112.443289,Gilbert,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+12/18/2009,13.9,4982450,UTAHDWQ,41.0569444,-112.4019444,Gilbert,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/14/2010,2.2,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/14/2010,3.2,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/14/2010,3.6,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/14/2010,11.5,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/14/2010,6.1,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/14/2010,2.3,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/14/2010,7.5,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/14/2010,11.5,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/15/2010,10,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/15/2010,8.2,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/15/2010,6.6,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/15/2010,86.3,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/15/2010,9.1,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/15/2010,14.1,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/15/2010,15.7,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/15/2010,7.7,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/19/2010,30.2,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/19/2010,23.3,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/19/2010,37.6,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/19/2010,61.4,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/19/2010,11.7,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/19/2010,185.5,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/23/2010,19.1,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/23/2010,14.2,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/28/2011,1.41,4.11E+14,USGS,41.1102147,-112.4519024,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/28/2011,1.03,2820,USGS,41.05638889,-112.5052778,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/28/2011,1.29,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/28/2011,0.77,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/29/2011,1.57,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/29/2011,33.6,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/29/2011,1.08,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/30/2011,1.52,4069,USGS,40.76861111,-112.3272222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/22/2011,140.8,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/22/2011,23.2,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/22/2011,60.9,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/22/2011,120,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/22/2011,17.1,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/22/2011,51.8,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/22/2011,146.2,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/22/2011,22.7,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/22/2011,14.5,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/22/2011,37,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/22/2011,77.6,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/22/2011,16.3,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/22/2011,11.5,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/22/2011,35.2,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/22/2011,17,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/22/2011,5.5,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/12/2011,61.8,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/12/2011,19.8,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/12/2011,52.6,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/12/2011,57.1,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/12/2011,127.2,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/12/2011,26,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/12/2011,45.7,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/12/2011,41.2,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/27/2011,51.8,2963,USGS,41.03138889,-112.1397222,Farmington,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/27/2011,98.5,4.10E+14,USGS,41.0401,-112.1642,Farmington,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/27/2011,72.5,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/27/2011,0.83,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/27/2011,1.48,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/28/2011,2.34,4.11E+14,USGS,41.1102147,-112.4519024,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/28/2011,6.24,2820,USGS,41.05638889,-112.5052778,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/28/2011,2.9,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/31/2011,0.78,4069,USGS,40.76861111,-112.3272222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/31/2011,1.24,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+5/31/2012,-9999,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+5/31/2012,-9999,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+5/31/2012,-9999,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+5/31/2012,31.7,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+5/31/2012,-9999,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+5/31/2012,-9999,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+5/31/2012,-9999,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+5/31/2012,-9999,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+6/11/2012,0.51,4.11E+14,USGS,41.1102147,-112.4519024,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/2012,0.53,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/11/2012,0.75,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/12/2012,0.07,2820,USGS,41.05638889,-112.5052778,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/12/2012,128,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/12/2012,1.53,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/13/2012,0.31,4069,USGS,40.76861111,-112.3272222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/13/2012,0.01,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/25/2012,267,4.10E+14,USGS,41.0401,-112.1642,Farmington,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/2/2012,-9999,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/2/2012,3.3,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/2/2012,4.3,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/2/2012,324.9,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/2/2012,5.8,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/2/2012,4.2,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/2/2012,13,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/2/2012,90.5,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+7/26/2012,114,2963,USGS,41.03138889,-112.1397222,Farmington,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+8/15/2012,46.2,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/15/2012,38.1,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/15/2012,89.7,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/15/2012,216.4,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/15/2012,24,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/15/2012,31.5,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/15/2012,38.1,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+8/15/2012,26.2,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/6/2012,44.7,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/6/2012,30.5,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/6/2012,40.4,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/6/2012,269.3,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/6/2012,11.9,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/6/2012,14.8,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/6/2012,58.1,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+9/6/2012,16.6,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9999,ug/l,-9999,Chlorophyll,Chlorophyll-A (Colorimet)
+10/29/2012,72.4,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/29/2012,12.2,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/30/2012,4.88,4.11E+14,USGS,41.1102147,-112.4519024,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/30/2012,0.004,2820,USGS,41.05638889,-112.5052778,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/30/2012,2.48,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/31/2012,66.7,2963,USGS,41.03138889,-112.1397222,Farmington,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/31/2012,6.65,4.10E+14,USGS,41.0401,-112.1642,Farmington,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/31/2012,12.7,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/2/2012,5.36,4069,USGS,40.76861111,-112.3272222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/2/2012,3.37,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+3/11/2013,6.675,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.25,ug/l,1.6,Chlorophyll,Corrected for pheophytin
+3/14/2013,29.37,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,1.194,Chlorophyll,Corrected for pheophytin
+3/14/2013,45.39,2,JRFBWQC,41.0525,-112.1880556,Farmington,0.25,ug/l,1.346,Chlorophyll,Corrected for pheophytin
+3/14/2013,23.3625,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,1.117,Chlorophyll,Corrected for pheophytin
+3/14/2013,30.0375,4,JRFBWQC,40.99277778,-112.1433333,Farmington,0.25,ug/l,0.864,Chlorophyll,Corrected for pheophytin
+3/14/2013,18.69,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.5,ug/l,1.971,Chlorophyll,Corrected for pheophytin
+5/13/2013,56.07,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,2.1,Chlorophyll,Corrected for pheophytin
+5/13/2013,56.07,2,JRFBWQC,41.0525,-112.1880556,Farmington,0.25,ug/l,1.2,Chlorophyll,Corrected for pheophytin
+5/13/2013,94.785,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,1.2,Chlorophyll,Corrected for pheophytin
+5/13/2013,119,4,JRFBWQC,40.99277778,-112.1433333,Farmington,0.25,ug/l,1.1,Chlorophyll,Corrected for pheophytin
+5/13/2013,117,5,JRFBWQC,40.95833333,-112.1266667,Farmington,0.25,ug/l,0.7,Chlorophyll,Corrected for pheophytin
+5/13/2013,85.44,6,JRFBWQC,40.92583333,-112.1025,Farmington,0.25,ug/l,0.75,Chlorophyll,Corrected for pheophytin
+5/13/2013,30.705,7,JRFBWQC,40.91194444,-112.0441667,Farmington,0.25,ug/l,0.305,Chlorophyll,Corrected for pheophytin
+5/13/2013,32.04,8,JRFBWQC,40.92,-112.0252778,Farmington,0.1,ug/l,0.152,Chlorophyll,Corrected for pheophytin
+5/13/2013,69.42,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.25,ug/l,0.152,Chlorophyll,Corrected for pheophytin
+5/30/2013,485.94,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,1.42,Chlorophyll,Corrected for pheophytin
+5/30/2013,373.8,2,JRFBWQC,41.0525,-112.1880556,Farmington,0.25,ug/l,1.5,Chlorophyll,Corrected for pheophytin
+5/30/2013,479.265,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,1.22,Chlorophyll,Corrected for pheophytin
+5/30/2013,463.245,4,JRFBWQC,40.99277778,-112.1433333,Farmington,0.25,ug/l,1.08,Chlorophyll,Corrected for pheophytin
+5/30/2013,444.555,5,JRFBWQC,40.95833333,-112.1266667,Farmington,0.25,ug/l,0.8,Chlorophyll,Corrected for pheophytin
+5/30/2013,505.965,6,JRFBWQC,40.92583333,-112.1025,Farmington,0.25,ug/l,0.8,Chlorophyll,Corrected for pheophytin
+5/30/2013,9.345,7,JRFBWQC,40.91194444,-112.0441667,Farmington,0.25,ug/l,0.38,Chlorophyll,Corrected for pheophytin
+5/30/2013,32.7075,8,JRFBWQC,40.92,-112.0252778,Farmington,0.25,ug/l,0.22,Chlorophyll,Corrected for pheophytin
+6/10/2013,221.61,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,2,Chlorophyll,Corrected for pheophytin
+6/10/2013,45.39,7,JRFBWQC,40.91194444,-112.0441667,Farmington,0.15,ug/l,0.18,Chlorophyll,Corrected for pheophytin
+6/12/2013,0.39,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/12/2013,1.67,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/13/2013,0.67,4.11E+14,USGS,41.1102147,-112.4519024,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/13/2013,0.68,2820,USGS,41.05638889,-112.5052778,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/13/2013,0.95,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/13/2013,73.425,2,JRFBWQC,41.0525,-112.1880556,Farmington,0.25,ug/l,1.4,Chlorophyll,Corrected for pheophytin
+6/13/2013,101.46,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,1.05,Chlorophyll,Corrected for pheophytin
+6/13/2013,145.515,5,JRFBWQC,40.95833333,-112.1266667,Farmington,0.2,ug/l,0.6,Chlorophyll,Corrected for pheophytin
+6/13/2013,283.02,6,JRFBWQC,40.92583333,-112.1025,Farmington,0.25,ug/l,0.64,Chlorophyll,Corrected for pheophytin
+6/13/2013,62.745,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.25,ug/l,1.9,Chlorophyll,Corrected for pheophytin
+6/14/2013,1.62,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/14/2013,65.2,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/17/2013,1.72,4069,USGS,40.76861111,-112.3272222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/17/2013,-9999,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9998,ug/l,-9998,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/17/2013,-9999,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9997,ug/l,-9997,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/17/2013,-9999,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9996,ug/l,-9996,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/17/2013,154.88,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9995,ug/l,-9995,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/17/2013,-9999,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9994,ug/l,-9994,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/17/2013,-9999,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9993,ug/l,-9993,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/24/2013,127,2963,USGS,41.03138889,-112.1397222,Farmington,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/24/2013,89.9,4.10E+14,USGS,41.0401,-112.1642,Farmington,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/25/2013,40.05,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,1.55,Chlorophyll,Corrected for pheophytin
+6/25/2013,14.685,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,1,Chlorophyll,Corrected for pheophytin
+6/25/2013,89.445,5,JRFBWQC,40.95833333,-112.1266667,Farmington,0.25,ug/l,0.48,Chlorophyll,Corrected for pheophytin
+6/25/2013,38.715,7,JRFBWQC,40.91194444,-112.0441667,Farmington,0.1,ug/l,0.14,Chlorophyll,Corrected for pheophytin
+6/25/2013,36.045,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.25,ug/l,1.8,Chlorophyll,Corrected for pheophytin
+7/2/2013,-9999,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9992,ug/l,-9992,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/2/2013,-9999,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9990,ug/l,-9990,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/2/2013,114.24,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9989,ug/l,-9989,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/2/2013,-9999,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9988,ug/l,-9988,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/2/2013,-9999,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9987,ug/l,-9987,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/2/2013,-9999,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9986,ug/l,-9986,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/2/2013,-9999,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9985,ug/l,-9985,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/2/2013,17.44,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9984,ug/l,-9984,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/11/2013,88.11,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,1.75,Chlorophyll,Corrected for pheophytin
+7/11/2013,134.835,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,0.78,Chlorophyll,Corrected for pheophytin
+7/11/2013,162.87,5,JRFBWQC,40.95833333,-112.1266667,Farmington,0.25,ug/l,0.42,Chlorophyll,Corrected for pheophytin
+7/11/2013,28.035,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.25,ug/l,1.82,Chlorophyll,Corrected for pheophytin
+7/22/2013,100.125,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,1.27,Chlorophyll,Corrected for pheophytin
+7/22/2013,82.77,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,0.85,Chlorophyll,Corrected for pheophytin
+7/22/2013,97.455,5,JRFBWQC,40.95833333,-112.1266667,Farmington,0.2,ug/l,0.35,Chlorophyll,Corrected for pheophytin
+7/22/2013,17.355,7,JRFBWQC,40.91194444,-112.0441667,Farmington,0.05,ug/l,0.1,Chlorophyll,Corrected for pheophytin
+7/22/2013,48.06,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.25,ug/l,1.26,Chlorophyll,Corrected for pheophytin
+8/6/2013,61.41,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,1.37,Chlorophyll,Corrected for pheophytin
+8/6/2013,117.48,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,0.75,Chlorophyll,Corrected for pheophytin
+8/6/2013,101.46,5,JRFBWQC,40.95833333,-112.1266667,Farmington,0.25,ug/l,0.28,Chlorophyll,Corrected for pheophytin
+8/6/2013,37.38,7,JRFBWQC,40.91194444,-112.0441667,Farmington,0.15,ug/l,0.15,Chlorophyll,Corrected for pheophytin
+8/6/2013,50.73,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.25,ug/l,1.65,Chlorophyll,Corrected for pheophytin
+8/26/2013,258.99,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,1.25,Chlorophyll,Corrected for pheophytin
+8/26/2013,226.95,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,0.62,Chlorophyll,Corrected for pheophytin
+8/26/2013,104.13,5,JRFBWQC,40.95833333,-112.1266667,Farmington,0.25,ug/l,0.32,Chlorophyll,Corrected for pheophytin
+8/26/2013,138.84,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.25,ug/l,0.59,Chlorophyll,Corrected for pheophytin
+9/16/2013,44.52,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9983,ug/l,-9983,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/16/2013,19.36,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9981,ug/l,-9981,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/16/2013,80.36,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9980,ug/l,-9980,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/16/2013,82.28,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9979,ug/l,-9979,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/16/2013,35.8,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9978,ug/l,-9978,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/16/2013,17.44,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9977,ug/l,-9977,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/16/2013,43.56,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9976,ug/l,-9976,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/16/2013,28.08,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9975,ug/l,-9975,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/19/2013,176.22,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,0.92,Chlorophyll,Corrected for pheophytin
+9/19/2013,234.96,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,0.6,Chlorophyll,Corrected for pheophytin
+9/19/2013,154.86,5,JRFBWQC,40.95833333,-112.1266667,Farmington,0.25,ug/l,0.35,Chlorophyll,Corrected for pheophytin
+9/19/2013,112.14,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.25,ug/l,1.44,Chlorophyll,Corrected for pheophytin
+10/17/2013,53.4,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,1.1,Chlorophyll,Corrected for pheophytin
+10/17/2013,54.735,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,0.55,Chlorophyll,Corrected for pheophytin
+10/17/2013,130.83,5,JRFBWQC,40.95833333,-112.1266667,Farmington,0.25,ug/l,0.41,Chlorophyll,Corrected for pheophytin
+10/17/2013,33.375,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.25,ug/l,1.3,Chlorophyll,Corrected for pheophytin
+10/23/2013,-9999,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9974,ug/l,-9974,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+10/23/2013,-9999,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9972,ug/l,-9972,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+10/23/2013,-9999,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9971,ug/l,-9971,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+10/23/2013,-9999,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9970,ug/l,-9970,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+10/23/2013,-9999,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9969,ug/l,-9969,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+10/29/2013,59.9,2963,USGS,41.03138889,-112.1397222,Farmington,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/29/2013,37.7,4.10E+14,USGS,41.0401,-112.1642,Farmington,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/30/2013,9.74,4.11E+14,USGS,41.1102147,-112.4519024,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/30/2013,19.6,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/30/2013,24,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/31/2013,10.5,2820,USGS,41.05638889,-112.5052778,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/31/2013,18.6,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/31/2013,11.6,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/1/2013,11.7,4069,USGS,40.76861111,-112.3272222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/1/2013,7.49,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/14/2013,8.01,1,JRFBWQC,41.06611111,-112.2294444,Farmington,0.25,ug/l,1.2,Chlorophyll,Corrected for pheophytin
+11/14/2013,14.685,3,JRFBWQC,41.02777778,-112.1563889,Farmington,0.25,ug/l,0.5,Chlorophyll,Corrected for pheophytin
+11/14/2013,30.705,5,JRFBWQC,40.95833333,-112.1266667,Farmington,0.25,ug/l,0.4,Chlorophyll,Corrected for pheophytin
+11/14/2013,12.015,9,JRFBWQC,41.06722222,-112.2333333,Gilbert,0.25,ug/l,1.25,Chlorophyll,Corrected for pheophytin
+6/2/2014,-9999,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9968,ug/l,-9968,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/2/2014,-9999,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9966,ug/l,-9966,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/2/2014,55.7,4917450,UTAHDWQ,40.189139,-111.699931,Utah,-9965,ug/l,-9965,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/2/2014,-9999,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9964,ug/l,-9964,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/2/2014,-9999,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9963,ug/l,-9963,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/2/2014,-9999,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9962,ug/l,-9962,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/2/2014,-9999,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9961,ug/l,-9961,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/1/2014,-9999,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9960,ug/l,-9960,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/1/2014,-9999,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9958,ug/l,-9958,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/1/2014,-9999,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9957,ug/l,-9957,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/1/2014,-9999,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9956,ug/l,-9956,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/1/2014,-9999,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9955,ug/l,-9955,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/1/2014,-9999,4917600,UTAHDWQ,40.060235,-111.874384,Utah,-9954,ug/l,-9954,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+7/1/2014,-9999,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9953,ug/l,-9953,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/24/2014,-9999,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9952,ug/l,-9952,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/24/2014,-9999,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9950,ug/l,-9950,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/24/2014,-9999,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9949,ug/l,-9949,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/24/2014,-9999,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9948,ug/l,-9948,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/24/2014,-9999,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9947,ug/l,-9947,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+9/24/2014,-9999,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9946,ug/l,-9946,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+11/6/2014,-9999,4917310,UTAHDWQ,40.320873,-111.777538,Utah,-9945,ug/l,-9945,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+11/6/2014,-9999,4917370,UTAHDWQ,40.268283,-111.82993,Utah,-9943,ug/l,-9943,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+11/6/2014,-9999,4917390,UTAHDWQ,40.237173,-111.764647,Utah,-9942,ug/l,-9942,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+11/6/2014,-9999,4917500,UTAHDWQ,40.169676,-111.871606,Utah,-9941,ug/l,-9941,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+11/6/2014,-9999,4917520,UTAHDWQ,40.342169,-111.871326,Utah,-9940,ug/l,-9940,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+11/6/2014,-9999,4917770,UTAHDWQ,40.188567,-111.731314,Utah,-9939,ug/l,-9939,Chlorophyll,"Chlorophyll-A (Colorimet), Corrected for pheophytin"
+6/19/2015,0.38,4069,USGS,40.76861111,-112.3272222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/19/2015,0.34,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/24/2015,3.21,4.10E+14,USGS,41.0401,-112.1642,Farmington,0.23,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/2015,0.48,4.11E+14,USGS,41.1102147,-112.4519024,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/2015,1.23,2565,USGS,41.11222222,-112.6405556,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+6/26/2015,0.4,2267,USGS,41.18777778,-112.4122222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/6/2015,0.94,2820,USGS,41.05638889,-112.5052778,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/6/2015,2.93,4.10E+14,USGS,41.0668864,-112.2307802,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+7/6/2015,0.32,2767,USGS,41.07277778,-112.3333333,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/14/2015,11.8,4.11E+14,USGS,41.1102147,-112.4519024,Gilbert,0.5,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/14/2015,5.42,2565,USGS,41.11222222,-112.6405556,Gilbert,0.5,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/14/2015,26.8,2267,USGS,41.18777778,-112.4122222,Gilbert,0.5,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/15/2015,21.8,2820,USGS,41.05638889,-112.5052778,Gilbert,0.5,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/15/2015,29.6,2767,USGS,41.07277778,-112.3333333,Gilbert,0.5,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/16/2015,1.17,4069,USGS,40.76861111,-112.3272222,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+10/16/2015,0.51,3510,USGS,40.89888889,-112.3488889,Gilbert,0.2,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
+11/5/2015,98,4.10E+14,USGS,41.0401,-112.1642,Farmington,0.46,ug/l,-9999,Chlorophyll,Welschmeyer Fluorometric Method
