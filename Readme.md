@@ -13,17 +13,13 @@ An example workflow is as follows:
 
 Read in dates and station IDs from a field record file and Google Fusion Table of sampling locations. Can be adapted to retrieve data over the entire satellite record. Save data in .csv.
 
-### Format data:
-* R_Scripts>FormatCalibrationReflectanceData.R
-* R_Scripts>FormatHistoricReflectanceData.R
+### R Package for formatting/modeling/analyzing data:
+GSLAlgaeR
 
-Save data in .csv format.
+To install and use these functions:
 
-### Create model variables:
-* R_Scripts>CreateModelVariables.R
+```
+library(devtools)
+install_github("cahhansen/GSLAlgae/GSLAlgaeR")
+```
 
-Save data in .RData format (XData.RData)
-
-### Testing different time windows and obtaining significant variables:
-* R_Scripts>
-More content will be added as functions are generalized and finalized.
