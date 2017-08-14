@@ -2,7 +2,7 @@
 % Please edit documentation in R/create_model_vars.R
 \name{create_model_vars}
 \alias{create_model_vars}
-\title{Perform Stepwise Regression}
+\title{create_model_vars}
 \usage{
 create_model_vars(filename, rowIndex = TRUE)
 }
@@ -15,5 +15,5 @@ create_model_vars(filename, rowIndex = TRUE)
 dataframe with variables used in model development or application
 }
 \description{
-Use stepwise regression to parameterize initial model
+Create model variables used in model calibration and application
 }

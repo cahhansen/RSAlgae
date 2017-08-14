@@ -7,6 +7,7 @@
 #' @param season Vector of months to include in model
 #' @param stepdirection Direction for stepwise regression ("backward","both","forward")
 #' @return list with the stepwise model and the modeled values
+#' @import hydroGOF
 #' @export
 #'
 
@@ -39,7 +40,8 @@ stepChlModel <- function(caldata,timewindow,season,stepdirection,print.on=TRUE){
     #Compute RMSE, R2, and AIC
     print("Full stepwise regression:")
     print(paste("Number of observations for timewindow: ",nrow(caldf)))
-    print(paste("RMSE is: ",sqrt(mean(compare$diff)^2)))
+    print(paste("RMSE is: ",sqrt(mean((compare$diff)^2))))
+    print(paste("PBIAS is: ", pbias(compare$predicted,compare$actual)))
     print(paste("R2 is: ",summary(lm(compare$actual~compare$predicted))$r.squared))
     print(paste("AIC is: ",stepmodsummary$aic))
     print(stepmodsummary$coefficients)
@@ -81,42 +83,95 @@ limitparams <- function(form,pval){
 #' @param form Formula for GLM
 #' @param params Number of independent variables in the specified formula
 #' @return parameter estimates for specified model formula
+#' @import cvTools
+#' @import hydroGOF
 #' @export
 #'
 #Calcluate avg R2, RMSE, and Parameter Estimates (coefficients)
-cvChlModel <- function(caldf,k,form,params){
+cvChlModel <- function(caldf,k,model,gof){
+  formula <- model$formula
+  params <- length(model$model)
   #Cross validation (k-fold, if at least k observations in calibration set), LOOCV if <k observations
-  caldf$id <- sample(1:k, nrow(caldf), replace = FALSE)
-  coeffsum <- data.frame(matrix(nrow=length(params+1),ncol=length(unique(caldf$id))))
-  pvaluesum <- data.frame(matrix(nrow=length(params+1),ncol=length(unique(caldf$id))))
-  modelsum <- data.frame(matrix(nrow=length(unique(caldf$id)),ncol=2))
-  for (n in unique(caldf$id)){
-    traindata <- caldf[(caldf$id!=n),]
-    traindata <- subset(traindata,select=-c(id))
-    trainmod <- glm(form,data=traindata,family=gaussian(link="log"))
-
+  folds <- cvTools::cvFolds(n=nrow(data),K=k,R=1,type="random")
+  trainmodelsum <- data.frame(R2=rep(NA,k),RMSE=rep(NA,k),PBIAS=rep(NA,k))
+  testmodelsum <- data.frame(R2=rep(NA,k),RMSE=rep(NA,k),PBIAS=rep(NA,k))
+  for (n in seq(1,k,1)){
+    foldindex <- folds$subsets[folds$which==n]
+    traindata <- caldf[-foldindex,]
+    testdata <- caldf[foldindex,]
+    trainmod <- glm(formula,data=traindata,family=gaussian(link="log"))
     #Calculate Model Results
-    kpredicted <- (trainmod$fitted.values)
-    kcompare <- data.frame(predicted)
-    kcompare$actual <- traindata$FieldValue
-    kcompare$diff <- kcompare$actual-kcompare$predicted
+    testpredict <- exp(predict(trainmod,newdata=testdata))
+    traincompare <- data.frame(predicted=trainmod$fitted.values)
+    traincompare$actual <- traindata$FieldValue
+    traincompare$diff <- traincompare$actual-traincompare$predicted
+    testcompare <- data.frame(predicted=testpredict)
+    testcompare$actual <- testdata$FieldValue
+    testcompare$diff <- testcompare$actual-testcompare$predicted
     #Summarize Model Results
-    coeffsum[,n] <- trainmod$coefficients
-    pvaluesum[,n] <- summary(trainmod)$coefficients[,4]
-    modelsum[n,1] <- summary(lm(kcompare$actual~kcompare$predicted))$r.squared
-    modelsum[n,2] <- sqrt(mean(kcompare$diff)^2)
-  }
-  avgR2 <- mean(modelsum[,1],na.rm=TRUE)
-  minR2 <- min(modelsum[,1])
-  maxR2 <- max(modelsum[,1])
-  print(paste("Avg R2 for all folds: ",avgR2))
-  print(paste("Summary of R2",minR2,"-",maxR2))
-  avgRMSE <- mean(modelsum[,2],na.rm=TRUE)
-  minRMSE <- min(modelsum[,2])
-  maxRMSE <- max(modelsum[,2])
-  print(paste("Avg RMSE for all folds: ",avgRMSE))
-  print(paste("Summary of RMSE",minRMSE,"-",maxRMSE))
+    trainmodelsum[n,'R2'] <- summary(lm(traincompare$actual~traincompare$predicted))$r.squared
+    trainmodelsum[n,'RMSE'] <- sqrt(mean((traincompare$diff)^2))
+    trainmodelsum[n,'PBIAS'] <- pbias(traincompare$predicted,traincompare$actual)
+    testmodelsum[n,'R2'] <- summary(lm(testcompare$actual~testcompare$predicted))$r.squared
+    testmodelsum[n,'RMSE'] <- sqrt(mean((testcompare$diff)^2))
+    testmodelsum[n,'PBIAS'] <- pbias(testcompare$predicted,testcompare$actual)
 
-  return(rowMeans(coeffsum))
+  }
+  if(gof=='R2'){
+    trainavgR2 <- mean(trainmodelsum[,'R2'],na.rm=TRUE)
+    val1 <- trainavgR2
+    testavgR2 <- mean(testmodelsum[,'R2'],na.rm=TRUE)
+    val2 <- testavgR2
+  }
+  if(gof=='RMSE'){
+    trainavgRMSE <- mean(trainmodelsum[,'RMSE'],na.rm=TRUE)
+    val1 <- trainavgRMSE
+    testavgRMSE <- mean(testmodelsum[,'RMSE'],na.rm=TRUE)
+    val2 <- testavgRMSE
+  }
+  if(gof=='PBIAS'){
+    trainavgPBIAS <- mean(trainmodelsum[,'PBIAS'],na.rm=TRUE)
+    val1 <- trainavgPBIAS
+    testavgPBIAS <- mean(testmodelsum[,'PBIAS'],na.rm=TRUE)
+    val2 <- testavgPBIAS
+  }
+  return(list(val1,val2))
 }
+
+#' Model Results
+#'
+#' Evaluate Model Performance (R2 and RMSE)
+#'
+#' @param model GLM model
+#' @param data data for calibration/evaluation
+#' @import hydroGOF
+#' @export
+#'
+
+
+modresults <- function(model, data, title){
+  compare <- data.frame(predicted=model$fitted.values)
+  compare$actual <- data$FieldValue
+  compare$diff <- compare$actual-compare$predicted
+  modsummary <- summary(model)
+  #Compute RMSE, R2, and AIC
+  print("GLM Performance:")
+  print(paste("Number of observations: ",nrow(data)))
+  print(paste("Range:",min(data$FieldValue),"-",max(data$FieldValue)))
+  print(paste("RMSE is: ",sqrt(mean((compare$diff)^2))))
+  print(paste("PBIAS is: ", pbias(compare$predicted,compare$actual)))
+  print(paste("R2 is: ",summary(lm(compare$actual~compare$predicted))$r.squared))
+  print(paste("AIC is: ",modsummary$aic))
+  print(modsummary$coefficients)
+
+  plot(compare$predicted~compare$actual, main=paste("Modeled vs. Observed",": ",title),ylab="Modeled",xlab="Observed")
+  abline(lm(compare$predicted~compare$actual), col="black")
+  abline(0,1,col="red",lty=2)
+
+
+
+
+
+}
+
 
