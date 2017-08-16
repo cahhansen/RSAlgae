@@ -34,7 +34,7 @@ monthly_trend <- function(record,lake){
 #' @param record dataframe with estimated historical record of Chl-a levels
 #' @param lake string, Name of Lake
 #' @import lubridate
-#' @import plyr
+#' @importFrom plyr ddply
 #' @export
 #'
 
