@@ -45,6 +45,7 @@ lagpad <- function(x, k) {
 
 
 climate_factor_compare <- function(chlrecord,climaterecord,climatevar,lag=NULL,noevent,alternative="two.sided",months=NULL){
+  #If the variable is lagged:
   if(!is.null(lag)){
     #Lag climatevar
     laggedvar <- lagpad(climaterecord[,climatevar],lag)
@@ -54,35 +55,53 @@ climate_factor_compare <- function(chlrecord,climaterecord,climatevar,lag=NULL,n
     chlrecord.events <- subset(chlrecord,ImageDate %in% climateeventdates)
     chlrecord.noevents <- subset(chlrecord,!(ImageDate %in% climateeventdates))
   }else{
+    #If the variable is not lagged:
     #Subset into groups based on climate/weather events
     climateeventdates <- climaterecord[(climaterecord[,climatevar]>noevent),'Date']
     chlrecord.events <- subset(chlrecord,ImageDate %in% climateeventdates)
     chlrecord.noevents <- subset(chlrecord,!(ImageDate %in% climateeventdates))
   }
 
-
+  #If the analysis should be done for a specific month:
   if(!is.null(months)){
     print(months)
-    chlrecord.events$Month=months(chlrecord.events$ImageDate)
+    chlrecord.events$Month <- months(chlrecord.events$ImageDate)
+    chlrecord.noevents$Month <- months(chlrecord.noevents$ImageDate)
     chlrecord.events.sub <- subset(chlrecord.events, Month %in% c(months))
     chlrecord.noevents.sub <- subset(chlrecord.noevents, Month %in% c(months))
+    print(paste("Number Events:",nrow(chlrecord.events.sub),",Number non-Events:",nrow(chlrecord.noevents.sub)))
     #Wilcox Test (Does not assume normal distributions)
-    results <- wilcox.test(chlrecord.events.sub$FieldValue,chlrecord.noevents.sub$FieldValue,alternative)
+    results <- tryCatch(wilcox.test(chlrecord.events.sub$FieldValue,chlrecord.noevents.sub$FieldValue,alternative), error=function(e) NULL)
 
-    #Box and whisker plot of the two comparison groups
-    chlrecord.events.sub$Event <- 'Event'
-    chlrecord.noevents.sub$Event <- 'No Event'
-    chlrecordcompare <- rbind(chlrecord.events.sub,chlrecord.noevents.sub)
-    p <- ggplot(chlrecordcompare)+
-      geom_boxplot(aes(x=as.factor(Event),y=FieldValue))+
-      ggtitle(paste("Comparison of Values for Climate Events: ",months))+
-      ylab(expression(paste("Chl-a ",mu,"g/L")))+
-      xlab("")+
-      theme_bw()+
-      annotate("text",x="Event",y=-8,label=paste("Mean:",round(mean(chlrecord.events.sub$FieldValue),2)))+
-      annotate("text",x="No Event",y=-8,label=paste("Mean:",round(mean(chlrecord.noevents.sub$FieldValue),2)))
+
+    if(nrow(chlrecord.noevents.sub)>0 & nrow(chlrecord.events.sub)>0){
+      chlrecord.events.sub$Event <- 'Event'
+      chlrecord.noevents.sub$Event <- 'No Event'
+      chlrecordcompare <- rbind(chlrecord.events.sub,chlrecord.noevents.sub)
+      #Box and whisker plot of the two comparison groups
+      p <- ggplot(chlrecordcompare)+
+        geom_boxplot(aes(x=as.factor(Event),y=FieldValue))+
+        ggtitle(paste("Comparison of Chl Values for Climate Events: ",months))+
+        ylab(expression(paste("Chl-a ",mu,"g/L")))+
+        xlab("")+
+        theme_bw()+
+        annotate("text",x="Event",y=-8,label=paste("Mean:",round(mean(chlrecord.events.sub$FieldValue),2)))+
+        annotate("text",x="No Event",y=-8,label=paste("Mean:",round(mean(chlrecord.noevents.sub$FieldValue),2)))
     }else{
+      chlrecordcompare <- rbind(chlrecord.events.sub,chlrecord.noevents.sub)
+      #Box and whisker plot of all of the data together
+      p <- ggplot(chlrecordcompare)+
+        geom_boxplot(aes(x=Lake,y=FieldValue))+
+        ggtitle(paste("Distribution of Chl Values for: ",months))+
+        ylab(expression(paste("Chl-a ",mu,"g/L")))+
+        xlab("")+
+        theme_bw()+
+        annotate("text",x=unique(chlrecordcompare$Lake),y=-8,label=paste("Mean:",round(mean(chlrecordcompare$FieldValue),2)))
+    }
+
+  }else{
     #Wilcox Test (Does not assume normal distributions)
+    print(paste("Number Events:",nrow(chlrecord.events),",Number non-Events:",nrow(chlrecord.noevents)))
     results <- wilcox.test(chlrecord.events$FieldValue,chlrecord.noevents$FieldValue,alternative)
 
     #Box and whisker plot of the two comparison groups
@@ -104,11 +123,12 @@ climate_factor_compare <- function(chlrecord,climaterecord,climatevar,lag=NULL,n
            "greater" = "Difference in means is greater than 0 ",
            "less" = "Difference in means is less than 0")
   }
-
-  if(results$p.value>=0.05){
-    writeLines(paste("Not a statistically significant difference.\nP-value:",results$p.value))
-  }else{
-    writeLines(paste(testtype(alternative),"\nP-value:",results$p.value))
+  if(!is.null(results)){
+    if(results$p.value>=0.05){
+      writeLines(paste("Not a statistically significant difference.\nP-value:",results$p.value))
+    }else{
+      writeLines(paste(testtype(alternative),"\nP-value:",results$p.value))
+    }
   }
   return(p)
 }
