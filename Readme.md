@@ -8,10 +8,11 @@ This repository is a collection of the scripts and functions used in Google Eart
 
 ---
 An example workflow is as follows:
+![alt text](https://github.com/cahhansen/GSLAlgae/blob/master/WorkflowDiagram.png) 
 ### Download reflectance data:
 * GEE_Scripts>GetSRDataLS5-7.py
 
-Read in dates and station IDs from a field record file and Google Fusion Table of sampling locations. Can be adapted to retrieve data over the entire satellite record. Save data in .csv.
+This script reads in dates and station IDs from a field record file and Google Fusion Table of sampling locations. Can be adapted to retrieve data over the entire satellite record. Save data in .csv.
 
 ### R Package for formatting/modeling/analyzing data:
 GSLAlgaeR
