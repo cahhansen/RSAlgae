@@ -1,6 +1,6 @@
 #' Explore linear trends
 #'
-#' Calculates linear trend and significance on a monthly basis for each lake
+#' Calculates linear trend and significance on a monthly basis for each station
 #'
 #' @param record dataframe with estimated historical record of chl-a levels
 #' @param lake string, Name of Lake

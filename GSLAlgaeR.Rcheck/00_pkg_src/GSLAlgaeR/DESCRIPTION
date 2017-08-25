@@ -10,5 +10,6 @@ License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.0
-Imports:
-    lubridate,ggplot2,plyr,hydroGOF,stats,cvTools
+Imports: lubridate,ggplot2,plyr,hydroGOF,stats
+NeedsCompilation: no
+Packaged: 2017-08-25 19:08:54 UTC; Carly

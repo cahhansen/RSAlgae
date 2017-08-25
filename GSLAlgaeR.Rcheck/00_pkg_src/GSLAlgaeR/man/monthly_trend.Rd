@@ -12,6 +12,6 @@ monthly_trend(record, lake)
 \item{lake}{string, Name of Lake}
 }
 \description{
-Calculates linear trend and significance on a monthly basis for each lake
+Calculates linear trend and significance on a monthly basis for each station
 }
 
