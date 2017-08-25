@@ -5,15 +5,17 @@
 #' @param record dataframe with estimated historical record of chl-a levels
 #' @param lake string, Name of Lake
 #' @import ggplot2
-#' @import lme4
+#' @import lubridate
 #' @export
 #'
 
 monthly_trend <- function(record,lake){
   record$Year <- year(record$ImageDate)
   record$Month <- as.factor(months(record$ImageDate))
-  monthlymod <- lmList(FieldValue ~ Year | Month, data=record)
-  print(summary(monthlymod))
+  for(i in unique(record$Month)){
+    monthlymod <- lm(FieldValue~Year, data=record[(record$Month==i),])
+    print(summary(monthlymod))
+  }
   ggplot(record,aes(x=ImageDate,y=FieldValue))+
     geom_point(aes(x=ImageDate,y=FieldValue,col=Month))+
     geom_line(aes(x=ImageDate,y=FieldValue,col=Month))+

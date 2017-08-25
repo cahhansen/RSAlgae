@@ -21,3 +21,4 @@ list with the stepwise model and the modeled values
 \description{
 Use stepwise regression to parameterize initial model
 }
+

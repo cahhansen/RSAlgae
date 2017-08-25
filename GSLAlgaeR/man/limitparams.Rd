@@ -17,3 +17,4 @@ formula with significant parameters
 \description{
 Create formula limited to parameters above a confidence level
 }
+

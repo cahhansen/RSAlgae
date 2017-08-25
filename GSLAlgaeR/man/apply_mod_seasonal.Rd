@@ -14,3 +14,4 @@ apply_mod_seasonal(histdata, model, season, threshold)
 \description{
 Apply GLM to remotely sensed record
 }
+

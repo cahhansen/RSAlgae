@@ -25,3 +25,4 @@ climate_factor_compare(chlrecord, climaterecord, climatevar, lag = NULL,
 \description{
 Performs a t-test on chl-a dataset for various climate variables
 }
+

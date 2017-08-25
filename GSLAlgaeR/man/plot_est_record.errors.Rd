@@ -16,3 +16,4 @@ plot_est_record.errors(histdata)
 \description{
 Plots estimated record with error bars
 }
+

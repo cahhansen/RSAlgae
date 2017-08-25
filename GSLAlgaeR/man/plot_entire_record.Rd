@@ -14,3 +14,4 @@ plot_entire_record(histdata, obsdata, lake)
 \description{
 Plots estimated and observed data
 }
+

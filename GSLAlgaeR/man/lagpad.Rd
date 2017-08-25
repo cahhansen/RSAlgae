@@ -14,3 +14,4 @@ lagpad(x, k)
 \description{
 Lags a variable by a time step
 }
+

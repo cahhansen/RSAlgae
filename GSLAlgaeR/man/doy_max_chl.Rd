@@ -14,3 +14,4 @@ doy_max_chl(record, lake)
 \description{
 Calculates DOY for maximum chl-a for each station
 }
+
