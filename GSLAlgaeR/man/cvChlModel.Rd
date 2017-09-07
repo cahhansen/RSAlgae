@@ -21,4 +21,3 @@ parameter estimates for specified model formula
 \description{
 Use k-fold or LOOCV to evaluate the R2, RMSE, and parameter estimates for a model
 }
-

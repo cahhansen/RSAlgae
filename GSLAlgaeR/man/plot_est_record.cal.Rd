@@ -14,4 +14,3 @@ plot_est_record.cal(histdata, caldata)
 \description{
 Plots estimated record with calibrated data
 }
-

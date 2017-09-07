@@ -14,4 +14,3 @@ modresults(model, data, title)
 \description{
 Evaluate Model Performance (R2 and RMSE)
 }
-

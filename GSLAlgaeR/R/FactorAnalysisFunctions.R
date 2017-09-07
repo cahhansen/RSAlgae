@@ -120,8 +120,8 @@ climate_factor_compare <- function(chlrecord,climaterecord,climatevar,lag=NULL,n
   testtype <- function(alternative){
     switch(alternative,
            "two.sided" = "Difference in means is not equal to 0",
-           "greater" = "Difference in means is greater than 0 ",
-           "less" = "Difference in means is less than 0")
+           "greater" = "Difference in means is greater than 0. Mean for event is greater than mean for non-event.",
+           "less" = "Difference in means is less than 0. Mean for event is less than mean for non-event.")
   }
   if(!is.null(results)){
     if(results$p.value>=0.05){
@@ -131,4 +131,57 @@ climate_factor_compare <- function(chlrecord,climaterecord,climatevar,lag=NULL,n
     }
   }
   return(p)
+}
+
+#' Climate Factor Impact
+#'
+#' Performs a t-test on chl-a dataset for various climate variables
+#'
+#' @param chlrecord dataframe with estimated historical record of chl-a levels
+#' @param climaterecord dataframe with climate variables
+#' @param climatevar character, name of climate variable (column) of interest
+#' @param lag integer, number of days to lag the climate variable
+#' @param noevent numeric, threshold for whether an event occured
+#' @param alternative character string specifying alternative hypothesis ("two.sided","greater","less")
+#' @param stations list of unique stations to iterate over
+#' @import stats
+#' @import lubridate
+#' @export
+#'
+
+
+climate_factor_station <- function(chlrecord,climaterecord,climatevar,lag=NULL,noevent,alternative="two.sided",stations){
+  #If the variable is lagged:
+  if(!is.null(lag)){
+    #Lag climatevar
+    laggedvar <- lagpad(climaterecord[,climatevar],lag)
+    climaterecord[,paste(climatevar,'_lag')] <- laggedvar
+    #Subset into groups based on climate/weather events
+    climateeventdates <- climaterecord[laggedvar>noevent,'Date']
+    chlrecord.events <- subset(chlrecord,ImageDate %in% climateeventdates)
+    chlrecord.noevents <- subset(chlrecord,!(ImageDate %in% climateeventdates))
+  }else{
+    #If the variable is not lagged:
+    #Subset into groups based on climate/weather events
+    climateeventdates <- climaterecord[(climaterecord[,climatevar]>noevent),'Date']
+    chlrecord.events <- subset(chlrecord,ImageDate %in% climateeventdates)
+    chlrecord.noevents <- subset(chlrecord,!(ImageDate %in% climateeventdates))
+  }
+  stationresults <- data.frame(Station=rep(NA,length(stations)),PValue=rep(NA,length(stations)))
+  if(nrow(chlrecord.noevents.sub)>0 & nrow(chlrecord.events.sub)>0){
+    chlrecordcompare <- rbind(chlrecord.events.sub,chlrecord.noevents.sub)
+
+    for(i in seq(1,length(stations))){
+      temp.data.event <- chlrecord.events[(chlrecord.events$StationID==stations[i]),]
+      temp.data.noevent <- chlrecord.noevents[(chlrecord.noevents$StationID==stations[i]),]
+      temp.results <- (wilcox.test(temp.data.event$FieldValue,temp.data.noevent$FieldValue,alternative="greater"))
+      stationresults$Station[i] <- as.character(stations[i])
+      stationresults$PValue[i] <- temp.results$p.value
+      stationresults$Event[i] <- mean(temp.data.event$FieldValue)
+      stationresults$NoEvent[i] <- mean(temp.data.noevent$FieldValue)
+    }
+  }
+
+
+  return(stationresults)
 }

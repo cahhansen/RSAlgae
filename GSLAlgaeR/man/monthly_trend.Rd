@@ -14,4 +14,3 @@ monthly_trend(record, lake)
 \description{
 Calculates linear trend and significance on a monthly basis for each lake
 }
-

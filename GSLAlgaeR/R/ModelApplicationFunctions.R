@@ -85,7 +85,7 @@ plot_entire_record <- function(histdata,obsdata,lake){
                           Value=c(histdata$FieldValue,obsdata$Value),
                           Dataset=c(histdata$Dataset,rep("Observed",nrow(obsdata))))
   ggplot()+geom_point(data=combinedf,aes(x=Date,y=Value,col=as.factor(Dataset)))+
-    theme_bw()+scale_color_discrete(name="Station ID")+
+    theme_bw()+scale_color_discrete(name="Dataset")+
     ggtitle(paste("Historical Record",":",lake))+
     ylab(expression(paste("Chl-a (",mu,"g/L)")))+xlab("Date")+
     theme(legend.position="bottom")+
