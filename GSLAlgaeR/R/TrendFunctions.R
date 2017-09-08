@@ -7,14 +7,15 @@
 #' @import ggplot2
 #' @import lubridate
 #' @export
-#'
 
 monthly_trend <- function(record,lake){
   record$Year <- year(record$ImageDate)
   record$Month <- as.factor(months(record$ImageDate))
   for(i in unique(record$Month)){
+    print(paste(i,"Slope (Trend):"))
     monthlymod <- lm(FieldValue~Year, data=record[(record$Month==i),])
-    print(summary(monthlymod))
+    print((monthlymod$coefficients[,2]))
+    print(paste("P-value",summary(monthlymod)$coefficients[2,4]))
   }
   ggplot(record,aes(x=ImageDate,y=FieldValue))+
     geom_point(aes(x=ImageDate,y=FieldValue,col=Month))+
@@ -38,7 +39,6 @@ monthly_trend <- function(record,lake){
 #' @import lubridate
 #' @importFrom plyr ddply
 #' @export
-#'
 
 doy_max_chl <- function(record,lake){
   record$Year <- as.factor(year(record$ImageDate))

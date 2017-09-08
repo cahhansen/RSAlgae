@@ -4,8 +4,7 @@
 #'
 #' @param x climate data
 #' @param k time step to lag (postive results in a forward shift, negative results in backwards shift)
-#' @export
-#'
+
 
 
 lagpad <- function(x, k) {
@@ -41,7 +40,6 @@ lagpad <- function(x, k) {
 #' @import stats
 #' @import lubridate
 #' @export
-#'
 
 
 climate_factor_compare <- function(chlrecord,climaterecord,climatevar,lag=NULL,noevent,alternative="two.sided",months=NULL){
