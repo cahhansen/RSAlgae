@@ -14,6 +14,8 @@ stepChlModel(caldata, timewindow, season, stepdirection, print.on = TRUE)
 \item{season}{Vector of months to include in model}
 
 \item{stepdirection}{Direction for stepwise regression ("backward","both","forward")}
+
+\item{print.on}{option to print the resutls of the model (default is TRUE)}
 }
 \value{
 list with the stepwise model and the modeled values

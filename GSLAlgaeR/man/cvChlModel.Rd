@@ -11,9 +11,9 @@ cvChlModel(caldf, k, model, gof)
 
 \item{k}{Number of folds (will not be used if there are fewer observations than folds)}
 
-\item{form}{Formula for GLM}
+\item{model}{formula}
 
-\item{params}{Number of independent variables in the specified formula}
+\item{gof}{character string, measure of the goodness of fit (PBIAS, R2, RMSE)}
 }
 \value{
 parameter estimates for specified model formula
