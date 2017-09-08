@@ -4,8 +4,9 @@
 #'
 #' @param histdata dataframe with reflectance values
 #' @param model GLM (.Rdata)
+#' @param season vector of months to include in the season
+#' @param threshold numeric value at which to limit the allowed estimate)
 #' @export
-#'
 
 
 apply_mod_seasonal <- function(histdata,model,season,threshold){
@@ -25,12 +26,9 @@ apply_mod_seasonal <- function(histdata,model,season,threshold){
 #' Plots estimated record with error bars
 #'
 #' @param histdata Dataframe with estimated values (FieldValue), dates (ImageDate), lake (Lake), lower and upper bounds (lower and upper)
-#' @param lb Lower Bounds
-#' @param ub Upper Bounds
 #' @import ggplot2
 #' @import lubridate
 #' @export
-#'
 
 plot_est_record.errors <- function(histdata){
   ggplot(histdata)+geom_point(aes(x=ImageDate,y=FieldValue,col=as.factor(StationID)))+
@@ -51,7 +49,6 @@ plot_est_record.errors <- function(histdata){
 #' @import ggplot2
 #' @import lubridate
 #' @export
-#'
 
 plot_est_record.cal <- function(histdata,caldata){
   caldata$ImageDate <- as.Date(caldata$ImageDate)
@@ -75,7 +72,6 @@ plot_est_record.cal <- function(histdata,caldata){
 #' @import ggplot2
 #' @import lubridate
 #' @export
-#'
 
 plot_entire_record <- function(histdata,obsdata,lake){
   obsdata$Date <- as.Date(obsdata$Date)

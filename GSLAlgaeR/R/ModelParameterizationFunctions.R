@@ -6,10 +6,11 @@
 #' @param timewindow Number of days to allow for near coincidence
 #' @param season Vector of months to include in model
 #' @param stepdirection Direction for stepwise regression ("backward","both","forward")
+#' @param print.on option to print the resutls of the model (default is TRUE)
 #' @return list with the stepwise model and the modeled values
 #' @import hydroGOF
 #' @export
-#'
+
 
 
 
@@ -61,7 +62,7 @@ stepChlModel <- function(caldata,timewindow,season,stepdirection,print.on=TRUE){
 #' @param pval P-value (confidence level)
 #' @return formula with significant parameters
 #' @export
-#'
+
 
 #Create model limited to statistically significant parameters
 limitparams <- function(form,pval){
@@ -80,13 +81,13 @@ limitparams <- function(form,pval){
 #'
 #' @param caldf dataframe limited to independent/dependent variables
 #' @param k Number of folds (will not be used if there are fewer observations than folds)
-#' @param form Formula for GLM
-#' @param params Number of independent variables in the specified formula
+#' @param model formula
+#' @param gof character string, measure of the goodness of fit (PBIAS, R2, RMSE)
 #' @return parameter estimates for specified model formula
 #' @import cvTools
 #' @import hydroGOF
 #' @export
-#'
+
 #Calcluate avg R2, RMSE, and Parameter Estimates (coefficients)
 cvChlModel <- function(caldf,k,model,gof){
   formula <- model$formula
@@ -144,9 +145,9 @@ cvChlModel <- function(caldf,k,model,gof){
 #'
 #' @param model GLM model
 #' @param data data for calibration/evaluation
+#' @param title character string, suffix for the title of the plot
 #' @import hydroGOF
 #' @export
-#'
 
 
 modresults <- function(model, data, title){
@@ -167,11 +168,6 @@ modresults <- function(model, data, title){
   plot(compare$predicted~compare$actual, main=paste("Modeled vs. Observed",": ",title),ylab="Modeled",xlab="Observed")
   abline(lm(compare$predicted~compare$actual), col="black")
   abline(0,1,col="red",lty=2)
-
-
-
-
-
 }
 
 
