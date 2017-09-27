@@ -59,7 +59,6 @@ monthly_trend <- function(record,lake){
     xlab("Date")+
     ggtitle(paste("Chl-Levels by Month: ",lake))+
     scale_color_discrete(name="Month")+
->>>>>>> f5e00a7df38555bce048e27c5a1f10ce3f450159
     theme(legend.position="bottom")
 return(list(Plot=p,Results=stationresults))
 
@@ -79,23 +78,17 @@ return(list(Plot=p,Results=stationresults))
 #' @importFrom plyr ddply
 #' @export
 
-<<<<<<< HEAD
+
 doy_max_chl <- function(record,lake,by.station=FALSE){
   record$Year <- (year(record$ImageDate))
   record$Yearnorm <- record$Year-min(record$Year)
   record$Year <- as.factor(record$Year)
   annualmaxrecord <- ddply(record,c('Year'),function(x) x[which(x$FieldValue==max(x$FieldValue)),])
-=======
-doy_max_chl <- function(record,lake){
-  record$Year <- as.factor(year(record$ImageDate))
-  annualmaxrecord <- ddply(record,c('Year','StationID'),function(x) x[which(x$FieldValue==max(x$FieldValue)),])
->>>>>>> f5e00a7df38555bce048e27c5a1f10ce3f450159
   annualmax <- data.frame(DOYmax=yday(annualmaxrecord$ImageDate),
                           Year=year(annualmaxrecord$ImageDate),
                           FieldValue=annualmaxrecord$FieldValue,
                           StationID=as.factor(annualmaxrecord$StationID))
 
-<<<<<<< HEAD
   p1 <- ggplot(annualmax,aes(x=Year,y=DOYmax))+
     geom_point(aes(x=Year,y=DOYmax))+
     geom_smooth(method = "lm", se = FALSE,col='red')+
@@ -122,18 +115,22 @@ doy_max_chl <- function(record,lake){
 
 
   p2 <- ggplot(annualmax.station,aes(x=Year,y=DOYmax))+
-=======
+
   print(summary(lm(DOYmax~Year,data=annualmax)))
 
   ggplot(annualmax,aes(x=Year,y=DOYmax))+
->>>>>>> f5e00a7df38555bce048e27c5a1f10ce3f450159
+
+  print(summary(lm(DOYmax~Year,data=annualmax)))
+
+  ggplot(annualmax,aes(x=Year,y=DOYmax))+
+
     geom_point(aes(x=Year,y=DOYmax,col=StationID))+
     theme_bw()+
     ylab("Day of Year")+
     ggtitle(paste("Occurrence of Maximum Chl-Levels by Station: ",lake))+
     scale_color_discrete(name="Station ID")+
     theme(legend.position="bottom")
-<<<<<<< HEAD
+
   if(by.station==TRUE){
     return(list(stationresults,p2))
   }else{
@@ -207,9 +204,4 @@ extreme_trends <- function(record,lake,extreme=mean(record$FieldValue),plot="sta
       theme(legend.position="bottom")
   }
   print(p)
-
-
-
-=======
->>>>>>> f5e00a7df38555bce048e27c5a1f10ce3f450159
 }
