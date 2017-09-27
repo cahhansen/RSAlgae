@@ -4,12 +4,14 @@
 \alias{doy_max_chl}
 \title{DOY for Max Chl}
 \usage{
-doy_max_chl(record, lake)
+doy_max_chl(record, lake, by.station = FALSE)
 }
 \arguments{
 \item{record}{dataframe with estimated historical record of Chl-a levels}
 
 \item{lake}{string, Name of Lake}
+
+\item{by.station, }{option to look at DOY for max chl by station}
 }
 \description{
 Calculates DOY for maximum chl-a for each station

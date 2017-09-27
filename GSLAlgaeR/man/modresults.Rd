@@ -10,6 +10,8 @@ modresults(model, data, title)
 \item{model}{GLM model}
 
 \item{data}{data for calibration/evaluation}
+
+\item{title}{character string, suffix for the title of the plot}
 }
 \description{
 Evaluate Model Performance (R2 and RMSE)

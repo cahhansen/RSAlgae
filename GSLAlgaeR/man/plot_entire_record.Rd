@@ -4,12 +4,16 @@
 \alias{plot_entire_record}
 \title{Plot record}
 \usage{
-plot_entire_record(histdata, obsdata, lake)
+plot_entire_record(histdata, obsdata, lake, labels = TRUE)
 }
 \arguments{
 \item{histdata}{Dataframe with estimated values (FieldValue), dates (ImageDate), lake (Lake), lower and upper bounds (lower and upper)}
 
-\item{caldata}{Dataframe with data used in Calibration (FieldValue, ImageDate, and Lake column)}
+\item{obsdata}{Dataframe with Observed Data (Value, ImageDate)}
+
+\item{lake}{string, Name of Lake}
+
+\item{labels}{optional for plotting}
 }
 \description{
 Plots estimated and observed data

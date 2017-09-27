@@ -10,6 +10,10 @@ apply_mod_seasonal(histdata, model, season, threshold)
 \item{histdata}{dataframe with reflectance values}
 
 \item{model}{GLM (.Rdata)}
+
+\item{season}{vector of months to include in the season}
+
+\item{threshold}{numeric value at which to limit the allowed estimate)}
 }
 \description{
 Apply GLM to remotely sensed record

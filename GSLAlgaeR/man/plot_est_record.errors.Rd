@@ -8,10 +8,6 @@ plot_est_record.errors(histdata)
 }
 \arguments{
 \item{histdata}{Dataframe with estimated values (FieldValue), dates (ImageDate), lake (Lake), lower and upper bounds (lower and upper)}
-
-\item{lb}{Lower Bounds}
-
-\item{ub}{Upper Bounds}
 }
 \description{
 Plots estimated record with error bars

@@ -4,8 +4,7 @@
 #'
 #' @param x climate data
 #' @param k time step to lag (postive results in a forward shift, negative results in backwards shift)
-#' @export
-#'
+
 
 
 lagpad <- function(x, k) {
@@ -41,7 +40,6 @@ lagpad <- function(x, k) {
 #' @import stats
 #' @import lubridate
 #' @export
-#'
 
 
 climate_factor_compare <- function(chlrecord,climaterecord,climatevar,lag=NULL,noevent,alternative="two.sided",months=NULL){
@@ -73,6 +71,8 @@ climate_factor_compare <- function(chlrecord,climaterecord,climatevar,lag=NULL,n
     #Wilcox Test (Does not assume normal distributions)
     results <- tryCatch(wilcox.test(chlrecord.events.sub$FieldValue,chlrecord.noevents.sub$FieldValue,alternative), error=function(e) NULL)
 
+    print(paste("Mean Events:",mean(chlrecord.events.sub$FieldValue)))
+    print(paste("Mean non-Events:", mean(chlrecord.noevents.sub$FieldValue)))
 
     if(nrow(chlrecord.noevents.sub)>0 & nrow(chlrecord.events.sub)>0){
       chlrecord.events.sub$Event <- 'Event'

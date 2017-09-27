@@ -6,7 +6,6 @@
 #' @param rowIndex True or False, Indicates whether the first column in the formatted data file is a row index
 #' @return dataframe with variables used in model development or application
 #' @export
-#'
 
 create_model_vars <- function(filename,rowIndex=TRUE){
   dataframe <- read.csv(filename)

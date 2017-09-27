@@ -4,8 +4,9 @@
 #'
 #' @param histdata dataframe with reflectance values
 #' @param model GLM (.Rdata)
+#' @param season vector of months to include in the season
+#' @param threshold numeric value at which to limit the allowed estimate)
 #' @export
-#'
 
 
 apply_mod_seasonal <- function(histdata,model,season,threshold){
@@ -25,12 +26,9 @@ apply_mod_seasonal <- function(histdata,model,season,threshold){
 #' Plots estimated record with error bars
 #'
 #' @param histdata Dataframe with estimated values (FieldValue), dates (ImageDate), lake (Lake), lower and upper bounds (lower and upper)
-#' @param lb Lower Bounds
-#' @param ub Upper Bounds
 #' @import ggplot2
 #' @import lubridate
 #' @export
-#'
 
 plot_est_record.errors <- function(histdata){
   ggplot(histdata)+geom_point(aes(x=ImageDate,y=FieldValue,col=as.factor(StationID)))+
@@ -51,7 +49,6 @@ plot_est_record.errors <- function(histdata){
 #' @import ggplot2
 #' @import lubridate
 #' @export
-#'
 
 plot_est_record.cal <- function(histdata,caldata){
   caldata$ImageDate <- as.Date(caldata$ImageDate)
@@ -71,23 +68,47 @@ plot_est_record.cal <- function(histdata,caldata){
 #' Plots estimated and observed data
 #'
 #' @param histdata Dataframe with estimated values (FieldValue), dates (ImageDate), lake (Lake), lower and upper bounds (lower and upper)
-#' @param caldata Dataframe with data used in Calibration (FieldValue, ImageDate, and Lake column)
+#' @param obsdata Dataframe with Observed Data (Value, ImageDate)
+#' @param lake string, Name of Lake
+#' @param labels optional for plotting
 #' @import ggplot2
 #' @import lubridate
 #' @export
-#'
 
-plot_entire_record <- function(histdata,obsdata,lake){
+plot_entire_record <- function(histdata,obsdata,lake,labels=TRUE){
   obsdata$Date <- as.Date(obsdata$Date)
   obsdata <- subset(obsdata, Value >= 0)
   histdata$Dataset <- as.character(histdata$Dataset)
   combinedf <- data.frame(Date=c(histdata$ImageDate,obsdata$Date),
                           Value=c(histdata$FieldValue,obsdata$Value),
                           Dataset=c(histdata$Dataset,rep("Observed",nrow(obsdata))))
-  ggplot()+geom_point(data=combinedf,aes(x=Date,y=Value,col=as.factor(Dataset)))+
-    theme_bw()+scale_color_discrete(name="Dataset")+
-    ggtitle(paste("Historical Record",":",lake))+
-    ylab(expression(paste("Chl-a (",mu,"g/L)")))+xlab("Date")+
-    theme(legend.position="bottom")+
+  p <- ggplot(data=combinedf,aes(x=Date,y=Value))+
+    geom_point(aes(fill=as.factor(Dataset)),pch=21,colour="black")+
+    theme_bw()+
     scale_x_date(limits = c(as.Date(paste0(min(year(histdata$ImageDate)),"-1-1")), as.Date(paste0(max(year(histdata$ImageDate)),"-12-31"))))
+
+  if(labels==FALSE){
+    p <- p+
+      xlab("")+
+      ylab("")+
+      scale_fill_manual(values=c('white','red'),
+                        name="Dataset",
+                        breaks=c("Estimated","Observed"),
+                        labels=c("Estimated","Observed"))
+
+    return(p)
+
+  }else{
+    p <- p+
+      ggtitle(paste("Historical Record",":",lake))+
+      ylab(expression(paste("Chl-a (",mu,"g/L)")))+xlab("Date")+
+      theme(legend.position="bottom")+
+      scale_fill_manual(values=c('white','red'),
+                        name="Dataset",
+                        breaks=c("Estimated","Observed"),
+                        labels=c("Estimated","Observed"))
+    print(p)
+    }
+
 }
+
