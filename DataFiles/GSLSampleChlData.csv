@@ -1,0 +1,7 @@
+Date,Value,StationID,Organization,Latitude,Longitude,Lake,SampleDepth_m,Units,MaxDepth_m,Variable,Method
+8/4/1995,8,2820,USGS,41.05638889,-112.5052778,Gilbert,1,ug/l,6,Chlorophyll,Welschmeyer Fluorometric Method
+8/22/1995,8,4069,USGS,40.76861111,-112.3272222,Gilbert,1,ug/l,7.3,Chlorophyll,Welschmeyer Fluorometric Method
+8/23/1995,2,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.1,Chlorophyll,Welschmeyer Fluorometric Method
+9/6/1995,4,2583,USGS,41.11666667,-112.2958333,Gilbert,1,ug/l,4.3,Chlorophyll,Welschmeyer Fluorometric Method
+9/25/1995,2,3510,USGS,40.89888889,-112.3488889,Gilbert,1,ug/l,9.2,Chlorophyll,Welschmeyer Fluorometric Method
+9/25/1995,10,3641,USGS,40.87138889,-112.2147222,Gilbert,1,ug/l,2.1,Chlorophyll,Welschmeyer Fluorometric Method
