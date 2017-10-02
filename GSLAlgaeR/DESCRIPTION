@@ -1,4 +1,4 @@
-Package: GSLAlgaeR
+Package: RSAlgaeR
 Type: Package
 Title: Builds and Analyzes Remote Sensing Models of Chl-a
 Version: 0.1.0
