@@ -32,9 +32,9 @@ Use the ```step.model``` function (stepwise regression based on a user-specified
 #### 4. Apply model.
 Apply the model to remotely sensed imagery for a user-specified season using ```apply.mod.seasonal``` 
 #### 5. Plot estimates.
-* With error bars: ```plot.record.errors```
-* With data used in calibration: ```plot.record.cal```
-* With field-sampled data: ```plot.record```
+* With error bars: ```plotrecord.errors```
+* With data used in calibration: ```plotrecord.cal```
+* With field-sampled data: ```plotrecord```
 #### 6. Explore trends.
 Long term, linear changes in values/year can be explored using the Theil-Sen Estimator, which is more robust than a simple OLS regression.
 * Annually: ```annualtrend.ts```
