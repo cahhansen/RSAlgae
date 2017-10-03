@@ -1,4 +1,4 @@
-#' create_model_vars
+#' create.model.vars
 #'
 #' Create model variables used in model calibration and application
 #'
@@ -7,7 +7,7 @@
 #' @return dataframe with variables used in model development or application
 #' @export
 
-create_model_vars <- function(filename,rowIndex=TRUE){
+create.model.vars <- function(filename,rowIndex=TRUE){
   dataframe <- read.csv(filename)
   if(rowIndex==TRUE){
     dataframe=dataframe[,-1]

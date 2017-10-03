@@ -57,7 +57,6 @@ def getSRDataLS57 (samplingfile,timewindow,gftable,resultsfile):
                                                                     'ImageName': [pixelr[i+1][0]],
                                                                     'ImageDate': [imgdate],
                                                                     'SamplingDate': [samplingdf['SampleDate'].iloc[m]],
-                                                                    'DiffInDays': [imgdate-samplingdf['SampleDate'].iloc[m]],
                                                                     'FieldValue': [samplingdf['Value'].iloc[m]],
                                                                     'MaxDepth': [samplingdf['MaxDepth_m'].iloc[m]],
                                                                     'SampleDepth':[samplingdf['SampleDepth_m'].iloc[m]],

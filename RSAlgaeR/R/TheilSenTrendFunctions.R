@@ -3,7 +3,7 @@
 #' Calculates annual linear trend of average values and significance of  with Theil-Sen Estimator (used for robust to non-normal data)
 #'
 #' @param record dataframe with record of estimated water quality
-#' @param value string, name of column with values
+#' @param value string, name of column with water quality values
 #' @param date string, name of column with dates
 #' @param var string, aggregator (e.g. mean, max)
 #' @import lubridate

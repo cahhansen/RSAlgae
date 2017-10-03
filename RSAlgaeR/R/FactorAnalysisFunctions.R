@@ -1,4 +1,4 @@
-#' Lag variable
+#' lagpad
 #'
 #' Lags a variable by a time step
 #'
@@ -26,11 +26,12 @@ lagpad <- function(x, k) {
 }
 
 
-#' Climate Factor Impact
+#' climate.factor.compare
 #'
-#' Performs a t-test on chl-a dataset for various climate variables
+#' Performs a t-test on water quality dataset for various climate variables
 #'
-#' @param chlrecord dataframe with estimated historical record of chl-a levels
+#' @param record dataframe with estimated historical record of water quality
+#' @param value string, name of column with estimated or field-sampled water quality parameter
 #' @param climaterecord dataframe with climate variables
 #' @param climatevar character, name of climate variable (column) of interest
 #' @param lag integer, number of days to lag the climate variable
@@ -42,7 +43,8 @@ lagpad <- function(x, k) {
 #' @export
 
 
-climate_factor_compare <- function(chlrecord,climaterecord,climatevar,lag=NULL,noevent,alternative="two.sided",months=NULL){
+climate.factor.compare <- function(record,value,climaterecord,climatevar,lag=NULL,noevent,alternative="two.sided",months=NULL){
+  record$value <- record[,value]
   #If the variable is lagged:
   if(!is.null(lag)){
     #Lag climatevar
@@ -50,72 +52,72 @@ climate_factor_compare <- function(chlrecord,climaterecord,climatevar,lag=NULL,n
     climaterecord[,paste(climatevar,'_lag')] <- laggedvar
     #Subset into groups based on climate/weather events
     climateeventdates <- climaterecord[laggedvar>noevent,'Date']
-    chlrecord.events <- subset(chlrecord,ImageDate %in% climateeventdates)
-    chlrecord.noevents <- subset(chlrecord,!(ImageDate %in% climateeventdates))
+    record.events <- subset(record,ImageDate %in% climateeventdates)
+    record.noevents <- subset(record,!(ImageDate %in% climateeventdates))
   }else{
     #If the variable is not lagged:
     #Subset into groups based on climate/weather events
     climateeventdates <- climaterecord[(climaterecord[,climatevar]>noevent),'Date']
-    chlrecord.events <- subset(chlrecord,ImageDate %in% climateeventdates)
-    chlrecord.noevents <- subset(chlrecord,!(ImageDate %in% climateeventdates))
+    record.events <- subset(record,ImageDate %in% climateeventdates)
+    record.noevents <- subset(record,!(ImageDate %in% climateeventdates))
   }
 
   #If the analysis should be done for a specific month:
   if(!is.null(months)){
     print(months)
-    chlrecord.events$Month <- months(chlrecord.events$ImageDate)
-    chlrecord.noevents$Month <- months(chlrecord.noevents$ImageDate)
-    chlrecord.events.sub <- subset(chlrecord.events, Month %in% c(months))
-    chlrecord.noevents.sub <- subset(chlrecord.noevents, Month %in% c(months))
-    print(paste("Number Events:",nrow(chlrecord.events.sub),",Number non-Events:",nrow(chlrecord.noevents.sub)))
+    record.events$Month <- months(record.events$ImageDate)
+    record.noevents$Month <- months(record.noevents$ImageDate)
+    record.events.sub <- subset(record.events, Month %in% c(months))
+    record.noevents.sub <- subset(record.noevents, Month %in% c(months))
+    print(paste("Number Events:",nrow(record.events.sub),",Number non-Events:",nrow(record.noevents.sub)))
     #Wilcox Test (Does not assume normal distributions)
-    results <- tryCatch(wilcox.test(chlrecord.events.sub$FieldValue,chlrecord.noevents.sub$FieldValue,alternative), error=function(e) NULL)
+    results <- tryCatch(wilcox.test(record.events.sub$value,record.noevents.sub$value,alternative), error=function(e) NULL)
 
-    print(paste("Mean Events:",mean(chlrecord.events.sub$FieldValue)))
-    print(paste("Mean non-Events:", mean(chlrecord.noevents.sub$FieldValue)))
+    print(paste("Mean Events:",mean(record.events.sub$value)))
+    print(paste("Mean non-Events:", mean(record.noevents.sub$value)))
 
-    if(nrow(chlrecord.noevents.sub)>0 & nrow(chlrecord.events.sub)>0){
-      chlrecord.events.sub$Event <- 'Event'
-      chlrecord.noevents.sub$Event <- 'No Event'
-      chlrecordcompare <- rbind(chlrecord.events.sub,chlrecord.noevents.sub)
+    if(nrow(record.noevents.sub)>0 & nrow(record.events.sub)>0){
+      record.events.sub$Event <- 'Event'
+      record.noevents.sub$Event <- 'No Event'
+      recordcompare <- rbind(record.events.sub,record.noevents.sub)
       #Box and whisker plot of the two comparison groups
-      p <- ggplot(chlrecordcompare)+
-        geom_boxplot(aes(x=as.factor(Event),y=FieldValue))+
+      p <- ggplot(recordcompare)+
+        geom_boxplot(aes(x=as.factor(Event),y=value))+
         ggtitle(paste("Comparison of Chl Values for Climate Events: ",months))+
         ylab(expression(paste("Chl-a ",mu,"g/L")))+
         xlab("")+
         theme_bw()+
-        annotate("text",x="Event",y=-8,label=paste("Mean:",round(mean(chlrecord.events.sub$FieldValue),2)))+
-        annotate("text",x="No Event",y=-8,label=paste("Mean:",round(mean(chlrecord.noevents.sub$FieldValue),2)))
+        annotate("text",x="Event",y=-8,label=paste("Mean:",round(mean(record.events.sub$value),2)))+
+        annotate("text",x="No Event",y=-8,label=paste("Mean:",round(mean(record.noevents.sub$value),2)))
     }else{
-      chlrecordcompare <- rbind(chlrecord.events.sub,chlrecord.noevents.sub)
+      recordcompare <- rbind(record.events.sub,record.noevents.sub)
       #Box and whisker plot of all of the data together
-      p <- ggplot(chlrecordcompare)+
-        geom_boxplot(aes(x=Lake,y=FieldValue))+
+      p <- ggplot(recordcompare)+
+        geom_boxplot(aes(x=Lake,y=value))+
         ggtitle(paste("Distribution of Chl Values for: ",months))+
         ylab(expression(paste("Chl-a ",mu,"g/L")))+
         xlab("")+
         theme_bw()+
-        annotate("text",x=unique(chlrecordcompare$Lake),y=-8,label=paste("Mean:",round(mean(chlrecordcompare$FieldValue),2)))
+        annotate("text",x=unique(recordcompare$Lake),y=-8,label=paste("Mean:",round(mean(recordcompare$value),2)))
     }
 
   }else{
     #Wilcox Test (Does not assume normal distributions)
-    print(paste("Number Events:",nrow(chlrecord.events),",Number non-Events:",nrow(chlrecord.noevents)))
-    results <- wilcox.test(chlrecord.events$FieldValue,chlrecord.noevents$FieldValue,alternative)
+    print(paste("Number Events:",nrow(record.events),",Number non-Events:",nrow(record.noevents)))
+    results <- wilcox.test(record.events$value,record.noevents$value,alternative)
 
     #Box and whisker plot of the two comparison groups
-    chlrecord.events$Event <- 'Event'
-    chlrecord.noevents$Event <- 'No Event'
-    chlrecordcompare <- rbind(chlrecord.events,chlrecord.noevents)
-    p <- ggplot(chlrecordcompare)+
-      geom_boxplot(aes(x=as.factor(Event),y=FieldValue))+
+    record.events$Event <- 'Event'
+    record.noevents$Event <- 'No Event'
+    recordcompare <- rbind(record.events,record.noevents)
+    p <- ggplot(recordcompare)+
+      geom_boxplot(aes(x=as.factor(Event),y=value))+
       ggtitle(paste("Comparison of Values for Climate Events: Overall"))+
       ylab(expression(paste("Chl-a ",mu,"g/L")))+
       xlab("")+
       theme_bw()+
-      annotate("text",x="Event",y=-8,label=paste("Mean:",round(mean(chlrecord.events$FieldValue),2)))+
-      annotate("text",x="No Event",y=-8,label=paste("Mean:",round(mean(chlrecord.noevents$FieldValue),2)))
+      annotate("text",x="Event",y=-8,label=paste("Mean:",round(mean(record.events$value),2)))+
+      annotate("text",x="No Event",y=-8,label=paste("Mean:",round(mean(record.noevents$value),2)))
     }
   testtype <- function(alternative){
     switch(alternative,
@@ -133,24 +135,26 @@ climate_factor_compare <- function(chlrecord,climaterecord,climatevar,lag=NULL,n
   return(p)
 }
 
-#' Climate Factor Impact
+#' climate.factor.location
 #'
-#' Performs a t-test on chl-a dataset for various climate variables
+#' Performs a t-test on water quality dataset for various climate variables (by location)
 #'
-#' @param chlrecord dataframe with estimated historical record of chl-a levels
+#' @param record dataframe with estimated historical record of water quality levels
+#' #' @param value string, name of column with estimated or field-sampled water quality parameter
 #' @param climaterecord dataframe with climate variables
 #' @param climatevar character, name of climate variable (column) of interest
 #' @param lag integer, number of days to lag the climate variable
 #' @param noevent numeric, threshold for whether an event occured
 #' @param alternative character string specifying alternative hypothesis ("two.sided","greater","less")
-#' @param stations list of unique stations to iterate over
+#' @param location vector, list of unique location identifiers to iterate over
 #' @import stats
 #' @import lubridate
 #' @export
 #'
 
 
-climate_factor_station <- function(chlrecord,climaterecord,climatevar,lag=NULL,noevent,alternative="two.sided",stations){
+climate.factor.location <- function(record,value, climaterecord,climatevar,lag=NULL,noevent,alternative="two.sided",location){
+  record$value <- record[,value]
   #If the variable is lagged:
   if(!is.null(lag)){
     #Lag climatevar
@@ -158,27 +162,27 @@ climate_factor_station <- function(chlrecord,climaterecord,climatevar,lag=NULL,n
     climaterecord[,paste(climatevar,'_lag')] <- laggedvar
     #Subset into groups based on climate/weather events
     climateeventdates <- climaterecord[laggedvar>noevent,'Date']
-    chlrecord.events <- subset(chlrecord,ImageDate %in% climateeventdates)
-    chlrecord.noevents <- subset(chlrecord,!(ImageDate %in% climateeventdates))
+    record.events <- subset(record,ImageDate %in% climateeventdates)
+    record.noevents <- subset(record,!(ImageDate %in% climateeventdates))
   }else{
     #If the variable is not lagged:
     #Subset into groups based on climate/weather events
     climateeventdates <- climaterecord[(climaterecord[,climatevar]>noevent),'Date']
-    chlrecord.events <- subset(chlrecord,ImageDate %in% climateeventdates)
-    chlrecord.noevents <- subset(chlrecord,!(ImageDate %in% climateeventdates))
+    record.events <- subset(record,ImageDate %in% climateeventdates)
+    record.noevents <- subset(record,!(ImageDate %in% climateeventdates))
   }
-  stationresults <- data.frame(Station=rep(NA,length(stations)),PValue=rep(NA,length(stations)))
-  if(nrow(chlrecord.noevents.sub)>0 & nrow(chlrecord.events.sub)>0){
-    chlrecordcompare <- rbind(chlrecord.events.sub,chlrecord.noevents.sub)
+  stationresults <- data.frame(Station=rep(NA,length(location)),PValue=rep(NA,length(location)))
+  if(nrow(record.noevents.sub)>0 & nrow(record.events.sub)>0){
+    recordcompare <- rbind(record.events.sub,record.noevents.sub)
 
-    for(i in seq(1,length(stations))){
-      temp.data.event <- chlrecord.events[(chlrecord.events$StationID==stations[i]),]
-      temp.data.noevent <- chlrecord.noevents[(chlrecord.noevents$StationID==stations[i]),]
-      temp.results <- (wilcox.test(temp.data.event$FieldValue,temp.data.noevent$FieldValue,alternative="greater"))
-      stationresults$Station[i] <- as.character(stations[i])
+    for(i in seq(1,length(location))){
+      temp.data.event <- record.events[(record.events$StationID==location[i]),]
+      temp.data.noevent <- record.noevents[(record.noevents$StationID==location[i]),]
+      temp.results <- (wilcox.test(temp.data.event$value,temp.data.noevent$value,alternative="greater"))
+      stationresults$Station[i] <- as.character(location[i])
       stationresults$PValue[i] <- temp.results$p.value
-      stationresults$Event[i] <- mean(temp.data.event$FieldValue)
-      stationresults$NoEvent[i] <- mean(temp.data.noevent$FieldValue)
+      stationresults$Event[i] <- mean(temp.data.event$value)
+      stationresults$NoEvent[i] <- mean(temp.data.noevent$value)
     }
   }
 
