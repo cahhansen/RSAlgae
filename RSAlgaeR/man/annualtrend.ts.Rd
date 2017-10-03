@@ -9,7 +9,7 @@ annualtrend.ts(record, value, date, var)
 \arguments{
 \item{record}{dataframe with record of estimated water quality}
 
-\item{value}{string, name of column with values}
+\item{value}{string, name of column with water quality values}
 
 \item{date}{string, name of column with dates}
 

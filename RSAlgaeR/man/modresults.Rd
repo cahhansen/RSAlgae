@@ -2,16 +2,18 @@
 % Please edit documentation in R/ModelParameterizationFunctions.R
 \name{modresults}
 \alias{modresults}
-\title{Model Results}
+\title{modresults}
 \usage{
-modresults(model, data, title)
+modresults(model, data, value, title = "")
 }
 \arguments{
 \item{model}{GLM model}
 
 \item{data}{data for calibration/evaluation}
 
-\item{title}{character string, suffix for the title of the plot}
+\item{value}{tring, name of column with water quality values}
+
+\item{title}{string, optional suffix for the title of the plot}
 }
 \description{
 Evaluate Model Performance (R2 and RMSE)

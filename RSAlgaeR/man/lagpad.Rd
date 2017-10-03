@@ -2,7 +2,7 @@
 % Please edit documentation in R/FactorAnalysisFunctions.R
 \name{lagpad}
 \alias{lagpad}
-\title{Lag variable}
+\title{lagpad}
 \usage{
 lagpad(x, k)
 }
