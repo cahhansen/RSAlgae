@@ -4,7 +4,7 @@ from EEExport import getSRDataLS57
 	
 # User Input--------------------------------------------------------------------
 # Specify basefolder location
-basefolder = 'C:\Users\carly\OneDrive\Documents\GitHub\GSLAlgae\DataFiles'
+basefolder = 'C:\Users\carly\OneDrive\Documents\GitHub\RSAlgae\DataFiles'
 # Specify name of file with the dates of field samples to match to the imagery (must have column called 'Date' and column with location id called 'StationID')
 samplingfile = basefolder+'\GSLSampleChlData.csv'
 # Specify Google Fusion Table ID which has locations of sampling points (stations) with identifiers called 'StationID'
