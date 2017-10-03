@@ -8,8 +8,9 @@ climate.factor.location(record, value, climaterecord, climatevar, lag = NULL,
   noevent, alternative = "two.sided", location)
 }
 \arguments{
-\item{record}{dataframe with estimated historical record of water quality levels
-#' @param value string, name of column with estimated or field-sampled water quality parameter}
+\item{record}{dataframe with estimated historical record of water quality levels}
+
+\item{value}{string, name of column with estimated or field-sampled water quality parameter}
 
 \item{climaterecord}{dataframe with climate variables}
 

@@ -140,7 +140,7 @@ climate.factor.compare <- function(record,value,climaterecord,climatevar,lag=NUL
 #' Performs a t-test on water quality dataset for various climate variables (by location)
 #'
 #' @param record dataframe with estimated historical record of water quality levels
-#' #' @param value string, name of column with estimated or field-sampled water quality parameter
+#' @param value string, name of column with estimated or field-sampled water quality parameter
 #' @param climaterecord dataframe with climate variables
 #' @param climatevar character, name of climate variable (column) of interest
 #' @param lag integer, number of days to lag the climate variable

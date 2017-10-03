@@ -1,4 +1,4 @@
-#' plot.record.errors
+#' plotrecord.errors
 #'
 #' Plots estimated record with error bars
 #'
@@ -11,7 +11,7 @@
 #' @import lubridate
 #' @export
 
-plot.record.errors <- function(data, value, date, location, ylab=expression(paste("Chl-a (",mu,"g/L)"))){
+plotrecord.errors <- function(data, value, date, location, ylab=expression(paste("Chl-a (",mu,"g/L)"))){
   data$date <- as.Date(data[,date])
   data$value <- data[,value]
   data$location <- data[,location]
@@ -24,7 +24,7 @@ plot.record.errors <- function(data, value, date, location, ylab=expression(past
     scale_x_date(limits = c(as.Date(paste0(min(year(data$ImageDate)),"-1-1")), as.Date(paste0(max(year(data$ImageDate)),"-12-31"))))
 }
 
-#' plot.record.cal
+#' plotrecord.cal
 #'
 #' Plots estimated record with calibrated data
 #'
@@ -38,7 +38,7 @@ plot.record.errors <- function(data, value, date, location, ylab=expression(past
 #' @import lubridate
 #' @export
 
-plot.record.cal <- function(data,caldata,value,date,location,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
+plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
   data$date <- as.Date(data[,date])
   data$value <- data[,value]
   data$location <- data[,location]
@@ -54,7 +54,7 @@ plot.record.cal <- function(data,caldata,value,date,location,ylab=expression(pas
 
 
 
-#' plot.record
+#' plotrecord
 #'
 #' Plots estimated and observed data
 #'
@@ -67,7 +67,7 @@ plot.record.cal <- function(data,caldata,value,date,location,ylab=expression(pas
 #' @import lubridate
 #' @export
 
-plot.record <- function(data,obsdata,lake,labels=TRUE,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
+plotrecord <- function(data,obsdata,lake,labels=TRUE,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
   obsdata$Date <- as.Date(obsdata$Date)
   obsdata <- subset(obsdata, Value >= 0)
   data$Dataset <- as.character(data$Dataset)
