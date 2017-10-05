@@ -4,7 +4,7 @@
 #'
 #' @param x climate data
 #' @param k time step to lag (postive results in a forward shift, negative results in backwards shift)
-
+#' @export
 
 
 lagpad <- function(x, k) {
