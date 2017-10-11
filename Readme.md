@@ -40,8 +40,7 @@ Long term, linear changes in values/year can be explored using the Theil-Sen Est
 * Annually: ```annualtrend.ts```
 * Monthly: ```monthlytrend.ts```
 #### 7. Explore connections to local climate conditions.
-* Overall: ```climate.factor.compare```
-* By location: ```climate.factor.location```
+* Overall, monthly, or by location: ```climate.factor.effect```
 
 This process is summarized in the following graphic:
 
