@@ -6,15 +6,23 @@
 #' @param value string, name of column with water quality values
 #' @param date string, name of column with dates
 #' @param var string, aggregator (e.g. mean, max)
+#' @param monthlybias, calculates annual average using monthly averages (in case of differing numbers of samples for each month)
 #' @import lubridate
 #' @import mblm
 #' @export
 
 
-annualtrend.ts <- function(record,value,date,var){
-  record$year.norm <- year(record[,date])-min(year(record[,date]))
-  record$value <- record[,value]
-  yearlyrecord <- aggregate(data=record,value~year.norm,FUN=var)
+annualtrend.ts <- function(record,value,date,var,monthlybias=FALSE){
+  if(monthlybias==TRUE){
+    record$year.norm <- year(record[,date])-min(year(record[,date]))
+    record$value <- record[,value]
+    yearlymonthlyrecord <- aggregate(data=record,value~year.norm+Month, var, na.rm=TRUE)
+    yearlyrecord <- aggregate(data=yearlymonthlyrecord,value~year.norm,FUN=var)
+  }else{
+    record$year.norm <- year(record[,date])-min(year(record[,date]))
+    record$value <- record[,value]
+    yearlyrecord <- aggregate(data=record,value~year.norm,FUN=var)
+  }
   fit <- with(yearlyrecord,mblm(value~year.norm))
   summary(fit)
 }
@@ -47,3 +55,5 @@ monthlytrend.ts <- function(record,value,date,months,var){
 
   return(monthlyresults)
 }
+
+
