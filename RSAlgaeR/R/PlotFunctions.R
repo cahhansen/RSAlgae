@@ -42,9 +42,10 @@ plotrecord.errors <- function(data, value, date, location, ylab=expression(paste
 plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
   data$date <- as.Date(data[,date])
   data$value <- data[,value]
-  data$location <- data[,location]
+  data$location <- as.factor(data[,location])
   caldata$date <- as.Date(caldata[,date])
-  ggplot()+geom_point(data=data,aes(x=date,y=value,col=as.factor(location)))+
+  caldata$value <- caldata[,value]
+  ggplot()+geom_point(data=data,aes(x=date,y=value,col=location))+
     geom_point(data=caldata,aes(x=date,y=value))+
     theme_bw()+scale_color_discrete(name="Location")+
     ggtitle("Modeled Values")+
@@ -61,6 +62,8 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
 #'
 #' @param data Dataframe with estimated values (value), dates (ImageDate)
 #' @param obsdata Dataframe with Observed Data (Value, ImageDate)
+#' @param datavalue string, name of column with values in estimated dataframe
+#' @param obsdatavalue string, name of column with values in observed dataframe
 #' @param lake string, Name of Lake
 #' @param labels optional for plotting
 #' @param ylab string, label for y axis
@@ -68,7 +71,9 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
 #' @import lubridate
 #' @export
 
-plotrecord <- function(data,obsdata,lake,labels=TRUE,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
+plotrecord <- function(data,datavalue,obsdata,obsdatavalue,lake,labels=TRUE,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
+  data$value <- data[,datavalue]
+  obsdata$value <- data[,obsdatavalue]
   obsdata$Date <- as.Date(obsdata$Date)
   obsdata <- subset(obsdata, Value >= 0)
   data$Dataset <- as.character(data$Dataset)
