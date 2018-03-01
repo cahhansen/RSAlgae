@@ -4,8 +4,8 @@
 \alias{step.model}
 \title{step.model}
 \usage{
-step.model(data, imagerydate, value, timewindow, season, stepdirection,
-  print.on = TRUE)
+step.model(data, imagerydate, value, modelvariables, timewindow, season,
+  stepdirection, print.on = TRUE)
 }
 \arguments{
 \item{data}{dataframe, formatted calibration data (model variables: field data and surface reflectance values)}
@@ -14,6 +14,8 @@ step.model(data, imagerydate, value, timewindow, season, stepdirection,
 
 \item{value}{string, name of column with water quality values}
 
+\item{modelvariables}{vector of strings with the names of columns for bands to consider}
+
 \item{timewindow}{numeric, number of days to allow for near coincidence}
 
 \item{season}{vector, months to include in model}
@@ -21,8 +23,6 @@ step.model(data, imagerydate, value, timewindow, season, stepdirection,
 \item{stepdirection}{string, direction for stepwise regression ("backward","both","forward")}
 
 \item{print.on}{boolean, option to print the resutls of the model (default is TRUE)}
-
-\item{modelvariables}{vector of strings with the names of columns for bands to consider}
 }
 \value{
 list with the stepwise model and the modeled values
