@@ -17,7 +17,7 @@
 
 
 
-step.model <- function(data,imagerydate,value,timewindow,season,stepdirection,print.on=TRUE){
+step.model <- function(data,imagerydate,value,modelvariables,timewindow,season,stepdirection,print.on=TRUE){
 
   data$value <- data[,value]
   #Limit timewindow to certain number of days (max=10)
