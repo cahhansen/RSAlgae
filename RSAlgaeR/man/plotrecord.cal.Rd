@@ -8,7 +8,7 @@ plotrecord.cal(data, caldata, value, date, location,
   ylab = expression(paste("Chl-a (", mu, "g/L)")))
 }
 \arguments{
-\item{data}{Dataframe with estimated values (value), dates (ImageDate), lake (Lake), lower and upper bounds (lower and upper)}
+\item{data}{Dataframe with estimated values (value), dates (ImageDate), location identifier}
 
 \item{caldata}{Dataframe with data used in Calibration (value, ImageDate, and Lake column)}
 

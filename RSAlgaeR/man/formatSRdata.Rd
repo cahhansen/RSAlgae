@@ -4,8 +4,7 @@
 \alias{formatSRdata}
 \title{formatSRdata}
 \usage{
-formatSRdata(data, imagerydate, samplingdate = "", location,
-  datatype = "Estimated")
+formatSRdata(data, imagerydate, samplingdate = "", location, datatype)
 }
 \arguments{
 \item{data}{dataframe of surface reflectance data. Designed to work with reflectance values for bands from Landsat surface reflectance products (Blue, Red, Green, NIR, SWIR1, SWIR2, CloudMask) at specific point locations}
@@ -22,5 +21,5 @@ formatSRdata(data, imagerydate, samplingdate = "", location,
 dataframe with formatted data
 }
 \description{
-Format surface reflectance data (used for application, not calibration)
+Format surface reflectance data
 }

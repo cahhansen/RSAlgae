@@ -4,7 +4,7 @@
 \alias{annualtrend.ts}
 \title{Explore long term annual trends with Theil-Sen Estimator}
 \usage{
-annualtrend.ts(record, value, date, var)
+annualtrend.ts(record, value, date, var, monthlybias = FALSE)
 }
 \arguments{
 \item{record}{dataframe with record of estimated water quality}
@@ -14,6 +14,8 @@ annualtrend.ts(record, value, date, var)
 \item{date}{string, name of column with dates}
 
 \item{var}{string, aggregator (e.g. mean, max)}
+
+\item{monthlybias, }{calculates annual average using monthly averages (in case of differing numbers of samples for each month)}
 }
 \description{
 Calculates annual linear trend of average values and significance of  with Theil-Sen Estimator (used for robust to non-normal data)

@@ -4,12 +4,10 @@
 \alias{apply.mod.seasonal}
 \title{apply.mod.seasonal}
 \usage{
-apply.mod.seasonal(data, value, date, model, season, threshold)
+apply.mod.seasonal(data, date, model, season, threshold)
 }
 \arguments{
 \item{data}{dataframe with reflectance values}
-
-\item{value}{string, name of column with water quality values}
 
 \item{date}{string, name of column with imagery dates}
 
@@ -18,6 +16,8 @@ apply.mod.seasonal(data, value, date, model, season, threshold)
 \item{season}{vector of months to include in the season}
 
 \item{threshold}{numeric value at which to limit the allowed estimate)}
+
+\item{value}{string, name of column with water quality values}
 }
 \description{
 Apply GLM to remotely sensed record

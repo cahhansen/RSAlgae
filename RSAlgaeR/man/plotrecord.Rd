@@ -8,7 +8,7 @@ plotrecord(data, obsdata, lake, labels = TRUE,
   ylab = expression(paste("Chl-a (", mu, "g/L)")))
 }
 \arguments{
-\item{data}{Dataframe with estimated values (value), dates (ImageDate), lake (Lake), lower and upper bounds (lower and upper)}
+\item{data}{Dataframe with estimated values (value), dates (ImageDate)}
 
 \item{obsdata}{Dataframe with Observed Data (Value, ImageDate)}
 

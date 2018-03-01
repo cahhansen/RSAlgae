@@ -8,7 +8,7 @@ plotrecord.errors(data, value, date, location,
   ylab = expression(paste("Chl-a (", mu, "g/L)")))
 }
 \arguments{
-\item{data}{Dataframe with estimated values (value), dates (ImageDate), lake (Lake), lower and upper bounds (lower and upper)}
+\item{data}{Dataframe with estimated values,dates, location identifiers, lower and upper bounds (lower and upper)}
 
 \item{value}{string, name of column with water quality values}
 
