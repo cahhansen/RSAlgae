@@ -11,8 +11,7 @@
 #' @export
 
 
-apply.mod.seasonal <- function(data, value, date, model, season, threshold){
-  data$value <- data[,value]
+apply.mod.seasonal <- function(data, date, model, season, threshold){
   data$ImageDate <- as.Date(data[,date])
   data$Month <- months(data$ImageDate)
   datasub <- data[(data$Month %in% season),]

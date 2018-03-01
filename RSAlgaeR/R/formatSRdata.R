@@ -1,6 +1,6 @@
 #' formatSRdata
 #'
-#' Format surface reflectance data (used for application, not calibration)
+#' Format surface reflectance data
 #'
 #' @param data dataframe of surface reflectance data. Designed to work with reflectance values for bands from Landsat surface reflectance products (Blue, Red, Green, NIR, SWIR1, SWIR2, CloudMask) at specific point locations
 #' @param imagerydate string, name of column for imagery dates
@@ -10,7 +10,7 @@
 #' @return dataframe with formatted data
 #' @export
 
-formatSRdata <- function(data,imagerydate,samplingdate="",location,datatype="Estimated"){
+formatSRdata <- function(data,imagerydate,samplingdate="",location,datatype){
   #Format dates
   data$ImageDate <- as.Date(data[,imagerydate],format="%m/%d/%Y")
 
