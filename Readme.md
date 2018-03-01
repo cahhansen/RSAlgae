@@ -27,8 +27,11 @@ This includes formatting dates, removing negative values, cloud pixels, etc.
 #### 2. Create model variables.
 Use the ```create.model.vars``` function
 #### 3. Parameterize model.
-Use the ```step.model``` function (stepwise regression based on a user-specified timewindow for near coincident data and season).
-(Optional) Examine model performance using k-fold cross validation and exploring the goodness of fit (```cv.model``` and ```modresults``` functions)
+(Optional)
+Use the ```step.model``` function (stepwise regression based on a user-specified timewindow) to explore performance for various parameters, definitions of near coincident data and seasons.
+Examine model performance using k-fold cross validation and exploring the goodness of fit (```cv.model``` and ```modresults``` functions)
+
+Use glm() to develop the final model, based on an appropriate season, timewindow, and parameters. 
 #### 4. Apply model.
 Apply the model to remotely sensed imagery for a user-specified season using ```apply.mod.seasonal``` 
 #### 5. Plot estimates.
