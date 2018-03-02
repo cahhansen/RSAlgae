@@ -25,7 +25,7 @@ doy.max.trend <- function(data,date,value,location){
                           Value=annualmaxdata$value,
                           LocationID=as.factor(annualmaxdata$location))
 
-  ggplot(annualmax,aes(x=Year,y=DOYmax))+
+  doyplot <- ggplot(annualmax,aes(x=Year,y=DOYmax))+
     geom_point(aes(x=Year,y=DOYmax))+
     geom_smooth(method = "lm", se = FALSE,col='red')+
     theme_bw()+
@@ -34,5 +34,5 @@ doy.max.trend <- function(data,date,value,location){
     theme(legend.position="none")
 
   fit <- with(annualmax,mblm(DOYmax~Year))
-  summary(fit)
+  return(list(summary(fit),doyplot))
 }
