@@ -47,7 +47,7 @@ annual.summary.climate <- function(data,date,value,parameter){
   data$Month <- as.factor(month(data$date))
 
   if(parameter=="Precipitation"){
-    data[(data$value<0),]$value <- NA
+    data <- data[(data$value<0),]
     janfebprecip <- ddply(data[(data$Month %in% c(1,2)),],c('Year'),function(x) sum(x$value))
     janfebprecip$Year <- as.numeric(levels(factor(janfebprecip$Year)))
     decprecip <- ddply(data[(data$Month==12),],c('Year'),function(x) sum(x$value))
