@@ -62,7 +62,7 @@ annual.summary.climate <- function(data,date,value,parameter){
     avgtotalwinterprecip <- mean(winterprecipsum$TotalPrecip)
     avgtotalspringprecip <- mean(springprecipsum$TotalPrecip)
     avgspringprecipcount <- mean(springprecipcount$CountPrecip)
-    return(list(winterprecip,springprecip,avgtotalwinterprecip,avgtotalspringprecip,avgspringprecipcount))
+    return(list(winterprecipsum,springprecipsum,springprecipcount,avgtotalwinterprecip,avgtotalspringprecip,avgspringprecipcount))
   }else if(parameter=="Temperature"){
     springtemp <- ddply(data[(data$Month %in% c(3,4,5,6)),],c('Year'),function(x) mean(x$value))
     summertemp <- ddply(data[(data$Month %in% c(7,8,9)),],c('Year'),function(x) mean(x$value))
