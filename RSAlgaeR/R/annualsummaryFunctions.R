@@ -71,6 +71,6 @@ annual.summary.climate <- function(data,date,value,parameter){
     colnames(summertemp) <- c("Year","MeanTemp")
     avgspringtemp <- mean(springtemp$MeanTemp)
     avgsummertemp <- mean(summertemp$MeanTemp)
-    return(list(avgspringtemp,avgsummertemp))
+    return(list(avgspringtemp=avgspringtemp,avgsummertemp=avgsummertemp))
   }
 }
