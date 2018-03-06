@@ -47,7 +47,7 @@ annual.summary.climate <- function(data,date,value,parameter){
   data$Month <- as.factor(month(data$date))
 
   if(parameter=="Precipitation"){
-    data <- data[(data$value<0),]
+    data <- data[(data$value>=0),]
     janfebprecip <- ddply(data[(data$Month %in% c(1,2)),],c('Year'),function(x) sum(x$value))
     janfebprecip$Year <- as.numeric(levels(factor(janfebprecip$Year)))
     decprecip <- ddply(data[(data$Month==12),],c('Year'),function(x) sum(x$value))
@@ -62,7 +62,7 @@ annual.summary.climate <- function(data,date,value,parameter){
     colnames(springprecipcount) <- c("Year","springCountPrecip")
     avgtotalwinterprecip <- mean(winterprecipsum$winterTotalPrecip)
     avgtotalspringprecip <- mean(springprecipsum$springTotalPrecip)
-    avgspringprecipcount <- mean(springprecipcount$CountPrecip)
+    avgspringprecipcount <- mean(springprecipcount$springCountPrecip)
     return(list(winterprecipsum,springprecipsum,springprecipcount,avgWinterPrecip=avgtotalwinterprecip,avgSpringPrecip=avgtotalspringprecip,avgNumSpringPrecip=avgspringprecipcount))
   }else if(parameter=="Temperature"){
     springtemp <- ddply(data[(data$Month %in% c(3,4,5,6)),],c('Year'),function(x) mean(x$value))
