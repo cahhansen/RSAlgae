@@ -47,6 +47,7 @@ annual.summary.climate <- function(data,date,value,parameter){
   data$Month <- as.factor(month(data$date))
 
   if(parameter=="Precipitation"){
+    data[(data$value<0),]$value <- NA
     janfebprecip <- ddply(data[(data$Month %in% c(1,2)),],c('Year'),function(x) sum(x$value))
     janfebprecip$Year <- as.numeric(levels(factor(janfebprecip$Year)))
     decprecip <- ddply(data[(data$Month==12),],c('Year'),function(x) sum(x$value))
@@ -56,13 +57,13 @@ annual.summary.climate <- function(data,date,value,parameter){
 
     springprecipsum <- ddply(data[(data$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$value))
     springprecipcount <- ddply(data[(data$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$value>0))
-    colnames(winterprecipsum) <- c("Year","TotalPrecip")
-    colnames(springprecipsum) <- c("Year","TotalPrecip")
-    colnames(springprecipcount) <- c("Year","CountPrecip")
-    avgtotalwinterprecip <- mean(winterprecipsum$TotalPrecip)
-    avgtotalspringprecip <- mean(springprecipsum$TotalPrecip)
-    avgspringprecipcount <- mean(springprecipcount$CountPrecip)
-    return(list(winterprecipsum,springprecipsum,springprecipcount,avgtotalwinterprecip,avgtotalspringprecip,avgspringprecipcount))
+    colnames(winterprecipsum) <- c("Year","winterTotalPrecip")
+    colnames(springprecipsum) <- c("Year","springTotalPrecip")
+    colnames(springprecipcount) <- c("Year","springCountPrecip")
+    avgtotalwinterprecip <- mean(winterprecipsum$winterTotalPrecip,na.rm=TRUE)
+    avgtotalspringprecip <- mean(springprecipsum$springTotalPrecip,na.rm=TRUE)
+    avgspringprecipcount <- mean(springprecipcount$CountPrecip,na.rm=TRUE)
+    return(list(winterprecipsum,springprecipsum,springprecipcount,avgWinterPrecip=avgtotalwinterprecip,avgSpringPrecip=avgtotalspringprecip,avgNumSpringPrecip=avgspringprecipcount))
   }else if(parameter=="Temperature"){
     springtemp <- ddply(data[(data$Month %in% c(3,4,5,6)),],c('Year'),function(x) mean(x$value))
     summertemp <- ddply(data[(data$Month %in% c(7,8,9)),],c('Year'),function(x) mean(x$value))
