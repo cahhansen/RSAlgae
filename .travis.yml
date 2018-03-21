@@ -7,6 +7,6 @@ cache: packages
 
 
 install:
-  - Rscript -e 'install.packages("devtools");devtools::install_deps("RSAlgaeR")'
+  - Rscript -e 'install.packages("devtools");install.packages("roxygen2");devtools::install_deps("RSAlgaeR")'
 script:
   - Rscript -e 'devtools::check("RSAlgaeR")'
