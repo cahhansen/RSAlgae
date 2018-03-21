@@ -5,10 +5,11 @@
 #' @param filename CSV file with formatted surface reflectance data
 #' @param rowIndex True or False, Indicates whether the first column in the formatted data file is a row index
 #' @return dataframe with variables used in model development or application
+#' @import utils
 #' @export
 
 create.model.vars <- function(filename,rowIndex=TRUE){
-  dataframe <- read.csv(filename)
+  dataframe <- utils::read.csv(filename)
   if(rowIndex==TRUE){
     dataframe=dataframe[,-1]
   }
