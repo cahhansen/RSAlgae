@@ -4,3 +4,9 @@ language: R
 warnings_are_errors: true
 sudo: false
 cache: packages
+
+
+install:
+  - Rscript -e 'install.packages("devtools");devtools::install_deps("RSAlgaeR")'
+script:
+  - Rscript -e 'devtools::check("RSAlgaeR")'
