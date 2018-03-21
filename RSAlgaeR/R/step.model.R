@@ -42,12 +42,12 @@ step.model <- function(data,imagerydate,value,modelvariables,timewindow,season,s
     print("Full stepwise regression:")
     print(paste("Number of observations for timewindow: ",nrow(data)))
     print(paste("RMSE is: ",sqrt(mean((compare$diff)^2))))
-    print(paste("PBIAS is: ", pbias(compare$predicted,compare$actual)))
+    print(paste("PBIAS is: ", hydroGOF::pbias(compare$predicted,compare$actual)))
     print(paste("R2 is: ",summary(lm(compare$actual~compare$predicted))$r.squared))
     print(paste("AIC is: ",stepmodsummary$aic))
     print(stepmodsummary$coefficients)
-    plot(compare$predicted~compare$actual, main="Modeled vs. Observed",ylab="Modeled",xlab="Observed")
-    abline(lm(compare$predicted~compare$actual), col="black")
+    graphics::plot(compare$predicted~compare$actual, main="Modeled vs. Observed",ylab="Modeled",xlab="Observed")
+    graphics::abline(lm(compare$predicted~compare$actual), col="black")
   }
 
   return(list(StepwiseModel=stepmod,StepwiseResults=compare))

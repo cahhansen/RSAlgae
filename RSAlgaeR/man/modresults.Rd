@@ -15,6 +15,9 @@ modresults(model, data, value, title = "")
 
 \item{title}{string, optional suffix for the title of the plot}
 }
+\value{
+prints summary of model and plot of modeled vs. observed
+}
 \description{
 Evaluate Model Performance (R2 and RMSE)
 }

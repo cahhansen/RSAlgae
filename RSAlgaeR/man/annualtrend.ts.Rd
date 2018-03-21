@@ -17,6 +17,9 @@ annualtrend.ts(record, value, date, var, monthlybias = FALSE)
 
 \item{monthlybias, }{calculates annual average using monthly averages (in case of differing numbers of samples for each month)}
 }
+\value{
+summary of the Theil-Sen estimator
+}
 \description{
 Calculates annual linear trend of average values and significance of  with Theil-Sen Estimator (used for robust to non-normal data)
 }

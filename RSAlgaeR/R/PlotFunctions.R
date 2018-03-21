@@ -7,15 +7,15 @@
 #' @param date string, name of column with imagery dates
 #' @param location string, name of column with location identifiers
 #' @param ylab string, label for y axis
+#' @return plots the estimated record with error bars
 #' @import ggplot2
-#' @import lubridate
 #' @export
 
 plotrecord.errors <- function(data, value, date, location, ylab=expression(paste("Chl-a (",mu,"g/L)"))){
   data$date <- as.Date(data[,date])
   data$value <- data[,value]
   data$location <- data[,location]
-  ggplot(data)+geom_point(aes(x=date,y=value,col=as.factor(location)))+
+  ggplot2::ggplot(data)+geom_point(aes(x=date,y=value,col=as.factor(location)))+
     geom_errorbar(aes(x=date,ymin=lower,ymax=upper), width=0.2)+
     theme_bw()+scale_color_discrete(name="Location")+
     ggtitle("Modeled Record with Confidence Intervals")+
@@ -35,8 +35,8 @@ plotrecord.errors <- function(data, value, date, location, ylab=expression(paste
 #' @param date string, name of column with imagery dates
 #' @param location string, name of column with location identifiers
 #' @param ylab string, label for y axis
+#' @return plot of estimated record with data used for calibration
 #' @import ggplot2
-#' @import lubridate
 #' @export
 
 plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
@@ -45,7 +45,7 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
   data$location <- as.factor(data[,location])
   caldata$date <- as.Date(caldata[,date])
   caldata$value <- caldata[,value]
-  ggplot()+geom_point(data=data,aes(x=date,y=value,col=location))+
+  ggplot2::ggplot()+geom_point(data=data,aes(x=date,y=value,col=location))+
     geom_point(data=caldata,aes(x=date,y=value))+
     theme_bw()+scale_color_discrete(name="Location")+
     ggtitle("Modeled Values")+
@@ -67,8 +67,8 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
 #' @param lake string, Name of Lake
 #' @param labels optional for plotting
 #' @param ylab string, label for y axis
+#' @return plot of estimated and observed data
 #' @import ggplot2
-#' @import lubridate
 #' @export
 
 plotrecord <- function(data,datavalue,obsdata,obsdatavalue,lake,labels=TRUE,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
@@ -80,7 +80,7 @@ plotrecord <- function(data,datavalue,obsdata,obsdatavalue,lake,labels=TRUE,ylab
   combinedf <- data.frame(Date=c(data$ImageDate,obsdata$Date),
                           Value=c(data$value,obsdata$Value),
                           Dataset=c(data$Dataset,rep("Observed",nrow(obsdata))))
-  p <- ggplot(data=combinedf,aes(x=Date,y=Value))+
+  p <- ggplot2::ggplot(data=combinedf,aes(x=Date,y=Value))+
     geom_point(aes(fill=as.factor(Dataset)),pch=21,colour="black")+
     theme_bw()+
     scale_x_date(limits = c(as.Date(paste0(min(year(data$ImageDate)),"-1-1")), as.Date(paste0(max(year(data$ImageDate)),"-12-31"))))

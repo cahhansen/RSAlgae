@@ -4,16 +4,19 @@
 \alias{annual.summary.wq}
 \title{summarize water quality conditions on an annual basis}
 \usage{
-annual.summary.wq(data, date, value, location)
+annual.summary.wq(data, value, date, location)
 }
 \arguments{
-\item{data}{with estimated values, dates, location identifiers}
-
-\item{date}{string, name of column with dates}
+\item{data}{data frame with estimated values, dates, location identifiers}
 
 \item{value}{string, name of column with water quality values}
 
+\item{date}{string, name of column with dates}
+
 \item{location}{string, name of column with location identifiers}
+}
+\value{
+dataframe of annual summaries
 }
 \description{
 summarize water quality conditions on an annual basis

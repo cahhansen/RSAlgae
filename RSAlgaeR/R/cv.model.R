@@ -37,10 +37,10 @@ cv.model <- function(data,value,k,model,gof){
     #Summarize Model Results
     trainmodelsum[n,'R2'] <- summary(lm(traincompare$actual~traincompare$predicted))$r.squared
     trainmodelsum[n,'RMSE'] <- sqrt(mean((traincompare$diff)^2))
-    trainmodelsum[n,'PBIAS'] <- pbias(traincompare$predicted,traincompare$actual)
+    trainmodelsum[n,'PBIAS'] <- hydroGOF::pbias(traincompare$predicted,traincompare$actual)
     testmodelsum[n,'R2'] <- summary(lm(testcompare$actual~testcompare$predicted))$r.squared
     testmodelsum[n,'RMSE'] <- sqrt(mean((testcompare$diff)^2))
-    testmodelsum[n,'PBIAS'] <- pbias(testcompare$predicted,testcompare$actual)
+    testmodelsum[n,'PBIAS'] <- hydroGOF::pbias(testcompare$predicted,testcompare$actual)
 
   }
   if(gof=='R2'){

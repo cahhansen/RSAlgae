@@ -1,7 +1,7 @@
 Package: RSAlgaeR
 Type: Package
 Title: Builds and Analyzes Remote Sensing Models of Chl-a
-Version: 0.1.0
+Version: 1.0.0
 Author: Carly Hansen
 Maintainer:  Carly Hansen <carly.hansen@utah.edu>
 Description: This package was developed for processing, modeling, cross-
@@ -11,4 +11,4 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
 Imports:
-    lubridate,ggplot2,plyr,hydroGOF,stats,cvTools, RColorBrewer, mblm
+    plyr,lubridate,ggplot2,hydroGOF,stats,cvTools, mblm

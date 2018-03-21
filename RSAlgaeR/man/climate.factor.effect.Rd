@@ -4,18 +4,22 @@
 \alias{climate.factor.effect}
 \title{climate.factor.effect}
 \usage{
-climate.factor.effect(record, value, climaterecord, climatevar, noevent,
-  alternative = "two.sided", overall = TRUE, months = NULL,
-  location = "", ylabel = "Average Value")
+climate.factor.effect(record, imagedate, value, climaterecord, climatevar,
+  maxlag, noevent, alternative = "two.sided", overall = TRUE,
+  months = NULL, location = "", ylabel = "Average Value")
 }
 \arguments{
-\item{record}{dataframe with estimated historical record of water quality levels}
+\item{record}{dataframe with estimated historical record of water quality parameter}
+
+\item{imagedate}{string, name of coloumn with the date of the estimate (date of remotely sensed imagery)}
 
 \item{value}{string, name of column with estimated or field-sampled water quality parameter}
 
 \item{climaterecord}{dataframe with climate variables}
 
 \item{climatevar}{character, name of climate variable (column) of interest}
+
+\item{maxlag}{numeric, number of days to lag the climate effect}
 
 \item{noevent}{numeric, threshold for whether an event occured}
 
@@ -28,6 +32,9 @@ climate.factor.effect(record, value, climaterecord, climatevar, noevent,
 \item{location}{string, name of column with unique location identifier, used if overall is FALSE}
 
 \item{ylabel}{string, optional label for plot}
+}
+\value{
+results of wilcox test for differences in mean values
 }
 \description{
 Evaluates difference in values based on climate conditions

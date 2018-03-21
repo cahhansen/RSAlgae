@@ -29,29 +29,35 @@ lagpad <- function(x, k) {
 #'
 #' Evaluates difference in values based on climate conditions
 #'
-#' @param record dataframe with estimated historical record of water quality levels
+#' @param record dataframe with estimated historical record of water quality parameter
+#' @param imagedate string, name of coloumn with the date of the estimate (date of remotely sensed imagery)
 #' @param value string, name of column with estimated or field-sampled water quality parameter
 #' @param climaterecord dataframe with climate variables
 #' @param climatevar character, name of climate variable (column) of interest
+#' @param maxlag numeric, number of days to lag the climate effect
 #' @param noevent numeric, threshold for whether an event occured
 #' @param alternative character string specifying alternative hypothesis ("two.sided","greater","less")
 #' @param overall boolean, TRUE: all locations, FALSE: by each location. Default is TRUE
 #' @param months months an optional character string for if the t-test should be month specific
 #' @param location string, name of column with unique location identifier, used if overall is FALSE
 #' @param ylabel string, optional label for plot
+#' @return results of wilcox test for differences in mean values
 #' @import ggplot2
 #' @import lubridate
 #' @export
 #'
 
-climate.factor.effect <- function(record,value,climaterecord,
-                                  climatevar,noevent,alternative="two.sided",overall=TRUE,months=NULL,location="",ylabel="Average Value"){
-  lag <- seq(0,7,1)
+climate.factor.effect <- function(record,imagedate,value,climaterecord,
+                                  climatevar,maxlag,noevent,alternative="two.sided",overall=TRUE,months=NULL,location="",ylabel="Average Value"){
+  record$ImageDate <- record[,imagedate]
+  ImageDate <- record$ImageDate
+
+  lag <- seq(0,maxlag,1)
   if(overall==TRUE){
     if(!is.null(months)){
       climaterecord$Month <- months(climaterecord$Date)
       #Create results dataframe
-      results <- data.frame(Month=rep(months,8),Threshold=NA,Lag=rep(0:7,times=1,each=length(months)),Event=NA,NoEvent=NA,PValue=NA)
+      results <- data.frame(Month=rep(months,8),Threshold=NA,Lag=rep(0:maxlag,times=1,each=length(months)),Event=NA,NoEvent=NA,PValue=NA)
       for(j in months){
         if(noevent!=0){
           climaterecordsub <- climaterecord[(climaterecord$Month==j),]
@@ -80,7 +86,7 @@ climate.factor.effect <- function(record,value,climaterecord,
       }
     }else{
       #Create results dataframe
-      results <- data.frame(Lag=seq(0,7,1),Event=NA,NoEvent=NA,PValue=NA)
+      results <- data.frame(Lag=seq(0,maxlag,1),Event=NA,NoEvent=NA,PValue=NA)
       for(i in lag){
         climaterecord$templag <- lagpad(x=climaterecord[,climatevar],k=i)
         climateeventdates <- climaterecord[(climaterecord$templag>noevent),'Date']
@@ -91,7 +97,7 @@ climate.factor.effect <- function(record,value,climaterecord,
         results[i+1,"PValue"] <- wilcox.test(record.events[,value],record.noevents[,value],alternative)$p.value
       }
       #Plot Results
-      ggplot(data=results)+
+      ggplot2::ggplot(data=results)+
         geom_line(aes(x=Lag,y=Event,color='a'))+
         geom_line(aes(x=Lag,y=NoEvent,color='b'))+
         theme_bw()+

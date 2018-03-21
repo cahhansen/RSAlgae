@@ -3,11 +3,11 @@
 #' Apply GLM to remotely sensed record
 #'
 #' @param data dataframe with reflectance values
-#' @param value string, name of column with water quality values
 #' @param date string, name of column with imagery dates
-#' @param model GLM (.Rdata)
+#' @param model calibrated GLM
 #' @param season vector of months to include in the season
-#' @param threshold numeric value at which to limit the allowed estimate)
+#' @param threshold numeric value above which is considered unreasonable/noise
+#' @return dataframe of predicted values and confidence intervals
 #' @export
 
 

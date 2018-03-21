@@ -2,7 +2,7 @@
 % Please edit documentation in R/doy.max.trend.R
 \name{doy.max.trend}
 \alias{doy.max.trend}
-\title{calculate trends in the occurrence of a maximum event}
+\title{calculate trends in the occurrence (DOY or day of year) of a maximum event}
 \usage{
 doy.max.trend(data, date, value, location)
 }
@@ -15,6 +15,9 @@ doy.max.trend(data, date, value, location)
 
 \item{location}{string, name of column with location identifiers}
 }
+\value{
+list containing a summary of the model fit and a plot of the DOY of maximum vs year
+}
 \description{
-calculate trends in the occurrence of a maximum event
+calculate trends in the occurrence (DOY or day of year) of a maximum event
 }

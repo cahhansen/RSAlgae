@@ -17,6 +17,9 @@ monthlytrend.ts(record, value, date, months, var)
 
 \item{var}{string, aggregator (e.g. mean, max)}
 }
+\value{
+summary of the Theil-Sen estimator
+}
 \description{
 Calculates annual linear trend of average monthly values and significance of  with Theil-Sen Estimator (used for robust to non-normal data)
 }

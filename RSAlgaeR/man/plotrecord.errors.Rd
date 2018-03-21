@@ -18,6 +18,9 @@ plotrecord.errors(data, value, date, location,
 
 \item{ylab}{string, label for y axis}
 }
+\value{
+plots the estimated record with error bars
+}
 \description{
 Plots estimated record with error bars
 }

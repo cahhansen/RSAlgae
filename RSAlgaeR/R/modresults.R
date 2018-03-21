@@ -6,7 +6,9 @@
 #' @param data data for calibration/evaluation
 #' @param value string, name of column with water quality values
 #' @param title string, optional suffix for the title of the plot
+#' @return prints summary of model and plot of modeled vs. observed
 #' @import hydroGOF
+#' @import graphics
 #' @export
 
 
@@ -21,7 +23,7 @@ modresults <- function(model, data, value, title=""){
   print(paste("Number of observations: ",nrow(data)))
   print(paste("Range:",min(data$value),"-",max(data$value)))
   print(paste("RMSE is: ",sqrt(mean((compare$diff)^2))))
-  print(paste("PBIAS is: ", pbias(compare$predicted,compare$actual)))
+  print(paste("PBIAS is: ", hydroGOF::pbias(compare$predicted,compare$actual)))
   print(paste("R2 is: ",summary(lm(compare$actual~compare$predicted))$r.squared))
   print(paste("AIC is: ",modsummary$aic))
   print(modsummary$coefficients)

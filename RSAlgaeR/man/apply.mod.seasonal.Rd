@@ -11,13 +11,14 @@ apply.mod.seasonal(data, date, model, season, threshold)
 
 \item{date}{string, name of column with imagery dates}
 
-\item{model}{GLM (.Rdata)}
+\item{model}{calibrated GLM}
 
 \item{season}{vector of months to include in the season}
 
-\item{threshold}{numeric value at which to limit the allowed estimate)}
-
-\item{value}{string, name of column with water quality values}
+\item{threshold}{numeric value above which is considered unreasonable/noise}
+}
+\value{
+dataframe of predicted values and confidence intervals
 }
 \description{
 Apply GLM to remotely sensed record

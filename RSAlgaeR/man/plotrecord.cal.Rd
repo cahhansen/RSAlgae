@@ -20,6 +20,9 @@ plotrecord.cal(data, caldata, value, date, location,
 
 \item{ylab}{string, label for y axis}
 }
+\value{
+plot of estimated record with data used for calibration
+}
 \description{
 Plots estimated record with calibrated data
 }

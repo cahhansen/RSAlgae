@@ -15,6 +15,9 @@ annual.summary.climate(data, date, value, parameter)
 
 \item{parameter}{string, name of parameter ("Precipitation","Temperature")}
 }
+\value{
+list of annual (seasonal) summaries
+}
 \description{
 summarize climate conditions on an annual basis
 }

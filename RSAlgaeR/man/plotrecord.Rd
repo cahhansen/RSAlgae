@@ -22,6 +22,9 @@ plotrecord(data, datavalue, obsdata, obsdatavalue, lake, labels = TRUE,
 
 \item{ylab}{string, label for y axis}
 }
+\value{
+plot of estimated and observed data
+}
 \description{
 Plots estimated and observed data
 }
