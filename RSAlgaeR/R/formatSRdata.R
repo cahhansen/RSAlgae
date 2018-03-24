@@ -7,15 +7,18 @@
 #' @param samplingdate string, name of column for sampling dates (only required if dataset is used for calibration)
 #' @param location string, name of column for location identifier
 #' @param datatype string, "Calibration" or "Estimated"
+#' @param qaband string, name of column for QA (such as a cloudmask) rating
+#' @param qa_accept vector, QA classes which are acceptable
 #' @return dataframe with formatted data
 #' @export
 
-formatSRdata <- function(data,imagerydate,samplingdate="",location,datatype){
+formatSRdata <- function(data,imagerydate,samplingdate="",location,datatype,qaband,qa_accept){
   #Format dates
   data$ImageDate <- as.Date(data[,imagerydate],format="%m/%d/%Y")
 
   #Remove cloud pixels
-  data <- data[(data$CloudMask<=1),]
+  data$QA <- data[,qaband]
+  data <- data[(data$QA %in% qa_accept),]
   #Remove missing observations
   data <- data[(!is.na(data$Blue)),]
   #Remove data with negative reflectance values

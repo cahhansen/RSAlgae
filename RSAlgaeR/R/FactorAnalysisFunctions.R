@@ -51,6 +51,10 @@ climate.factor.effect <- function(record,imagedate,value,climaterecord,
                                   climatevar,maxlag,noevent,alternative="two.sided",overall=TRUE,months=NULL,location="",ylabel="Average Value"){
   record$ImageDate <- record[,imagedate]
   ImageDate <- record$ImageDate
+  Month <- NULL
+  Lag <- NULL
+  Event <- NULL
+  NoEvent <- NULL
 
   lag <- seq(0,maxlag,1)
   if(overall==TRUE){

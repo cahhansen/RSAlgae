@@ -5,7 +5,7 @@
 #' @param value string, name of column with water quality values
 #' @param date string, name of column with dates
 #' @param location string, name of column with location identifiers
-#' @return list containing a summary of the model fit and a plot of the DOY of maximum vs year
+#' @return list containing a dataframe of the annual maxima, summary of the model fit and a plot of the DOY of maximum vs year
 #' @import mblm
 #' @import ggplot2
 #' @import lubridate
@@ -37,6 +37,6 @@ doy.max.trend <- function(data,date,value,location){
     xlab("Year in record")+
     ggtitle(paste("Occurrence of Maximum Chl-Levels ",min(annualmax$Year),"-",max(annualmax$Year)))+
     theme(legend.position="none")
-  return(list(summary(fit),doyplot))
+  return(list(annualmax,summary(fit),doyplot))
 }
 

@@ -12,6 +12,7 @@
 #' @export
 
 plotrecord.errors <- function(data, value, date, location, ylab=expression(paste("Chl-a (",mu,"g/L)"))){
+
   data$date <- as.Date(data[,date])
   data$value <- data[,value]
   data$location <- data[,location]
@@ -60,10 +61,12 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
 #'
 #' Plots estimated and observed data
 #'
-#' @param data Dataframe with estimated values (value), dates (ImageDate)
-#' @param obsdata Dataframe with Observed Data (Value, ImageDate)
+#' @param data Dataframe with estimated values
+#' @param obsdata Dataframe with Observed Data
 #' @param datavalue string, name of column with values in estimated dataframe
 #' @param obsdatavalue string, name of column with values in observed dataframe
+#' @param date string, name of column with date of imagery used for estimating values (must be date class)
+#' @param obsdate string, name of column with date of observation (must be date class)
 #' @param lake string, Name of Lake
 #' @param labels optional for plotting
 #' @param ylab string, label for y axis
@@ -71,14 +74,15 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
 #' @import ggplot2
 #' @export
 
-plotrecord <- function(data,datavalue,obsdata,obsdatavalue,lake,labels=TRUE,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
+plotrecord <- function(data,datavalue,date,obsdata,obsdatavalue,obsdate,lake="",labels=TRUE,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
   data$value <- data[,datavalue]
+  data$Date <- data[,date]
   obsdata$value <- data[,obsdatavalue]
-  obsdata$Date <- as.Date(obsdata$Date)
-  obsdata <- subset(obsdata, Value >= 0)
+  obsdata$Date <- obsdata[,obsdate]
+  obsdata <- subset(obsdata, value >= 0)
   data$Dataset <- as.character(data$Dataset)
   combinedf <- data.frame(Date=c(data$ImageDate,obsdata$Date),
-                          Value=c(data$value,obsdata$Value),
+                          Value=c(data$value,obsdata$value),
                           Dataset=c(data$Dataset,rep("Observed",nrow(obsdata))))
   p <- ggplot2::ggplot(data=combinedf,aes(x=Date,y=Value))+
     geom_point(aes(fill=as.factor(Dataset)),pch=21,colour="black")+
@@ -98,7 +102,7 @@ plotrecord <- function(data,datavalue,obsdata,obsdatavalue,lake,labels=TRUE,ylab
 
   }else{
     p <- p+
-      ggtitle(paste("Historical Record",":",lake))+
+      ggtitle(paste(lake,"Historical Record"))+
       xlab("Date")+
       theme(legend.position="bottom")+
       scale_fill_manual(values=c('white','red'),
