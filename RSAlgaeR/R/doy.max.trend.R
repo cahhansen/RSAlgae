@@ -19,6 +19,7 @@ doy.max.trend <- function(data,date,value,location){
   data$location <- data[,location]
   data$Year <- (lubridate::year(data$date))
 
+
   data$Year <- as.factor(data$Year)
   annualmaxdata <- plyr::ddply(data,c('Year'),function(x) x[which(x$value==max(x$value)),])
   annualmax <- data.frame(DOYmax=yday(annualmaxdata$date),

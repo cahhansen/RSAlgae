@@ -4,17 +4,21 @@
 \alias{plotrecord}
 \title{plotrecord}
 \usage{
-plotrecord(data, datavalue, obsdata, obsdatavalue, lake, labels = TRUE,
-  ylab = expression(paste("Chl-a (", mu, "g/L)")))
+plotrecord(data, datavalue, date, obsdata, obsdatavalue, obsdate, lake = "",
+  labels = TRUE, ylab = expression(paste("Chl-a (", mu, "g/L)")))
 }
 \arguments{
-\item{data}{Dataframe with estimated values (value), dates (ImageDate)}
+\item{data}{Dataframe with estimated values}
 
 \item{datavalue}{string, name of column with values in estimated dataframe}
 
-\item{obsdata}{Dataframe with Observed Data (Value, ImageDate)}
+\item{date}{string, name of column with date of imagery used for estimating values (must be date class)}
+
+\item{obsdata}{Dataframe with Observed Data}
 
 \item{obsdatavalue}{string, name of column with values in observed dataframe}
+
+\item{obsdate}{string, name of column with date of observation (must be date class)}
 
 \item{lake}{string, Name of Lake}
 

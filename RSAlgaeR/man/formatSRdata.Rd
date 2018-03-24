@@ -4,7 +4,8 @@
 \alias{formatSRdata}
 \title{formatSRdata}
 \usage{
-formatSRdata(data, imagerydate, samplingdate = "", location, datatype)
+formatSRdata(data, imagerydate, samplingdate = "", location, datatype, qaband,
+  qa_accept)
 }
 \arguments{
 \item{data}{dataframe of surface reflectance data. Designed to work with reflectance values for bands from Landsat surface reflectance products (Blue, Red, Green, NIR, SWIR1, SWIR2, CloudMask) at specific point locations}
@@ -16,6 +17,10 @@ formatSRdata(data, imagerydate, samplingdate = "", location, datatype)
 \item{location}{string, name of column for location identifier}
 
 \item{datatype}{string, "Calibration" or "Estimated"}
+
+\item{qaband}{string, name of column for QA (such as a cloudmask) rating}
+
+\item{qa_accept}{vector, QA classes which are acceptable}
 }
 \value{
 dataframe with formatted data
