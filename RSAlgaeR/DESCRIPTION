@@ -8,7 +8,9 @@ Description: This package was developed for processing, modeling, cross-
     validation, and analysis of water quality conditions (specifically chl-a).
 License: GPL-2
 Encoding: UTF-8
-LazyData: true
+URL: http://github.com/cahhansen/RSAlgae
+BugReports: https://github.com/cahhansen/RSAlgae/issues
+LazyData: TRUE
 RoxygenNote: 6.0.1
 Imports:
     plyr,lubridate,ggplot2,hydroGOF,stats,cvTools,mblm,graphics,utils
