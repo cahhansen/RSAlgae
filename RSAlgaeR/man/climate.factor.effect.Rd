@@ -11,7 +11,7 @@ climate.factor.effect(record, imagedate, value, climaterecord, climatevar,
 \arguments{
 \item{record}{dataframe with estimated historical record of water quality parameter}
 
-\item{imagedate}{string, name of coloumn with the date of the estimate (date of remotely sensed imagery)}
+\item{imagedate}{string, name of column with the date of the estimate (date of remotely sensed imagery)}
 
 \item{value}{string, name of column with estimated or field-sampled water quality parameter}
 
@@ -21,7 +21,7 @@ climate.factor.effect(record, imagedate, value, climaterecord, climatevar,
 
 \item{maxlag}{numeric, number of days to lag the climate effect}
 
-\item{noevent}{numeric, threshold for whether an event occured}
+\item{noevent}{numeric, threshold for whether an event occurred}
 
 \item{alternative}{character string specifying alternative hypothesis ("two.sided","greater","less")}
 

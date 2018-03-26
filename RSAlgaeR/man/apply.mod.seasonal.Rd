@@ -4,12 +4,12 @@
 \alias{apply.mod.seasonal}
 \title{apply.mod.seasonal}
 \usage{
-apply.mod.seasonal(data, date, model, season, threshold)
+apply.mod.seasonal(df, datecol, model, season, threshold)
 }
 \arguments{
-\item{data}{dataframe with reflectance values}
+\item{df}{dataframe with reflectance values}
 
-\item{date}{string, name of column with imagery dates}
+\item{datecol}{string, name of column with imagery dates}
 
 \item{model}{calibrated GLM}
 
@@ -22,4 +22,10 @@ dataframe of predicted values and confidence intervals
 }
 \description{
 Apply GLM to remotely sensed record
+}
+\examples{
+data(srdataforapplication)
+data(utahsummermod)
+estdata <- apply.mod.seasonal(df=srdataforapplication,
+datecol="ImageDate",model=utahsummermod,season=c("July","August","September"),threshold=500)
 }

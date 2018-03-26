@@ -9,7 +9,7 @@
 #' @param timewindow numeric, number of days to allow for near coincidence
 #' @param season vector, months to include in model
 #' @param stepdirection string, direction for stepwise regression ("backward","both","forward")
-#' @param print.on boolean, option to print the resutls of the model (default is TRUE)
+#' @param print.on boolean, option to print the results of the model (default is TRUE)
 #' @return list with the stepwise model and the modeled values
 #' @import hydroGOF
 #' @export

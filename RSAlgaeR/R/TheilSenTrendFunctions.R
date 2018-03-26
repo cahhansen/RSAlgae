@@ -17,12 +17,12 @@
 annualtrend.ts <- function(record,value,date,var,monthlybias=FALSE){
   if(monthlybias==TRUE){
     record$year.norm <- lubridate::year(record[,date])-min(lubridate::year(record[,date]))
-    record$value <- record[,value]
+    record$value <- record[[,value]]
     yearlymonthlyrecord <- stats::aggregate(data=record,value~year.norm+Month, var, na.rm=TRUE)
     yearlyrecord <- stats::aggregate(data=yearlymonthlyrecord,value~year.norm,FUN=var)
   }else{
     record$year.norm <- lubridate::year(record[,date])-min(lubridate::year(record[,date]))
-    record$value <- record[,value]
+    record$value <- record[[,value]]
     yearlyrecord <- stats::aggregate(data=record,value~year.norm,FUN=var)
   }
   fit <- with(yearlyrecord,mblm::mblm(value~year.norm))
@@ -47,7 +47,7 @@ annualtrend.ts <- function(record,value,date,var,monthlybias=FALSE){
 
 monthlytrend.ts <- function(record,value,date,months,var){
   monthlyresults <- data.frame(Month=months,Trend=rep(NA,length(months)),PValue=rep(NA,length(months)))
-  record$value <- record[,value]
+  record$value <- record[[,value]]
   for(i in seq(1,length(months),1)){
     record.sub <- record[(record$Month==months[i]),]
     record.sub$year.norm <- lubridate::year(record.sub[,date])-min(lubridate::year(record.sub[,date]))

@@ -2,22 +2,27 @@
 % Please edit documentation in R/annualsummaryFunctions.R
 \name{annual.summary.wq}
 \alias{annual.summary.wq}
-\title{summarize water quality conditions on an annual basis}
+\title{summarize max and mean water quality conditions on an annual basis}
 \usage{
-annual.summary.wq(data, value, date, location)
+annual.summary.wq(df, valuecol, datecol, locationcol)
 }
 \arguments{
-\item{data}{data frame with estimated values, dates, location identifiers}
+\item{df}{data frame with estimated values, dates, location identifiers}
 
-\item{value}{string, name of column with water quality values}
+\item{valuecol}{string, name of column with water quality values}
 
-\item{date}{string, name of column with dates}
+\item{datecol}{string, name of column with dates (must be date format)}
 
-\item{location}{string, name of column with location identifiers}
+\item{locationcol}{string, name of column with location identifiers}
 }
 \value{
 dataframe of annual summaries
 }
 \description{
-summarize water quality conditions on an annual basis
+summarize max and mean water quality conditions on an annual basis
+}
+\examples{
+data(estimatedrecord)
+sumdata <- annual.summary.wq(df=estimatedrecord,valuecol="EstChlValue",datecol="ImageDate",
+locationcol="StationID")
 }

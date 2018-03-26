@@ -13,7 +13,7 @@
 
 
 modresults <- function(model, data, value, title=""){
-  data$value <- data[,value]
+  data$value <- data[[,value]]
   compare <- data.frame(predicted=model$fitted.values)
   compare$actual <- data$value
   compare$diff <- compare$actual-compare$predicted

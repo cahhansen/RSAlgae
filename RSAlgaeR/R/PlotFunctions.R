@@ -13,9 +13,9 @@
 
 plotrecord.errors <- function(data, value, date, location, ylab=expression(paste("Chl-a (",mu,"g/L)"))){
 
-  data$date <- as.Date(data[,date])
-  data$value <- data[,value]
-  data$location <- data[,location]
+  data$date <- as.Date(data[[,date]])
+  data$value <- data[[,value]]
+  data$location <- data[[,location]]
   ggplot2::ggplot(data)+geom_point(aes(x=date,y=value,col=as.factor(location)))+
     geom_errorbar(aes(x=date,ymin=lower,ymax=upper), width=0.2)+
     theme_bw()+scale_color_discrete(name="Location")+
@@ -41,11 +41,11 @@ plotrecord.errors <- function(data, value, date, location, ylab=expression(paste
 #' @export
 
 plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
-  data$date <- as.Date(data[,date])
-  data$value <- data[,value]
-  data$location <- as.factor(data[,location])
-  caldata$date <- as.Date(caldata[,date])
-  caldata$value <- caldata[,value]
+  data$date <- as.Date(data[[,date]])
+  data$value <- data[[,value]]
+  data$location <- as.factor(data[[,location]])
+  caldata$date <- as.Date(caldata[[,date]])
+  caldata$value <- caldata[[,value]]
   ggplot2::ggplot()+geom_point(data=data,aes(x=date,y=value,col=location))+
     geom_point(data=caldata,aes(x=date,y=value))+
     theme_bw()+scale_color_discrete(name="Location")+
@@ -75,10 +75,10 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
 #' @export
 
 plotrecord <- function(data,datavalue,date,obsdata,obsdatavalue,obsdate,lake="",labels=TRUE,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
-  data$value <- data[,datavalue]
-  data$Date <- data[,date]
-  obsdata$value <- data[,obsdatavalue]
-  obsdata$Date <- obsdata[,obsdate]
+  data$value <- data[[,datavalue]]
+  data$Date <- data[[,date]]
+  obsdata$value <- data[[,obsdatavalue]]
+  obsdata$Date <- obsdata[[,obsdate]]
   obsdata <- subset(obsdata, value >= 0)
   data$Dataset <- as.character(data$Dataset)
   combinedf <- data.frame(Date=c(data$ImageDate,obsdata$Date),

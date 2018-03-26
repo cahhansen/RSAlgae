@@ -3,7 +3,7 @@
 #' Lags a variable by a time step
 #'
 #' @param x climate data
-#' @param k time step to lag (postive results in a forward shift, negative results in backwards shift)
+#' @param k time step to lag (positive results in a forward shift, negative results in backwards shift)
 #' @export
 
 
@@ -30,12 +30,12 @@ lagpad <- function(x, k) {
 #' Evaluates difference in values based on climate conditions
 #'
 #' @param record dataframe with estimated historical record of water quality parameter
-#' @param imagedate string, name of coloumn with the date of the estimate (date of remotely sensed imagery)
+#' @param imagedate string, name of column with the date of the estimate (date of remotely sensed imagery)
 #' @param value string, name of column with estimated or field-sampled water quality parameter
 #' @param climaterecord dataframe with climate variables
 #' @param climatevar character, name of climate variable (column) of interest
 #' @param maxlag numeric, number of days to lag the climate effect
-#' @param noevent numeric, threshold for whether an event occured
+#' @param noevent numeric, threshold for whether an event occurred
 #' @param alternative character string specifying alternative hypothesis ("two.sided","greater","less")
 #' @param overall boolean, TRUE: all locations, FALSE: by each location. Default is TRUE
 #' @param months months an optional character string for if the t-test should be month specific

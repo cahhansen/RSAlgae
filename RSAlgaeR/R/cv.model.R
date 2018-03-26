@@ -2,8 +2,8 @@
 #'
 #' Use k-fold cross validation to evaluate the goodness of fit for a model
 #'
-#' @param data dataframe, limited to independent/dependent variables
-#' @param value string, name of column with water quality values
+#' @param df dataframe, limited to independent/dependent variables
+#' @param valuecol string, name of column with water quality values
 #' @param k numeric, number of folds (will not be used if there are fewer observations than folds)
 #' @param model formula
 #' @param gof string, measure of the goodness of fit (PBIAS, R2, RMSE)
@@ -13,26 +13,26 @@
 #' @export
 
 #Calcluate avg R2, RMSE, and Parameter Estimates (coefficients)
-cv.model <- function(data,value,k,model,gof){
-  data$value <- data[,value]
+cv.model <- function(df,valuecol,k,model,gof){
+  df$Value <- df[[,valuecol]]
   formula <- model$formula
   params <- length(model$model)
   #Cross validation (k-fold, if at least k observations in calibration set), LOOCV if <k observations
-  folds <- cvTools::cvFolds(n=nrow(data),K=k,R=1,type="random")
+  folds <- cvTools::cvFolds(n=nrow(df),K=k,R=1,type="random")
   trainmodelsum <- data.frame(R2=rep(NA,k),RMSE=rep(NA,k),PBIAS=rep(NA,k))
   testmodelsum <- data.frame(R2=rep(NA,k),RMSE=rep(NA,k),PBIAS=rep(NA,k))
   for (n in seq(1,k,1)){
     foldindex <- folds$subsets[folds$which==n]
-    traindata <- data[-foldindex,]
-    testdata <- data[foldindex,]
+    traindata <- df[-foldindex,]
+    testdata <- df[foldindex,]
     trainmod <- glm(formula,data=traindata,family=gaussian(link="log"))
     #Calculate Model Results
     testpredict <- exp(predict(trainmod,newdata=testdata))
     traincompare <- data.frame(predicted=trainmod$fitted.values)
-    traincompare$actual <- traindata$value
+    traincompare$actual <- traindata$Value
     traincompare$diff <- traincompare$actual-traincompare$predicted
     testcompare <- data.frame(predicted=testpredict)
-    testcompare$actual <- testdata$value
+    testcompare$actual <- testdata$Value
     testcompare$diff <- testcompare$actual-testcompare$predicted
     #Summarize Model Results
     trainmodelsum[n,'R2'] <- summary(lm(traincompare$actual~traincompare$predicted))$r.squared

@@ -1,0 +1,29 @@
+#' Surface reflectance data from Landsat 5 and 7
+#'
+#' A dataset containing the surface reflectance for
+#' locations in Utah Lake from Landsat 5 and 7
+#' (precollection dataset) in Google Earth Engine.
+#'
+#'
+#' @format A data frame with 215 rows and 16 variables:
+#' \describe{
+#'   \item{Blue}{reflectance in the blue band}
+#'   \item{CloudMask}{classes used for masking clouds/haze (0 or 1 are clear/water)}
+#'   \item{FieldValue}{sampled or observed chlorophyll a value}
+#'   \item{AbsDiffInDays}{calculated difference between imagery date and sampling date}
+#'   \item{Green}{reflectance in the green band}
+#'   \item{ImageDate}{date of imagery acquisition}
+#'   \item{ImageName}{name of Landsat scene}
+#'   \item{Method}{method used in sampling}
+#'   \item{NIR}{reflectance in the Near infrared band}
+#'   \item{Organization}{agency responsible for collecting sample data}
+#'   \item{Red}{reflectance in the red band}
+#'   \item{SWIR1}{reflectance in the short wave infrared 1 band}
+#'   \item{SWIR2}{reflectance in the short wave infrared 2 band}
+#'   \item{SamplingDate}{date of sample collection}
+#'   \item{Sensor}{sensor used to measure surface reflectance}
+#'   \item{StationID}{location of sample}
+#'   ...
+#' }
+#' @source {Utah Division of Water Quality}
+"srdata"

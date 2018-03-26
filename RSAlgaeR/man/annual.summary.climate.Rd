@@ -4,14 +4,14 @@
 \alias{annual.summary.climate}
 \title{summarize climate conditions on an annual basis}
 \usage{
-annual.summary.climate(data, date, value, parameter)
+annual.summary.climate(df, datecol, valuecol, parameter)
 }
 \arguments{
-\item{data}{with estimated values, dates, location identifiers}
+\item{df}{with estimated values, dates, location identifiers}
 
-\item{date}{string, name of column with dates}
+\item{datecol}{string, name of column with dates}
 
-\item{value}{string, name of column with climate parameter values}
+\item{valuecol}{string, name of column with climate parameter values}
 
 \item{parameter}{string, name of parameter ("Precipitation","Temperature")}
 }
@@ -20,4 +20,9 @@ list of annual (seasonal) summaries
 }
 \description{
 summarize climate conditions on an annual basis
+}
+\examples{
+data(climatedata)
+sumdata <- annual.summary.climate(df=climatedata,valuecol="PRCP",datecol="DATE",
+parameter="Precipitation")
 }

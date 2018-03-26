@@ -4,12 +4,12 @@
 \alias{cv.model}
 \title{cv.model}
 \usage{
-cv.model(data, value, k, model, gof)
+cv.model(df, valuecol, k, model, gof)
 }
 \arguments{
-\item{data}{dataframe, limited to independent/dependent variables}
+\item{df}{dataframe, limited to independent/dependent variables}
 
-\item{value}{string, name of column with water quality values}
+\item{valuecol}{string, name of column with water quality values}
 
 \item{k}{numeric, number of folds (will not be used if there are fewer observations than folds)}
 
