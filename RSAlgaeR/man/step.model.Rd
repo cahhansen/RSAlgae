@@ -22,7 +22,7 @@ step.model(data, imagerydate, value, modelvariables, timewindow, season,
 
 \item{stepdirection}{string, direction for stepwise regression ("backward","both","forward")}
 
-\item{print.on}{boolean, option to print the resutls of the model (default is TRUE)}
+\item{print.on}{boolean, option to print the results of the model (default is TRUE)}
 }
 \value{
 list with the stepwise model and the modeled values

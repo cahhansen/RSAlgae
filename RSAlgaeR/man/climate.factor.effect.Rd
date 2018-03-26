@@ -4,20 +4,23 @@
 \alias{climate.factor.effect}
 \title{climate.factor.effect}
 \usage{
-climate.factor.effect(record, imagedate, value, climaterecord, climatevar,
-  maxlag, noevent, alternative = "two.sided", overall = TRUE,
-  months = NULL, location = "", ylabel = "Average Value")
+climate.factor.effect(wqrecord, imagedatecol, valuecol, climaterecord,
+  climatevarcol, climatedatecol, maxlag, noevent, alternative = "two.sided",
+  overall = TRUE, months = NULL, locationcol = "",
+  ylabel = "Average Value")
 }
 \arguments{
-\item{record}{dataframe with estimated historical record of water quality parameter}
+\item{wqrecord}{dataframe with estimated historical record of water quality parameter}
 
-\item{imagedate}{string, name of column with the date of the estimate (date of remotely sensed imagery)}
+\item{imagedatecol}{string, name of column with the date of the estimate (date of remotely sensed imagery)}
 
-\item{value}{string, name of column with estimated or field-sampled water quality parameter}
+\item{valuecol}{string, name of column with estimated or field-sampled water quality parameter}
 
 \item{climaterecord}{dataframe with climate variables}
 
-\item{climatevar}{character, name of climate variable (column) of interest}
+\item{climatevarcol}{character, name of climate variable (column) of interest}
+
+\item{climatedatecol}{string, name of column with the date of the climate observation}
 
 \item{maxlag}{numeric, number of days to lag the climate effect}
 
@@ -29,13 +32,20 @@ climate.factor.effect(record, imagedate, value, climaterecord, climatevar,
 
 \item{months}{months an optional character string for if the t-test should be month specific}
 
-\item{location}{string, name of column with unique location identifier, used if overall is FALSE}
+\item{locationcol}{string, name of column with unique location identifier, used if overall is FALSE}
 
 \item{ylabel}{string, optional label for plot}
 }
 \value{
-results of wilcox test for differences in mean values
+results of wilcox test for differences in mean values (and, if overall, boxplots of water quality data)
 }
 \description{
 Evaluates difference in values based on climate conditions
+}
+\examples{
+data(estimatedrecord)
+data(climatedata)
+effectresults <- climate.factor.effect(wqrecord=estimatedrecord,imagedatecol="ImageDate",
+valuecol="EstChlValue",climaterecord=climatedata,climatevarcol="TMAX",climatedatecol="DATE",
+maxlag=7,noevent=16,months=c("July"))
 }

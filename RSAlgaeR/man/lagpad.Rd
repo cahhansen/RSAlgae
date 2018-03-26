@@ -9,7 +9,7 @@ lagpad(x, k)
 \arguments{
 \item{x}{climate data}
 
-\item{k}{time step to lag (postive results in a forward shift, negative results in backwards shift)}
+\item{k}{time step to lag (positive results in a forward shift, negative results in backwards shift)}
 }
 \description{
 Lags a variable by a time step
