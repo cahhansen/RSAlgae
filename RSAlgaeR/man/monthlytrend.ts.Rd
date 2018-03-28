@@ -4,14 +4,14 @@
 \alias{monthlytrend.ts}
 \title{Explore long term monthly trends with Theil-Sen Estimator}
 \usage{
-monthlytrend.ts(record, value, date, months, var)
+monthlytrend.ts(record, valuecol, datecol, months, var)
 }
 \arguments{
 \item{record}{dataframe with record of estimated water quality}
 
-\item{value}{string, name of column with values}
+\item{valuecol}{string, name of column with values}
 
-\item{date}{string, name of column with dates}
+\item{datecol}{string, name of column with dates}
 
 \item{months}{list of months}
 
