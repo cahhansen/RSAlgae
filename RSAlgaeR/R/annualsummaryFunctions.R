@@ -80,7 +80,7 @@ annual.summary.climate <- function(df,datecol,valuecol,parameter){
   df <- df[,c("Date","Value","Month","Year")]
 
   if(parameter=="Precipitation"){
-    df <- df[(df$value>=0),]
+    df <- df[(df$Value>=0),]
     janfebprecip <- plyr::ddply(df[(df$Month %in% c(1,2)),],c('Year'),function(x) sum(x$Value))
     janfebprecip$Year <- as.numeric(levels(factor(janfebprecip$Year)))
     decprecip <- plyr::ddply(df[(df$Month==12),],c('Year'),function(x) sum(x$Value))
