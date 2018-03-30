@@ -78,9 +78,9 @@ annual.summary.climate <- function(df,datecol,valuecol,parameter){
   df$Year <- as.factor(lubridate::year(df$Date))
 
   df <- df[,c("Date","Value","Month","Year")]
+  df <- df[(df$Value>=0),]
 
   if(parameter=="Precipitation"){
-    df <- df[(df$Value>=0),]
     janfebprecip <- plyr::ddply(df[(df$Month %in% c(1,2)),],c('Year'),function(x) sum(x$Value))
     janfebprecip$Year <- as.numeric(levels(factor(janfebprecip$Year)))
     decprecip <- plyr::ddply(df[(df$Month==12),],c('Year'),function(x) sum(x$Value))
@@ -90,20 +90,24 @@ annual.summary.climate <- function(df,datecol,valuecol,parameter){
 
     springprecipsum <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value))
     springprecipcount <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value>0))
-    colnames(winterprecipsum) <- c("Year","winterTotalPrecip")
+    colnames(winterprecipsum) <- c("winterTotalPrecip","Year")
     colnames(springprecipsum) <- c("Year","springTotalPrecip")
     colnames(springprecipcount) <- c("Year","springCountPrecip")
+
+    precipsummarydf <- merge(winterprecipsum,springprecipsum,by="Year")
+    precipsummarydf <- merge(precipsummarydf,springprecipcount,by="Year")
     avgtotalwinterprecip <- mean(winterprecipsum$winterTotalPrecip)
     avgtotalspringprecip <- mean(springprecipsum$springTotalPrecip)
     avgspringprecipcount <- mean(springprecipcount$springCountPrecip)
-    return(list(winterprecipsum,springprecipsum,springprecipcount,avgWinterPrecip=avgtotalwinterprecip,avgSpringPrecip=avgtotalspringprecip,avgNumSpringPrecip=avgspringprecipcount))
+    return(list(precipsummarydf,avgWinterPrecip=avgtotalwinterprecip,avgSpringPrecip=avgtotalspringprecip,avgNumSpringPrecip=avgspringprecipcount))
   }else if(parameter=="Temperature"){
     springtemp <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) mean(x$Value))
     summertemp <- plyr::ddply(df[(df$Month %in% c(7,8,9)),],c('Year'),function(x) mean(x$Value))
-    colnames(springtemp) <- c("Year","MeanTemp")
-    colnames(summertemp) <- c("Year","MeanTemp")
-    avgspringtemp <- mean(springtemp$MeanTemp)
-    avgsummertemp <- mean(summertemp$MeanTemp)
-    return(list(avgspringtemp=avgspringtemp,avgsummertemp=avgsummertemp))
+    colnames(springtemp) <- c("Year","MeanSpringTemp")
+    colnames(summertemp) <- c("Year","MeanSummerTemp")
+    avgspringtemp <- mean(springtemp$MeanSpringTemp)
+    avgsummertemp <- mean(summertemp$MeanSummerTemp)
+    tempsummarydf <- merge(springtemp,summertemp,by="Year")
+    return(list(tempsummarydf,avgspringtemp=avgspringtemp,avgsummertemp=avgsummertemp))
   }
 }
