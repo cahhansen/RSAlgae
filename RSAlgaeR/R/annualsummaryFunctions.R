@@ -84,13 +84,15 @@ annual.summary.climate <- function(df,datecol,valuecol,parameter){
     janfebprecip <- plyr::ddply(df[(df$Month %in% c(1,2)),],c('Year'),function(x) sum(x$Value))
     janfebprecip$Year <- as.numeric(levels(factor(janfebprecip$Year)))
     decprecip <- plyr::ddply(df[(df$Month==12),],c('Year'),function(x) sum(x$Value))
-    janfebprecip <- janfebprecip[-1,]
-    winterprecipsum <- data.frame(TotalPrecip=janfebprecip$V1+decprecip$V1)
-    winterprecipsum$Year <- janfebprecip$Year
+    decprecip$Year <- as.numeric(levels(factor(decprecip$Year)))
+    decprecip$Year <- decprecip$Year+1
+    winterprecipsum <- merge(decprecip,janfebprecip,by="Year")
+    winterprecipsum$TotalPrecip <- winterprecipsum$V1.x+winterprecipsum$V1.y
+    winterprecipsum <- winterprecipsum[,c("Year","TotalPrecip")]
 
     springprecipsum <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value))
     springprecipcount <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value>0))
-    colnames(winterprecipsum) <- c("winterTotalPrecip","Year")
+    colnames(winterprecipsum) <- c("Year","winterTotalPrecip")
     colnames(springprecipsum) <- c("Year","springTotalPrecip")
     colnames(springprecipcount) <- c("Year","springCountPrecip")
 
