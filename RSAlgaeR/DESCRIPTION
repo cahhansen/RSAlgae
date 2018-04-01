@@ -4,8 +4,8 @@ Title: Builds and Analyzes Remote Sensing Models of Water Quality Variables
 Version: 1.0.0
 Author: Carly Hansen
 Maintainer:  Carly Hansen <carlyahansen@gmail.com>
-Description: This package was developed for processing, modeling, cross-
-    validation, and analysis of water quality conditions (specifically chl-a).
+Description: Processing, modeling, cross-
+    validation, and analysis of water quality conditions (specifically chl-a) and climate conditions.
 License: GPL-2
 Encoding: UTF-8
 URL: http://github.com/cahhansen/RSAlgae
