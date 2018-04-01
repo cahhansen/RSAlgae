@@ -83,21 +83,30 @@ annual.summary.climate <- function(df,datecol,valuecol,parameter){
   if(parameter=="Precipitation"){
     janfebprecip <- plyr::ddply(df[(df$Month %in% c(1,2)),],c('Year'),function(x) sum(x$Value))
     janfebprecip$Year <- as.numeric(levels(factor(janfebprecip$Year)))
+    janfebprecipcount <- plyr::ddply(df[(df$Month %in% c(1,2)),],c('Year'),function(x) sum(x$Value>0))
     decprecip <- plyr::ddply(df[(df$Month==12),],c('Year'),function(x) sum(x$Value))
     decprecip$Year <- as.numeric(levels(factor(decprecip$Year)))
     decprecip$Year <- decprecip$Year+1
+    decprecipcount <- plyr::ddply(df[(df$Month %in% c(12)),],c('Year'),function(x) sum(x$Value>0))
+    decprecipcount$Year <- as.numeric(levels(factor(decprecipcount$Year)))
+    decprecipcount$Year <- decprecipcount$Year+1
+
     winterprecipsum <- merge(decprecip,janfebprecip,by="Year")
-    winterprecipsum$TotalPrecip <- winterprecipsum$V1.x+winterprecipsum$V1.y
-    winterprecipsum <- winterprecipsum[,c("Year","TotalPrecip")]
+    winterprecipcount <- merge(decprecipcount,janfebprecipcount,by="Year")
+    winterprecipcount$winterCountPrecip <- winterprecipcount$V1.x+winterprecipcount$V1.y
+    winterprecipsum$winterTotalPrecip <- winterprecipsum$V1.x+winterprecipsum$V1.y
+    winterprecipsum <- winterprecipsum[,c("Year","winterTotalPrecip")]
+    winterprecipcount <- winterprecipcount[,c("Year","winterCountPrecip")]
+    springprecipcount <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value>0))
 
     springprecipsum <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value))
     springprecipcount <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value>0))
     springprecipsum$Year <- as.numeric(levels(factor(springprecipsum$Year)))
-    colnames(winterprecipsum) <- c("Year","winterTotalPrecip")
     colnames(springprecipsum) <- c("Year","springTotalPrecip")
     colnames(springprecipcount) <- c("Year","springCountPrecip")
 
     precipsummarydf <- merge(winterprecipsum,springprecipsum,by="Year")
+    precipsummarydf <- merge(precipsummarydf,winterprecipcount,by="Year")
     precipsummarydf <- merge(precipsummarydf,springprecipcount,by="Year")
     avgtotalwinterprecip <- mean(winterprecipsum$winterTotalPrecip)
     avgtotalspringprecip <- mean(springprecipsum$springTotalPrecip)
