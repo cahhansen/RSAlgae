@@ -92,6 +92,7 @@ annual.summary.climate <- function(df,datecol,valuecol,parameter){
 
     springprecipsum <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value))
     springprecipcount <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value>0))
+    springprecipsum$Year <- as.numeric(levels(factor(springprecipsum$Year)))
     colnames(winterprecipsum) <- c("Year","winterTotalPrecip")
     colnames(springprecipsum) <- c("Year","springTotalPrecip")
     colnames(springprecipcount) <- c("Year","springCountPrecip")
