@@ -1,11 +1,11 @@
 Package: RSAlgaeR
 Type: Package
-Title: Builds and Analyzes Remote Sensing Models of Water Quality Variables
+Title: Builds Empirical Remote Sensing Models of Water Quality Variables and Analyzes Long-term Trends
 Version: 1.0.0
 Author: Carly Hansen
 Maintainer:  Carly Hansen <carlyahansen@gmail.com>
-Description: Processing, modeling, cross-
-    validation, and analysis of water quality conditions (specifically chl-a) and climate conditions.
+Description: Assists in processing reflectance data, developing empirical models using stepwise regression and a generalized linear modeling approach, cross-
+    validation, and analysis of trends in water quality conditions (specifically chl-a) and climate conditions using the Theil-Sen estimator.
 License: GPL-2
 Encoding: UTF-8
 URL: http://github.com/cahhansen/RSAlgae
