@@ -1,6 +1,6 @@
 Package: RSAlgaeR
 Type: Package
-Title: Builds Empirical Remote Sensing Models of Water Quality Variables and Analyzes Long-term Trends
+Title: Builds Empirical Remote Sensing Models of Water Quality Variables and Analyzes Long-Term Trends
 Version: 1.0.0
 Author: Carly Hansen
 Maintainer:  Carly Hansen <carlyahansen@gmail.com>
