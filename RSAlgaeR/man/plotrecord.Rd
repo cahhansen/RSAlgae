@@ -4,8 +4,9 @@
 \alias{plotrecord}
 \title{plotrecord}
 \usage{
-plotrecord(data, datavalue, date, obsdata, obsdatavalue, obsdate, lake = "",
-  labels = TRUE, ylab = expression(paste("Chl-a (", mu, "g/L)")))
+plotrecord(data, datavalue, date, obsdata, obsdatavalue, obsdate,
+  datacolors = c("grey", "red"), datashapes = c(1, 2), lake = "",
+  ylab = expression(paste("Chl-a (", mu, "g/L)")))
 }
 \arguments{
 \item{data}{Dataframe with estimated values}
@@ -20,11 +21,14 @@ plotrecord(data, datavalue, date, obsdata, obsdatavalue, obsdate, lake = "",
 
 \item{obsdate}{string, name of column with date of observation (must be date class)}
 
-\item{lake}{string, Name of Lake}
+\item{datacolors}{vector of length=2, specifying colors for estimated and observed datasets}
 
-\item{labels}{optional for plotting}
+\item{datashapes}{vector of length=2, specifying shapes for estimated and observed datasets
+#' @param lake string, Name of Lake}
 
 \item{ylab}{string, label for y axis}
+
+\item{labels}{optional for plotting}
 }
 \value{
 plot of estimated and observed data

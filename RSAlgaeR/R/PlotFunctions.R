@@ -67,50 +67,38 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
 #' @param obsdatavalue string, name of column with values in observed dataframe
 #' @param date string, name of column with date of imagery used for estimating values (must be date class)
 #' @param obsdate string, name of column with date of observation (must be date class)
-#' @param lake string, Name of Lake
+#' @param datacolors vector of length=2, specifying colors for estimated and observed datasets
+#' @param datashapes vector of length=2, specifying shapes for estimated and observed datasets
+#' #' @param lake string, Name of Lake
 #' @param labels optional for plotting
 #' @param ylab string, label for y axis
 #' @return plot of estimated and observed data
 #' @import ggplot2
 #' @export
 
-plotrecord <- function(data,datavalue,date,obsdata,obsdatavalue,obsdate,lake="",labels=TRUE,ylab=expression(paste("Chl-a (",mu,"g/L)"))){
-  data$value <- data[[,datavalue]]
-  data$Date <- data[[,date]]
-  obsdata$value <- data[[,obsdatavalue]]
-  obsdata$Date <- obsdata[[,obsdate]]
+plotrecord <- function(data,datavalue,date,obsdata,obsdatavalue,obsdate,datacolors=c("grey","red"),datashapes=c(1,2),lake="",ylab=expression(paste("Chl-a (",mu,"g/L)"))){
+  data$value <- data[,datavalue]
+  data$Date <- data[,date]
+  obsdata$value <- obsdata[,obsdatavalue]
+  obsdata$Date <- obsdata[,obsdate]
   obsdata <- subset(obsdata, value >= 0)
-  data$Dataset <- as.character(data$Dataset)
   combinedf <- data.frame(Date=c(data$ImageDate,obsdata$Date),
                           Value=c(data$value,obsdata$value),
-                          Dataset=c(data$Dataset,rep("Observed",nrow(obsdata))))
+                          Dataset=c(rep("Estimated",nrow(data)),rep("Observed",nrow(obsdata))))
+
+  names(datacolors) <- c("Estimated","Observed")
+  names(datashapes) <- c("Estimated","Observed")
+  combinedf$Dataset <- as.factor(combinedf$Dataset)
   p <- ggplot2::ggplot(data=combinedf,aes(x=Date,y=Value))+
-    geom_point(aes(fill=as.factor(Dataset)),pch=21,colour="black")+
+    geom_point(aes(color=Dataset,shape=Dataset))+
     theme_bw()+
-    scale_x_date(limits = c(as.Date(paste0(min(year(data$ImageDate)),"-1-1")), as.Date(paste0(max(year(data$ImageDate)),"-12-31"))))
-
-  if(labels==FALSE){
-    p <- p+
-      xlab("")+
-      ylab("")+
-      scale_fill_manual(values=c('white','red'),
-                        name="Dataset",
-                        breaks=c("Estimated","Observed"),
-                        labels=c("Estimated","Observed"))
-
-    return(p)
-
-  }else{
-    p <- p+
-      ggtitle(paste(lake,"Historical Record"))+
-      xlab("Date")+
-      theme(legend.position="bottom")+
-      scale_fill_manual(values=c('white','red'),
-                        name="Dataset",
-                        breaks=c("Estimated","Observed"),
-                        labels=c("Estimated","Observed"))
-    print(p)
-  }
+    scale_x_date(limits = c(as.Date(paste0(min(lubridate::year(data$ImageDate)),"-1-1")), as.Date(paste0(max(lubridate::year(data$ImageDate)),"-12-31"))))+
+    ggtitle(paste(lake,"Historical Record"))+
+    xlab("Date")+
+    theme(legend.position="bottom")+
+    scale_color_manual(values=datacolors)+
+    scale_shape_manual(values=datashapes,
+                       name="Dataset")
+  print(p)
 
 }
-
