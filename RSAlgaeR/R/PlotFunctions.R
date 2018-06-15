@@ -76,7 +76,7 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
 #' @import ggplot2
 #' @export
 
-plotrecord <- function(data,datavalue,date,obsdata,obsdatavalue,obsdate,datacolors=c("grey","red"),datashapes=c(1,2),lake="",ylab=expression(paste("Chl-a (",mu,"g/L)"))){
+plotrecord <- function(data,datavalue,date,obsdata,obsdatavalue,obsdate,datacolors=c("grey","red"),datashapes=c(1,2),lake="",title="",ylab=expression(paste("Chl-a (",mu,"g/L)"))){
   data$value <- data[,datavalue]
   data$Date <- data[,date]
   obsdata$value <- obsdata[,obsdatavalue]
@@ -93,7 +93,7 @@ plotrecord <- function(data,datavalue,date,obsdata,obsdatavalue,obsdate,datacolo
     geom_point(aes(color=Dataset,shape=Dataset))+
     theme_bw()+
     scale_x_date(limits = c(as.Date(paste0(min(lubridate::year(data$ImageDate)),"-1-1")), as.Date(paste0(max(lubridate::year(data$ImageDate)),"-12-31"))))+
-    ggtitle(paste(lake,"Historical Record"))+
+    ggtitle(paste(lake,title))+
     xlab("Date")+
     theme(legend.position="bottom")+
     scale_color_manual(values=datacolors)+
