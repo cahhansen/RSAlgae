@@ -98,7 +98,8 @@ plotrecord <- function(data,datavalue,date,obsdata,obsdatavalue,obsdate,datacolo
     theme(legend.position="bottom")+
     scale_color_manual(values=datacolors)+
     scale_shape_manual(values=datashapes,
-                       name="Dataset")
+                       name="Dataset")+
+    xlim(min(combinedf$Date),max(combinedf$Date))
   print(p)
 
 }
