@@ -73,8 +73,9 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
 #' @param labels optional for plotting
 #' @param ylab string, label for y axis
 #' @return plot of estimated and observed data
-#' @import ggplot2
+#' @import ggplot2,scales
 #' @export
+
 
 plotrecord <- function(data,datavalue,date,obsdata,obsdatavalue,obsdate,datacolors=c("grey","red"),datashapes=c(1,2),lake="",title="",ylab=expression(paste("Chl-a (",mu,"g/L)"))){
   data$value <- data[,datavalue]
@@ -92,14 +93,13 @@ plotrecord <- function(data,datavalue,date,obsdata,obsdatavalue,obsdate,datacolo
   p <- ggplot2::ggplot(data=combinedf,aes(x=Date,y=Value))+
     geom_point(aes(color=Dataset,shape=Dataset))+
     theme_bw()+
-    scale_x_date(limits = c(as.Date(paste0(min(lubridate::year(data$ImageDate)),"-1-1")), as.Date(paste0(max(lubridate::year(data$ImageDate)),"-12-31"))))+
+    scale_x_date(limits = c(as.Date(paste0(min(lubridate::year(data$ImageDate)),"-1-1")), as.Date(paste0(max(lubridate::year(data$ImageDate)),"-12-31"))), date_breaks="5 years",labels = date_format("%Y"))+
     ggtitle(paste(lake,title))+
     xlab("Date")+
     theme(legend.position="bottom")+
     scale_color_manual(values=datacolors)+
     scale_shape_manual(values=datashapes,
-                       name="Dataset")+
-    xlim(min(combinedf$Date),max(combinedf$Date))
+                       name="Dataset")
   print(p)
 
 }
