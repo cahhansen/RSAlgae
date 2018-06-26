@@ -25,9 +25,9 @@ lagpad <- function(x, k) {
 
 }
 
-#' climate.factor.effect
+#' weather.effect
 #'
-#' Evaluates difference in values based on climate conditions
+#' Evaluates immediate difference in values based on weather conditions
 #'
 #' @param wqrecord dataframe with estimated historical record of water quality parameter
 #' @param imagedatecol string, name of column with the date of the estimate (date of remotely sensed imagery)
@@ -48,13 +48,13 @@ lagpad <- function(x, k) {
 #' @examples
 #' data(estimatedrecord)
 #' data(climatedata)
-#' effectresults <- climate.factor.effect(wqrecord=estimatedrecord,imagedatecol="ImageDate",
+#' effectresults <- weather.effect(wqrecord=estimatedrecord,imagedatecol="ImageDate",
 #' valuecol="EstChlValue",climaterecord=climatedata,climatevarcol="TMAX",climatedatecol="DATE",
 #' maxlag=7,noevent=16,months=c("July"))
 #' @export
 #'
 
-climate.factor.effect <- function(wqrecord,imagedatecol,valuecol,climaterecord,
+weather.effect <- function(wqrecord,imagedatecol,valuecol,climaterecord,
                                   climatevarcol,climatedatecol,maxlag,noevent,alternative="two.sided",overall=TRUE,months=NULL,locationcol="",ylabel="Average Value"){
   #Format data frames
   wqrecord$ImageDate <- wqrecord[,imagedatecol]
@@ -132,4 +132,41 @@ climate.factor.effect <- function(wqrecord,imagedatecol,valuecol,climaterecord,
     }
   }
   return(results)
+}
+
+#' climate.effect
+#'
+#' Evaluates effects on HAB measures based on seasonal climate conditions
+#'
+#' @param record dataframe with both record of water quality parameter and climate data (annual)
+#' @param valuecol string, name of column with estimated or field-sampled water quality parameter
+#' @param climatevarcol character, name of climate variable (column) of interest
+#' @param alternative character string specifying alternative hypothesis ("two.sided","greater","less")
+#' @return results of wilcox test for differences in mean values (and, if overall, boxplots of water quality data)
+#' @import ggplot2
+#' @import lubridate
+#' @examples
+#' data(utahlake_hab_climatedata)
+#' effectresults <- climate.effect(record=utahlake_hab_climatedata,
+#' valuecol="MaxAvgChl",climatevarcol="TotalWinterPrecip")
+#' @export
+#'
+
+climate.effect <- function(record,valuecol,climatevarcol,alternative="two.sided"){
+  record$Value <- record[,valuecol]
+  record$Climate <- record[,climatevarcol]
+  #Calculate threshold
+  threshold <- mean(record$Climate,na.rm=T)
+  #Create thresholds
+  abovesub <- record[(record$Climate>=threshold),"Value"]
+  abovesubmean <- mean(abovesub,na.rm=T)
+  belowsub <- record[(record$Climate<threshold),"Value"]
+  belowsubmean <- mean(belowsub,na.rm=T)
+  meandiff <- wilcox.test(abovesub,belowsub)
+  corresult <- cor.test(record$Value,record$Climate,method = 'kendall')
+
+  return(list(MeanAboveAvg=abovesubmean,
+              MeanBelowAvg=belowsubmean,
+              WilcoxTest=meandiff,
+              KendallTau=corresult))
 }
