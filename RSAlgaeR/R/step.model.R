@@ -19,7 +19,7 @@
 
 step.model <- function(data,imagerydate,value,modelvariables,timewindow,season,stepdirection,print.on=TRUE){
 
-  data$value <- data[[,value]]
+  data$value <- data[,value]
   #Limit timewindow to certain number of days (max=10)
   datasub <- data[(data$AbsDiffInDays<=timewindow),]
   #Limit based on season
