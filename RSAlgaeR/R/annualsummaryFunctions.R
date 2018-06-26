@@ -61,6 +61,7 @@ annual.summary.wq <- function(df,valuecol,datecol,locationcol){
 #' @param valuecol string, name of column with climate parameter values
 #' @param datecol string, name of column with dates
 #' @param parameter string, name of parameter ("Precipitation","Temperature")
+#' @param season vector, names of months to include in analysis
 #' @return list of annual (seasonal) summaries
 #' @importFrom plyr ddply
 #' @importFrom lubridate year month
@@ -70,69 +71,59 @@ annual.summary.wq <- function(df,valuecol,datecol,locationcol){
 #' parameter="Precipitation")
 #' @export
 
-annual.summary.climate <- function(df,datecol,valuecol,parameter){
+annual.summary.climate <- function(df,datecol,valuecol,parameter,season){
   #Format data frame
   df$Date <- df[,datecol]
   df$Value <- df[,valuecol]
-  df$Month <- as.factor(lubridate::month(df$Date))
+  df$Month <- as.factor(months(df$Date))
   df$Year <- as.factor(lubridate::year(df$Date))
 
   df <- df[,c("Date","Value","Month","Year")]
   df <- df[(df$Value>=0),]
 
   if(parameter=="Precipitation"){
-    janfebprecip <- plyr::ddply(df[(df$Month %in% c(1,2)),],c('Year'),function(x) sum(x$Value))
-    janfebprecip$Year <- as.numeric(levels(factor(janfebprecip$Year)))
-    janfebprecipcount <- plyr::ddply(df[(df$Month %in% c(1,2)),],c('Year'),function(x) sum(x$Value>0))
-    decprecip <- plyr::ddply(df[(df$Month==12),],c('Year'),function(x) sum(x$Value))
-    decprecip$Year <- as.numeric(levels(factor(decprecip$Year)))
-    decprecip$Year <- decprecip$Year+1
-    decprecipcount <- plyr::ddply(df[(df$Month %in% c(12)),],c('Year'),function(x) sum(x$Value>0))
-    decprecipcount$Year <- as.numeric(levels(factor(decprecipcount$Year)))
-    decprecipcount$Year <- decprecipcount$Year+1
+    if("December" %in% season){
+      decprecip <- plyr::ddply(df[(df$Month=='December'),],c('Year'),function(x) sum(x$Value))
+      decprecip$Year <- as.numeric(levels(factor(decprecip$Year)))
+      decprecip$Year <- decprecip$Year+1
+      decprecipcount <- plyr::ddply(df[(df$Month=='December'),],c('Year'),function(x) sum(x$Value>0))
+      decprecipcount$Year <- as.numeric(levels(factor(decprecipcount$Year)))
+      decprecipcount$Year <- decprecipcount$Year+1
 
-    winterprecipsum <- merge(decprecip,janfebprecip,by="Year")
-    winterprecipcount <- merge(decprecipcount,janfebprecipcount,by="Year")
-    winterprecipcount$winterCountPrecip <- winterprecipcount$V1.x+winterprecipcount$V1.y
-    winterprecipsum$winterTotalPrecip <- winterprecipsum$V1.x+winterprecipsum$V1.y
-    winterprecipsum <- winterprecipsum[,c("Year","winterTotalPrecip")]
-    winterprecipcount <- winterprecipcount[,c("Year","winterCountPrecip")]
+      subseason <- season [! season %in% "December"]
+      precipsub <- plyr::ddply(df[(df$Month %in% subseason),],c('Year'),function(x) sum(x$Value))
+      precipsub$Year <- as.numeric(levels(factor(precipsub$Year)))
+      precipsubcount <- plyr::ddply(df[(df$Month %in% season),],c('Year'),function(x) sum(x$Value>0))
 
-    springprecipcount <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value>0))
-    springprecipsum <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value))
-    springprecipcount <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) sum(x$Value>0))
-    springprecipsum$Year <- as.numeric(levels(factor(springprecipsum$Year)))
-    colnames(springprecipsum) <- c("Year","springTotalPrecip")
-    colnames(springprecipcount) <- c("Year","springCountPrecip")
+      precipsum <- merge(decprecip,precipsub,by="Year")
+      precipsum$TotalPrecip <- precipsum$V1.x+precipsum$V1.y
+      precipsum <- precipsum[,c("Year","TotalPrecip")]
 
-    summerprecipcount <- plyr::ddply(df[(df$Month %in% c(7,8,9)),],c('Year'),function(x) sum(x$Value>0))
-    summerprecipsum <- plyr::ddply(df[(df$Month %in% c(7,8,9)),],c('Year'),function(x) sum(x$Value))
-    summerprecipcount <- plyr::ddply(df[(df$Month %in% c(7,8,9)),],c('Year'),function(x) sum(x$Value>0))
-    summerprecipsum$Year <- as.numeric(levels(factor(summerprecipsum$Year)))
-    colnames(summerprecipsum) <- c("Year","summerTotalPrecip")
-    colnames(summerprecipcount) <- c("Year","summerCountPrecip")
+      precipcount <- merge(decprecipcount,precipsubcount,by="Year")
+      precipcount$CountPrecip <- precipcount$V1.x+precipcount$V1.y
+      precipcount <- precipcount[,c("Year","CountPrecip")]
 
+    }else{
+      precipsum <- plyr::ddply(df[(df$Month %in% season),],c('Year'),function(x) sum(x$Value))
+      precipsum$Year <- as.numeric(levels(factor(precipsum$Year)))
+      precipsum$TotalPrecip <- precipsum$V1
+      precipsum <- precipsum[,c("Year","TotalPrecip")]
 
-    precipsummarydf <- merge(winterprecipsum,springprecipsum,by="Year")
-    precipsummarydf <- merge(precipsummarydf,summerprecipsum,by="Year")
-    precipsummarydf <- merge(precipsummarydf,winterprecipcount,by="Year")
-    precipsummarydf <- merge(precipsummarydf,springprecipcount,by="Year")
-    precipsummarydf <- merge(precipsummarydf,summerprecipcount,by="Year")
-    avgtotalwinterprecip <- mean(winterprecipsum$winterTotalPrecip)
-    avgtotalspringprecip <- mean(springprecipsum$springTotalPrecip)
-    avgtotalsummerprecip <- mean(summerprecipsum$summerTotalPrecip)
-    avgwinterprecipcount <- mean(winterprecipcount$winterCountPrecip)
-    avgspringprecipcount <- mean(springprecipcount$springCountPrecip)
-    avgsummerprecipcount <- mean(summerprecipcount$summerCountPrecip)
-    return(list(precipsummarydf,avgWinterPrecip=avgtotalwinterprecip,avgSpringPrecip=avgtotalspringprecip,avgNumWinterPrecip=avgwinterprecipcount,avgNumSpringPrecip=avgspringprecipcount))
+      precipcount <- plyr::ddply(df[(df$Month %in% season),],c('Year'),function(x) sum(x$Value>0))
+      precipcount$CountPrecip <- precipcount$V1
+      precipcount <- precipcount[,c("Year","CountPrecip")]
+    }
+
+    return(list(avgPrecip=mean(precipsum$TotalPrecip),
+                avgPrecipCount=mean(precipcount$CountPrecip),
+                annualprecipsum=precipsum,
+                annualprecipcount=precipcount))
+
   }else if(parameter=="Temperature"){
-    springtemp <- plyr::ddply(df[(df$Month %in% c(3,4,5,6)),],c('Year'),function(x) mean(x$Value))
-    summertemp <- plyr::ddply(df[(df$Month %in% c(7,8,9)),],c('Year'),function(x) mean(x$Value))
-    colnames(springtemp) <- c("Year","MeanSpringTemp")
-    colnames(summertemp) <- c("Year","MeanSummerTemp")
-    avgspringtemp <- mean(springtemp$MeanSpringTemp)
-    avgsummertemp <- mean(summertemp$MeanSummerTemp)
-    tempsummarydf <- merge(springtemp,summertemp,by="Year")
-    return(list(tempsummarydf,avgspringtemp=avgspringtemp,avgsummertemp=avgsummertemp))
+    tempsub <- plyr::ddply(df[(df$Month %in% season),],c('Year'),function(x) mean(x$Value))
+    colnames(tempsub) <- c("Year","MeanTemp")
+    avgtemp <- mean(tempsub$MeanTemp)
+    return(list(avgTemp=avgtemp,
+                annualavgTemp=tempsub))
   }
 }
