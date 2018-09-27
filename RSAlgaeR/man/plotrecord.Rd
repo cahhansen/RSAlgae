@@ -6,7 +6,7 @@
 \usage{
 plotrecord(data, datavalue, date, obsdata, obsdatavalue, obsdate,
   datacolors = c("grey", "red"), datashapes = c(1, 2), lake = "",
-  ylab = expression(paste("Chl-a (", mu, "g/L)")))
+  title = "", ylab = expression(paste("Chl-a (", mu, "g/L)")))
 }
 \arguments{
 \item{data}{Dataframe with estimated values}

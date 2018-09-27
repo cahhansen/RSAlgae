@@ -13,13 +13,13 @@
 
 
 modresults <- function(model, data, value, title=""){
-  data$value <- data[[,value]]
+  data$value <- data[,value]
   compare <- data.frame(predicted=model$fitted.values)
   compare$actual <- data$value
   compare$diff <- compare$actual-compare$predicted
   modsummary <- summary(model)
   #Compute RMSE, PBIAS R2, and AIC
-  print("GLM Performance:")
+  print("Model Performance:")
   print(paste("Number of observations: ",nrow(data)))
   print(paste("Range:",min(data$value),"-",max(data$value)))
   print(paste("RMSE is: ",sqrt(mean((compare$diff)^2))))

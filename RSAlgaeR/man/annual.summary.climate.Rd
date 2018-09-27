@@ -4,7 +4,7 @@
 \alias{annual.summary.climate}
 \title{summarize climate conditions on an annual basis}
 \usage{
-annual.summary.climate(df, datecol, valuecol, parameter)
+annual.summary.climate(df, datecol, valuecol, parameter, season)
 }
 \arguments{
 \item{df}{with estimated values, dates, location identifiers}
@@ -14,6 +14,8 @@ annual.summary.climate(df, datecol, valuecol, parameter)
 \item{valuecol}{string, name of column with climate parameter values}
 
 \item{parameter}{string, name of parameter ("Precipitation","Temperature")}
+
+\item{season}{vector, names of months to include in analysis}
 }
 \value{
 list of annual (seasonal) summaries
