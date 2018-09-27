@@ -73,7 +73,8 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
 #' @param labels optional for plotting
 #' @param ylab string, label for y axis
 #' @return plot of estimated and observed data
-#' @import ggplot2,scales
+#' @import ggplot2
+#' @import scales
 #' @export
 
 
