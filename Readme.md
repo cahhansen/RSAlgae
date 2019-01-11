@@ -1,4 +1,5 @@
 # RSAlgae
+https://doi.org/10.5281/zenodo.2538202
 
 ## Background
 Remote sensing provides a number of potential tools for better understanding and monitoring surface water quality conditions. Water bodies around the world have been affected by algal blooms, resulting in many problems, including habitat degredation, public health concerns, limited recreation, increases in treatment costs. The tools created in this respository were developed to address remote sensing needs for lakes in the Great Salt Lake surface water system. Utah has experienced several major algal blooms in a number of lakes and reservoirs in recent years (especially in heavily recreated areas near urban centers of Salt Lake City - Provo), which have raised concerns over water quality conditions.
