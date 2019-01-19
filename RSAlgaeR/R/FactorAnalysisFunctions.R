@@ -78,27 +78,27 @@ weather.effect <- function(wqrecord,imagedatecol,wqvarcol,
           #Lag the climate data
           climaterecordsub$lagclimVar <- lagpad(x=climaterecordsub$climVar,k=i)
           #Limit to only data at the location of interest
-          wqrecordsub2 <- wqrecordsub[(wqrecordsub$Location==k),]
+          wqrecordsub2 <- subset(wqrecordsub,Location==k)
           #Merge climate and water quality data
           wqclimatedata <- merge(climaterecordsub,wqrecordsub2, by.x="Date",by.y="Date")
           wqclimatedata$Month <- as.factor(months(wqclimatedata$Date))
           qbreaks <- quantile(wqclimatedata[(wqclimatedata$lagclimVar>noevent & wqclimatedata$Month==j),"lagclimVar"],
-                              prob=c(0,0.25,0.5,0.75,1))
+                              prob=c(0,0.25,0.5,0.75,1),na.rm=TRUE)
           wqclimatedata$Class <- cut(wqclimatedata$lagclimVar,
                                      breaks=c(noevent,unname(qbreaks)),
                                      labels=c("No Event","0-25%","25-50%","50-75%","75-100%"),
                                      include.lowest = TRUE)
           #Calculate the mean water quality value for each quantile
-          results[(results$Location==k & results$Month==j & results$Lag==i),"NoEvent"] <- mean(wqclimatedata[(wqclimatedata$Class=="No Event" & wqclimatedata$Month==j),]$wqVar,na.rm=TRUE)
-          results[(results$Location==k & results$Month==j & results$Lag==i),"nNoEvent"] <- length(wqclimatedata[(wqclimatedata$Class=="No Event" & wqclimatedata$Month==j),]$wqVar)
-          results[(results$Location==k & results$Month==j & results$Lag==i),"Q1"] <- mean(wqclimatedata[(wqclimatedata$Class=="0-25%" & wqclimatedata$Month==j),]$wqVar,na.rm=TRUE)
-          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ1"] <- length(wqclimatedata[(wqclimatedata$Class=="0-25%" & wqclimatedata$Month==j),]$wqVar)
-          results[(results$Location==k & results$Month==j & results$Lag==i),"Q2"] <- mean(wqclimatedata[(wqclimatedata$Class=="25-50%" & wqclimatedata$Month==j),]$wqVar,na.rm=TRUE)
-          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ2"] <- length(wqclimatedata[(wqclimatedata$Class=="25-50%" & wqclimatedata$Month==j),]$wqVar)
-          results[(results$Location==k & results$Month==j & results$Lag==i),"Q3"] <- mean(wqclimatedata[(wqclimatedata$Class=="50-75%" & wqclimatedata$Month==j),]$wqVar,na.rm=TRUE)
-          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ3"] <- length(wqclimatedata[(wqclimatedata$Class=="50-75%" & wqclimatedata$Month==j),]$wqVar)
-          results[(results$Location==k & results$Month==j & results$Lag==i),"Q4"] <- mean(wqclimatedata[(wqclimatedata$Class=="75-100%" & wqclimatedata$Month==j),]$wqVar,na.rm=TRUE)
-          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ4"] <- length(wqclimatedata[(wqclimatedata$Class=="75-100%" & wqclimatedata$Month==j),]$wqVar)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"NoEvent"] <- mean(subset(wqclimatedata,Class=="No Event" & Month==j,select=wqVar)[[1]],na.rm=TRUE)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"nNoEvent"] <- length(subset(wqclimatedata,Class=="No Event" & Month==j,select=wqVar)[[1]])
+          results[(results$Location==k & results$Month==j & results$Lag==i),"Q1"] <- mean(subset(wqclimatedata,Class=="0-25%" & Month==j,select=wqVar)[[1]],na.rm=TRUE)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ1"] <- length(subset(wqclimatedata,Class=="0-25%" & Month==j,select=wqVar)[[1]])
+          results[(results$Location==k & results$Month==j & results$Lag==i),"Q2"] <- mean(subset(wqclimatedata,Class=="25-50%" & Month==j,select=wqVar)[[1]],na.rm=TRUE)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ2"] <- length(subset(wqclimatedata,Class=="25-50%" & Month==j,select=wqVar)[[1]])
+          results[(results$Location==k & results$Month==j & results$Lag==i),"Q3"] <- mean(subset(wqclimatedata,Class=="50-75%" & Month==j,select=wqVar)[[1]],na.rm=TRUE)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ3"] <- length(subset(wqclimatedata,Class=="50-75%" & Month==j,select=wqVar)[[1]])
+          results[(results$Location==k & results$Month==j & results$Lag==i),"Q4"] <- mean(subset(wqclimatedata,Class=="75-100%" & Month==j,select=wqVar)[[1]],na.rm=TRUE)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ4"] <- length(subset(wqclimatedata,Class=="75-100%" & Month==j,select=wqVar)[[1]])
           #Kruskal-Walls Test (Non-parametric version of ANOVA)
           results[(results$Location==k & results$Month==j & results$Lag==i),"PValue"] <- kruskal.test(wqVar~Class,data=wqclimatedata[(wqclimatedata$Month==j & wqclimatedata$Location==k),])$p.value
         }
@@ -117,27 +117,27 @@ weather.effect <- function(wqrecord,imagedatecol,wqvarcol,
         #Lag the climate variable
         climaterecordsub$lagclimVar <- lagpad(x=climaterecordsub$climVar,k=i)
         #Limit to only data at the location of interest
-        wqrecordsub2 <- wqrecordsub[(wqrecordsub$Location==k),]
+        wqrecordsub2 <- subset(wqrecordsub,Location==k)
         #Merge climate and water quality data
         wqclimatedata <- merge(climaterecordsub,wqrecordsub2, by.x="Date",by.y="Date")
         #Calculate values at quantiles and classify the data accordingly
         qbreaks <- quantile(wqclimatedata[(wqclimatedata$lagclimVar>noevent),"lagclimVar"],
-                            prob=c(0,0.25,0.5,0.75,1))
+                            prob=c(0,0.25,0.5,0.75,1),na.rm=TRUE)
         wqclimatedata$Class <- cut(wqclimatedata$lagclimVar,
                                    breaks=c(noevent,unname(qbreaks)),
                                    labels=c("No Event","0-25%","25-50%","50-75%","75-100%"),
                                    include.lowest = TRUE)
         #Calculate the mean water quality value for each quantile
-        results[(results$Location==k & results$Lag==i),"NoEvent"] <- mean(wqclimatedata[(wqclimatedata$Class=="No Event"),]$wqVar,na.rm=TRUE)
-        results[(results$Location==k & results$Lag==i),"nNoEvent"] <- length(wqclimatedata[(wqclimatedata$Class=="No Event"),]$wqVar)
-        results[(results$Location==k & results$Lag==i),"Q1"] <- mean(wqclimatedata[(wqclimatedata$Class=="0-25%"),]$wqVar,na.rm=TRUE)
-        results[(results$Location==k & results$Lag==i),"nQ1"] <- length(wqclimatedata[(wqclimatedata$Class=="0-25%"),]$wqVar)
-        results[(results$Location==k & results$Lag==i),"Q2"] <- mean(wqclimatedata[(wqclimatedata$Class=="25-50%"),]$wqVar,na.rm=TRUE)
-        results[(results$Location==k & results$Lag==i),"nQ2"] <- length(wqclimatedata[(wqclimatedata$Class=="25-50%"),]$wqVar)
-        results[(results$Location==k & results$Lag==i),"Q3"] <- mean(wqclimatedata[(wqclimatedata$Class=="50-75%"),]$wqVar,na.rm=TRUE)
-        results[(results$Location==k & results$Lag==i),"nQ3"] <- length(wqclimatedata[(wqclimatedata$Class=="50-75%"),]$wqVar)
-        results[(results$Location==k & results$Lag==i),"Q4"] <- mean(wqclimatedata[(wqclimatedata$Class=="75-100%"),]$wqVar,na.rm=TRUE)
-        results[(results$Location==k & results$Lag==i),"nQ4"] <- length(wqclimatedata[(wqclimatedata$Class=="75-100%"),]$wqVar)
+        results[(results$Location==k & results$Lag==i),"NoEvent"] <- mean(subset(wqclimatedata,Class=="No Event",select=wqVar)[[1]],na.rm=TRUE)
+        results[(results$Location==k & results$Lag==i),"Q1"] <- mean(subset(wqclimatedata,Class=="0-25%",select=wqVar)[[1]],na.rm=TRUE)
+        results[(results$Location==k & results$Lag==i),"Q2"] <- mean(subset(wqclimatedata,Class=="25-50%",select=wqVar)[[1]],na.rm=TRUE)
+        results[(results$Location==k & results$Lag==i),"Q3"] <- mean(subset(wqclimatedata,Class=="50-75%",select=wqVar)[[1]],na.rm=TRUE)
+        results[(results$Location==k & results$Lag==i),"Q4"] <- mean(subset(wqclimatedata,Class=="75-100%",select=wqVar)[[1]],na.rm=TRUE)
+        results[(results$Location==k & results$Lag==i),"nNoEvent"] <- length(subset(wqclimatedata,Class=="No Event",select=wqVar)[[1]])
+        results[(results$Location==k & results$Lag==i),"nQ1"] <- length(subset(wqclimatedata,Class=="0-25%",select=wqVar)[[1]])
+        results[(results$Location==k & results$Lag==i),"nQ2"] <- length(subset(wqclimatedata,Class=="25-50%",select=wqVar)[[1]])
+        results[(results$Location==k & results$Lag==i),"nQ3"] <- length(subset(wqclimatedata,Class=="50-75%",select=wqVar)[[1]])
+        results[(results$Location==k & results$Lag==i),"nQ4"] <- length(subset(wqclimatedata,Class=="75-100%",select=wqVar)[[1]])
 
         #Kruskal-Walls Test (Non-parametric version of ANOVA)
         results[(results$Location==k & results$Lag==i),"PValue"] <- kruskal.test(wqVar~Class,data=wqclimatedata)$p.value
