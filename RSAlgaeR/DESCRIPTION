@@ -14,4 +14,4 @@ LazyData: TRUE
 RoxygenNote: 6.0.1
 Depends: R (>= 2.10)
 Imports:
-    plyr,lubridate,ggplot2,hydroGOF,stats,cvTools,mblm,graphics,utils
+    plyr,lubridate,ggplot2,hydroGOF,stats,cvTools,mblm,graphics,utils,scales
