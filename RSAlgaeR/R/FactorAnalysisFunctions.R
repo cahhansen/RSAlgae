@@ -27,107 +27,120 @@ lagpad <- function(x, k) {
 
 #' weather.effect
 #'
-#' Evaluates immediate difference in values based on weather conditions
+#' Evaluates difference in values based on weather conditions at quartiles and locations
 #'
 #' @param wqrecord dataframe with estimated historical record of water quality parameter
 #' @param imagedatecol string, name of column with the date of the estimate (date of remotely sensed imagery)
-#' @param valuecol string, name of column with estimated or field-sampled water quality parameter
+#' @param wqvarcol string, name of column with estimated or field-sampled water quality parameter
 #' @param climaterecord dataframe with climate variables
 #' @param climatevarcol character, name of climate variable (column) of interest
 #' @param climatedatecol string, name of column with the date of the climate observation
 #' @param maxlag numeric, number of days to lag the climate effect
 #' @param noevent numeric, threshold for whether an event occurred
-#' @param alternative character string specifying alternative hypothesis ("two.sided","greater","less")
-#' @param overall boolean, TRUE: all locations, FALSE: by each location. Default is TRUE
-#' @param months months an optional character string for if the t-test should be month specific
+#' @param monthlist vector, an optional vector containing the months to split the data on
 #' @param locationcol string, name of column with unique location identifier, used if overall is FALSE
-#' @param ylabel string, optional label for plot
-#' @return results of wilcox test for differences in mean values (and, if overall, boxplots of water quality data)
-#' @import ggplot2
+#' @return results of kruskal wallis test for differences in mean values (and, if overall, boxplots of water quality data)
 #' @import lubridate
 #' @examples
 #' data(estimatedrecord)
 #' data(climatedata)
-#' effectresults <- weather.effect(wqrecord=estimatedrecord,imagedatecol="ImageDate",
-#' valuecol="EstChlValue",climaterecord=climatedata,climatevarcol="TMAX",climatedatecol="DATE",
-#' maxlag=7,noevent=16,months=c("July"))
+#' effectresults <- weather.effect(wqrecord=estimatedrecord,imagedatecol="ImageDate",wqvarcol="EstChlValue",
+#' climaterecord=climatedata,climatevarcol="PRCP",climatedatecol="DATE",
+#' maxlag=7,noevent=0,monthlist=c("June","July","August"),locationcol="StationID")
 #' @export
 #'
 
-weather.effect <- function(wqrecord,imagedatecol,valuecol,climaterecord,
-                                  climatevarcol,climatedatecol,maxlag,noevent,alternative="two.sided",overall=TRUE,months=NULL,locationcol="",ylabel="Average Value"){
-  #Format data frames
-  wqrecord$ImageDate <- wqrecord[,imagedatecol]
-  climaterecord$Month <- months(climaterecord[,climatedatecol])
+weather.effect <- function(wqrecord,imagedatecol,wqvarcol,
+                           climaterecord,climatedatecol,climatevarcol,
+                           maxlag=0,noevent=NA,monthlist=NULL,locationcol=NULL){
+  #Format data frames of water quality record and climate record
+  wqrecord$Date <- wqrecord[,imagedatecol]
+  wqrecord$wqVar <- wqrecord[,wqvarcol]
+  wqrecord$Location <- wqrecord[,locationcol]
+  wqrecordsub <- wqrecord[,c("Location","Date","wqVar")]
+  climaterecord$climVar <- climaterecord[,climatevarcol]
+  climaterecord$Date <- climaterecord[,climatedatecol]
+  climaterecordsub <- climaterecord[,c("Date","climVar")]
   lag <- seq(0,maxlag,1)
-  if(overall==TRUE){
-    if(!is.null(months)){
-      #Create results dataframe
-      results <- data.frame(Month=rep(months,8),Threshold=NA,Lag=rep(0:maxlag,times=1,each=length(months)),Event=NA,NoEvent=NA,PValue=NA)
-      for(j in months){
-        if(noevent!=0){
-          climaterecordsub <- climaterecord[(climaterecord$Month==j),]
-          noevent <- mean(climaterecordsub[,climatevarcol],na.rm=TRUE)
-        }
+
+  if(!is.null(monthlist)){
+    #Find average values for each location, month, and time lag and evaluate whether differences are significant
+    #Create results dataframe
+    locationlist <- unique(wqrecordsub$Location)
+    results <- data.frame(Location=rep(locationlist,times=length(lag),each=length(monthlist)),
+                          Month=rep(monthlist,times=length(lag)),
+                          Lag=rep(0:maxlag,each=length(monthlist)*length(locationlist)),
+                          NoEvent=NA,Q1=NA,Q2=NA,Q3=NA,Q4=NA,PValue=NA,
+                          nNoEvent=NA,nQ1=NA,nQ2=NA,nQ3=NA,nQ4=NA)
+    for(k in locationlist){
+      for(j in monthlist){
         for(i in lag){
-          climaterecord$templag <- lagpad(x=climaterecord[,climatevarcol],k=i)
-          climateeventdates <- climaterecord[(climaterecord$templag>noevent),'Date']
-          record.events <- subset(wqrecord,ImageDate %in% climateeventdates)
-          record.noevents <- subset(wqrecord,!(ImageDate %in% climateeventdates))
-          record.events$Month <- months(record.events$ImageDate)
-          record.noevents$Month <- months(record.noevents$ImageDate)
-          record.events.sub <- subset(record.events, Month %in% j)
-          record.noevents.sub <- subset(record.noevents, Month %in% j)
-          #Wilcox Test (Does not assume normal distributions)
-          wilcoxresults <- tryCatch(wilcox.test(record.events.sub[,valuecol],record.noevents.sub[,valuecol],alternative), error=function(e) NULL)
-          results[results$Lag==i & results$Month==j,"Threshold"] <- noevent
-          results[results$Lag==i & results$Month==j,"Event"] <- mean(record.events.sub[,valuecol],na.rm=TRUE)
-          results[results$Lag==i & results$Month==j,"NoEvent"] <- mean(record.noevents.sub[,valuecol],na.rm=TRUE)
-          if(!is.null(wilcoxresults)){
-            results[results$Lag==i & results$Month==j,"PValue"] <- wilcoxresults$p.value
-          }
-
-
+          #Lag the climate data
+          climaterecordsub$lagclimVar <- lagpad(x=climaterecordsub$climVar,k=i)
+          #Limit to only data at the location of interest
+          wqrecordsub2 <- subset(wqrecordsub,Location==k)
+          #Merge climate and water quality data
+          wqclimatedata <- merge(climaterecordsub,wqrecordsub2, by.x="Date",by.y="Date")
+          wqclimatedata$Month <- as.factor(months(wqclimatedata$Date))
+          qbreaks <- quantile(wqclimatedata[(wqclimatedata$lagclimVar>noevent & wqclimatedata$Month==j),"lagclimVar"],
+                              prob=c(0,0.25,0.5,0.75,1))
+          wqclimatedata$Class <- cut(wqclimatedata$lagclimVar,
+                                     breaks=c(noevent,unname(qbreaks)),
+                                     labels=c("No Event","0-25%","25-50%","50-75%","75-100%"),
+                                     include.lowest = TRUE)
+          #Calculate the mean water quality value for each quantile
+          results[(results$Location==k & results$Month==j & results$Lag==i),"NoEvent"] <- mean(subset(wqclimatedata,Class=="No Event" & Month==j,select=wqVar)[[1]],na.rm=TRUE)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"nNoEvent"] <- length(subset(wqclimatedata,Class=="No Event" & Month==j,select=wqVar)[[1]])
+          results[(results$Location==k & results$Month==j & results$Lag==i),"Q1"] <- mean(subset(wqclimatedata,Class=="0-25%" & Month==j,select=wqVar)[[1]],na.rm=TRUE)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ1"] <- length(subset(wqclimatedata,Class=="0-25%" & Month==j,select=wqVar)[[1]])
+          results[(results$Location==k & results$Month==j & results$Lag==i),"Q2"] <- mean(subset(wqclimatedata,Class=="25-50%" & Month==j,select=wqVar)[[1]],na.rm=TRUE)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ2"] <- length(subset(wqclimatedata,Class=="25-50%" & Month==j,select=wqVar)[[1]])
+          results[(results$Location==k & results$Month==j & results$Lag==i),"Q3"] <- mean(subset(wqclimatedata,Class=="50-75%" & Month==j,select=wqVar)[[1]],na.rm=TRUE)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ3"] <- length(subset(wqclimatedata,Class=="50-75%" & Month==j,select=wqVar)[[1]])
+          results[(results$Location==k & results$Month==j & results$Lag==i),"Q4"] <- mean(subset(wqclimatedata,Class=="75-100%" & Month==j,select=wqVar)[[1]],na.rm=TRUE)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"nQ4"] <- length(subset(wqclimatedata,Class=="75-100%" & Month==j,select=wqVar)[[1]])
+          #Kruskal-Walls Test (Non-parametric version of ANOVA)
+          results[(results$Location==k & results$Month==j & results$Lag==i),"PValue"] <- kruskal.test(wqVar~Class,data=wqclimatedata[(wqclimatedata$Month==j & wqclimatedata$Location==k),])$p.value
         }
       }
-    }else{
-      #Create results dataframe for analysis (not by month)
-      results <- data.frame(Lag=seq(0,maxlag,1),Event=NA,NoEvent=NA,PValue=NA)
-      for(i in lag){
-        climaterecord$templag <- lagpad(x=climaterecord[,climatevarcol],k=i)
-        climateeventdates <- climaterecord[(climaterecord$templag>noevent),'Date']
-        record.events <- subset(wqrecord,ImageDate %in% climateeventdates)
-        record.noevents <- subset(wqrecord,!(ImageDate %in% climateeventdates))
-        results[i+1,"Event"] <- mean(record.events[,valuecol],na.rm=TRUE)
-        results[i+1,"NoEvent"] <- mean(record.noevents[,valuecol],na.rm=TRUE)
-        results[i+1,"PValue"] <- wilcox.test(record.events[,valuecol],record.noevents[,valuecol],alternative)$p.value
-      }
-      #Plot Results
-      ggplot2::ggplot(data=results)+
-        geom_line(aes(x=Lag,y=Event,color='a'))+
-        geom_line(aes(x=Lag,y=NoEvent,color='b'))+
-        theme_bw()+
-        xlab("Lag (Days)")+
-        ylab(ylabel)+
-        scale_color_manual(name="",
-                           values=c('a'='red','b'='blue'),
-                           labels=c("Event","No Event"))
     }
   }else{
-    #Get info for analysis by location
-    locationlist <- unique(wqrecord[,locationcol])
-    #Create Results dataframe
-    results <- data.frame(Location=rep(locationlist,8),Lag=rep(0:7,times=1,each=length(locationlist)),Event=NA,NoEvent=NA,PValue=NA)
-    for(j in locationlist){
-      recordsub <- wqrecord[(wqrecord[,locationcol]==j),]
+    #Find average values for each location,and time lag and evaluate whether differences are significant
+    #Create results dataframe
+    locationlist <- unique(wqrecordsub$Location)
+    results <- data.frame(Location=rep(locationlist,times=length(lag)),
+                          Lag=rep(0:maxlag,each=length(locationlist)),
+                          NoEvent=NA,Q1=NA,Q2=NA,Q3=NA,Q4=NA,PValue=NA,
+                          nNoEvent=NA,nQ1=NA,nQ2=NA,nQ3=NA,nQ4=NA)
+    for(k in locationlist){
       for(i in lag){
-        climaterecord$templag <- lagpad(x=climaterecord[,climatevarcol],k=i)
-        climateeventdates <- climaterecord[(climaterecord$templag>noevent),'Date']
-        record.events <- subset(recordsub,ImageDate %in% climateeventdates)
-        record.noevents <- subset(recordsub,!(ImageDate %in% climateeventdates))
-        results[(results$Lag==i & results$Location==j),"Event"] <- mean(record.events[,valuecol],na.rm=TRUE)
-        results[(results$Lag==i & results$Location==j),"NoEvent"] <- mean(record.noevents[,valuecol],na.rm=TRUE)
-        results[(results$Lag==i & results$Location==j),"PValue"] <- wilcox.test(record.events[,valuecol],record.noevents[,valuecol],alternative)$p.value
+        #Lag the climate variable
+        climaterecordsub$lagclimVar <- lagpad(x=climaterecordsub$climVar,k=i)
+        #Limit to only data at the location of interest
+        wqrecordsub2 <- subset(wqrecordsub,Location==k)
+        #Merge climate and water quality data
+        wqclimatedata <- merge(climaterecordsub,wqrecordsub2, by.x="Date",by.y="Date")
+        #Calculate values at quantiles and classify the data accordingly
+        qbreaks <- quantile(wqclimatedata[(wqclimatedata$lagclimVar>noevent),"lagclimVar"],
+                            prob=c(0,0.25,0.5,0.75,1))
+        wqclimatedata$Class <- cut(wqclimatedata$lagclimVar,
+                                   breaks=c(noevent,unname(qbreaks)),
+                                   labels=c("No Event","0-25%","25-50%","50-75%","75-100%"),
+                                   include.lowest = TRUE)
+        #Calculate the mean water quality value for each quantile
+        results[(results$Location==k & results$Lag==i),"NoEvent"] <- mean(subset(wqclimatedata,Class=="No Event",select=wqVar)[[1]],na.rm=TRUE)
+        results[(results$Location==k & results$Lag==i),"Q1"] <- mean(subset(wqclimatedata,Class=="0-25%",select=wqVar)[[1]],na.rm=TRUE)
+        results[(results$Location==k & results$Lag==i),"Q2"] <- mean(subset(wqclimatedata,Class=="25-50%",select=wqVar)[[1]],na.rm=TRUE)
+        results[(results$Location==k & results$Lag==i),"Q3"] <- mean(subset(wqclimatedata,Class=="50-75%",select=wqVar)[[1]],na.rm=TRUE)
+        results[(results$Location==k & results$Lag==i),"Q4"] <- mean(subset(wqclimatedata,Class=="75-100%",select=wqVar)[[1]],na.rm=TRUE)
+        results[(results$Location==k & results$Lag==i),"nNoEvent"] <- length(subset(wqclimatedata,Class=="No Event",select=wqVar)[[1]])
+        results[(results$Location==k & results$Lag==i),"nQ1"] <- length(subset(wqclimatedata,Class=="0-25%",select=wqVar)[[1]])
+        results[(results$Location==k & results$Lag==i),"nQ2"] <- length(subset(wqclimatedata,Class=="25-50%",select=wqVar)[[1]])
+        results[(results$Location==k & results$Lag==i),"nQ3"] <- length(subset(wqclimatedata,Class=="50-75%",select=wqVar)[[1]])
+        results[(results$Location==k & results$Lag==i),"nQ4"] <- length(subset(wqclimatedata,Class=="75-100%",select=wqVar)[[1]])
+
+        #Kruskal-Walls Test (Non-parametric version of ANOVA)
+        results[(results$Location==k & results$Lag==i),"PValue"] <- kruskal.test(wqVar~Class,data=wqclimatedata)$p.value
       }
     }
   }
