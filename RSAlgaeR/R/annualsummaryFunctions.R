@@ -68,7 +68,7 @@ annual.summary.wq <- function(df,valuecol,datecol,locationcol){
 #' @examples
 #' data(climatedata)
 #' sumdata <- annual.summary.climate(df=climatedata,valuecol="PRCP",datecol="DATE",
-#' parameter="Precipitation")
+#' parameter="Precipitation",season=c("January","February"))
 #' @export
 
 annual.summary.climate <- function(df,datecol,valuecol,parameter,season){
