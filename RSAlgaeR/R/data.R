@@ -143,3 +143,25 @@
 #' }
 #' @source {developed by Carly Hansen}
 "utahsummermod"
+
+#' HAB and Climate Data for Utah Lake
+#'
+#' A dataset containing annual lake-wide estimates of chlorophyll for Utah Lake and climate data
+#'
+#'
+#' @format A data frame with 34 rows and 9 variables:
+#' \describe{
+#'   \item{Year}{year of summary}
+#'   \item{LocationID}{Name of lake}
+#'   \item{MaxAvgChl}{Maximum average chl}
+#'   \item{MaxMaxChl}{Maximum maximum chl}
+#'   \item{MaxBloom}{Max bloom extent}
+#'   \item{TotalWinterPrecip}{total precipitation during the winter}
+#'   \item{TotalSummerPrecip}{total precipitation during the summer}
+#'   \item{MeanSummerTemp}{Average summer temperature}
+#'   \item{TotalSWE}{total snow water equivalent}
+#'   ...
+#' }
+#' @source {derived from models developed by
+#' Carly Hansen and Landsat surface reflectance data}
+"utahlake_hab_climatedata"
