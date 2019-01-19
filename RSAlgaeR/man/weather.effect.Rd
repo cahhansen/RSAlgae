@@ -4,48 +4,41 @@
 \alias{weather.effect}
 \title{weather.effect}
 \usage{
-weather.effect(wqrecord, imagedatecol, valuecol, climaterecord, climatevarcol,
-  climatedatecol, maxlag, noevent, alternative = "two.sided",
-  overall = TRUE, months = NULL, locationcol = "",
-  ylabel = "Average Value")
+weather.effect(wqrecord, imagedatecol, wqvarcol, climaterecord, climatedatecol,
+  climatevarcol, maxlag = 0, noevent = NA, monthlist = NULL,
+  locationcol = NULL)
 }
 \arguments{
 \item{wqrecord}{dataframe with estimated historical record of water quality parameter}
 
 \item{imagedatecol}{string, name of column with the date of the estimate (date of remotely sensed imagery)}
 
-\item{valuecol}{string, name of column with estimated or field-sampled water quality parameter}
+\item{wqvarcol}{string, name of column with estimated or field-sampled water quality parameter}
 
 \item{climaterecord}{dataframe with climate variables}
 
-\item{climatevarcol}{character, name of climate variable (column) of interest}
-
 \item{climatedatecol}{string, name of column with the date of the climate observation}
+
+\item{climatevarcol}{character, name of climate variable (column) of interest}
 
 \item{maxlag}{numeric, number of days to lag the climate effect}
 
 \item{noevent}{numeric, threshold for whether an event occurred}
 
-\item{alternative}{character string specifying alternative hypothesis ("two.sided","greater","less")}
-
-\item{overall}{boolean, TRUE: all locations, FALSE: by each location. Default is TRUE}
-
-\item{months}{months an optional character string for if the t-test should be month specific}
+\item{monthlist}{vector, an optional vector containing the months to split the data on}
 
 \item{locationcol}{string, name of column with unique location identifier, used if overall is FALSE}
-
-\item{ylabel}{string, optional label for plot}
 }
 \value{
-results of wilcox test for differences in mean values (and, if overall, boxplots of water quality data)
+results of kruskal wallis test for differences in mean values (and, if overall, boxplots of water quality data)
 }
 \description{
-Evaluates immediate difference in values based on weather conditions
+Evaluates difference in values based on weather conditions at quartiles and locations
 }
 \examples{
 data(estimatedrecord)
 data(climatedata)
 effectresults <- weather.effect(wqrecord=estimatedrecord,imagedatecol="ImageDate",
-valuecol="EstChlValue",climaterecord=climatedata,climatevarcol="TMAX",climatedatecol="DATE",
-maxlag=7,noevent=16,months=c("July"))
+wqvarcol="EstChlValue", climaterecord=climatedata,climatevarcol="TMAX",climatedatecol="DATE",
+maxlag=7,noevent=0,monthlist=c("July","August"),locationcol="StationID")
 }

@@ -23,12 +23,13 @@ plotrecord(data, datavalue, date, obsdata, obsdatavalue, obsdate,
 
 \item{datacolors}{vector of length=2, specifying colors for estimated and observed datasets}
 
-\item{datashapes}{vector of length=2, specifying shapes for estimated and observed datasets
-#' @param lake string, Name of Lake}
+\item{datashapes}{vector of length=2, specifying shapes for estimated and observed datasets}
+
+\item{lake}{string, Name of Lake}
+
+\item{title}{string, Title of the plot}
 
 \item{ylab}{string, label for y axis}
-
-\item{labels}{optional for plotting}
 }
 \value{
 plot of estimated and observed data

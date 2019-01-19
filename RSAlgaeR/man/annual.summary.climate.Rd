@@ -26,5 +26,5 @@ summarize climate conditions on an annual basis
 \examples{
 data(climatedata)
 sumdata <- annual.summary.climate(df=climatedata,valuecol="PRCP",datecol="DATE",
-parameter="Precipitation")
+parameter="Precipitation",season=c("January","February"))
 }
