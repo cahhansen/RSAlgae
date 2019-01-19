@@ -69,8 +69,8 @@ plotrecord.cal <- function(data,caldata,value,date,location,ylab=expression(past
 #' @param obsdate string, name of column with date of observation (must be date class)
 #' @param datacolors vector of length=2, specifying colors for estimated and observed datasets
 #' @param datashapes vector of length=2, specifying shapes for estimated and observed datasets
-#' #' @param lake string, Name of Lake
-#' @param labels optional for plotting
+#' @param lake string, Name of Lake
+#' @param title string, Title of the plot
 #' @param ylab string, label for y axis
 #' @return plot of estimated and observed data
 #' @import ggplot2
