@@ -24,6 +24,7 @@ modresults <- function(model, data, value, title=""){
   print(paste("Range:",min(data$value),"-",max(data$value)))
   print(paste("RMSE is: ",sqrt(mean((compare$diff)^2))))
   print(paste("PBIAS is: ", hydroGOF::pbias(compare$predicted,compare$actual)))
+  print(paste("MAE is: ", hydroGOF::mae(compare$predicted,compare$actual)))
   print(paste("R2 is: ",summary(lm(compare$actual~compare$predicted))$r.squared))
   print(paste("AIC is: ",modsummary$aic))
   print(modsummary$coefficients)
